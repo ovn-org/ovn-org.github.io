@@ -11,5 +11,15 @@
 	<atom:link href="/en/releases/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Previous Releases</title>
+      <link>/en/releases/previous_releases/</link>
+      <pubDate>Thu, 09 Jul 2020 08:53:23 -0400</pubDate>
+      
+      <guid>/en/releases/previous_releases/</guid>
+      <description>The following releases are out of date and should only be used if your environment specifically requires them. Please consider using the newest release in the series instead.
+   Series Release Release Date     OVN 20.06 OVN 20.06.0 09 Jun 2020   OVN 20.03 OVN 20.03.0 02 Mar 2020    Prior to the 20.03 series, OVN was included as part of the Open vSwitch project.</description>
+    </item>
+    
   </channel>
 </rss>
