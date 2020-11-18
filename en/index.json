@@ -32,7 +32,7 @@
 	"title": "Releases",
 	"tags": [],
 	"description": "",
-	"content": "This page contains the latest releases of OVN for each series. To learn more about the release scheme for OVN, please see the versioning document located here.\n   Series Release Release Date     OVN 20.09 OVN 20.09.0 29 Sep 2020   OVN 20.06 OVN 20.06.2 21 Aug 2020   OVN 20.03 OVN 20.03.1 11 Jun 2020    "
+	"content": "This page contains the latest releases of OVN for each series. To learn more about the release scheme for OVN, please see the versioning document located here.\n   Series Release Release Date Release Notes     OVN 20.09 OVN 20.09.0 29 Sep 2020 Release 20.09.0   OVN 20.06 OVN 20.06.2 21 Aug 2020    OVN 20.03 OVN 20.03.1 11 Jun 2020     "
 },
 {
 	"uri": "/en/contributing/code-of-conduct/",
@@ -53,7 +53,7 @@
 	"title": "OVN, Open Virtual Network",
 	"tags": [],
 	"description": "",
-	"content": "OVN Open Virtual Network OVN (Open Virtual Network) is a series of daemons for the Open vSwitch that translate virtual network configurations into OpenFlow. OVN is licensed under the open source Apache 2 license.\nOVN provides a higher-layer of abstraction than Open vSwitch, working with logical routers and logical switches, rather than flows. OVN is intended to be used by cloud management software (CMS). For details about the architecture of OVN, see the ovn-architecture manpage. Some high-level features offered by OVN include:\n Distributed virtual routers Distributed logical switches Access Control Lists DHCP DNS server  Like Open vSwitch, OVN is written in platform-independent C. OVN runs entirely in userspace and therefore requires no kernel modules to be installed.\nIRC meetings We have weekly IRC meetings you can participate in:\nOVN weekly IRC meeting every Thu 1715 UTC\nFreenode #openvswitch\nUntil recently, OVN code lived within the Open vSwitch codebase. OVN was recently split into its own repo.\n "
+	"content": "OVN Open Virtual Network OVN (Open Virtual Network) is a series of daemons for the Open vSwitch that translate virtual network configurations into OpenFlow. OVN is licensed under the open source Apache 2 license.\nOVN provides a higher-layer of abstraction than Open vSwitch, working with logical routers and logical switches, rather than flows. OVN is intended to be used by cloud management software (CMS). For details about the architecture of OVN, see the ovn-architecture manpage. Some high-level features offered by OVN include:\n Distributed virtual routers Distributed logical switches Access Control Lists DHCP DNS server  Like Open vSwitch, OVN is written in platform-independent C. OVN runs entirely in userspace and therefore requires no kernel modules to be installed.\nLatest Release Download the latest release of OVN on the releases page on the left. For a summary of changes in the latest release, see here\nIRC meetings We have weekly IRC meetings you can participate in:\nOVN weekly IRC meeting every Thu 1715 UTC\nFreenode #openvswitch\nUntil recently, OVN code lived within the Open vSwitch codebase. OVN was recently split into its own repo.\n "
 },
 {
 	"uri": "/en/releases/previous_releases/",
@@ -61,6 +61,13 @@
 	"tags": [],
 	"description": "",
 	"content": "The following releases are out of date and should only be used if your environment specifically requires them. Please consider using the newest release in the series instead.\n   Series Release Release Date     OVN 20.06 OVN 20.06.1 08 Jul 2020    OVN 20.06.0 09 Jun 2020   OVN 20.03 OVN 20.03.0 02 Mar 2020    Prior to the 20.03 series, OVN was included as part of the Open vSwitch project. To get versions prior to 20.03.0, please retrieve them from the Open vSwitch github repository\n"
+},
+{
+	"uri": "/en/releases/release_20.09.0/",
+	"title": "Release 20.09.0",
+	"tags": [],
+	"description": "",
+	"content": "In addition to numerous bug fixes, the 20.09.0 release of OVN contains a mix of new features and performance improvements.\nNew Features  Allow the lb_force_snat_ip and dnat_force_snat_ip options to take an IPv4 and IPv6 address pair. This may be needed for dual stack setups. DHCP now understands DHCPDECLINE External IP based NAT. This allows for a set of IPs to be used for SNAT instead of always SNATting to a single external IP address. It also allows for a range of IPs to be matched for DNATting. VXLAN support has been added for general-purpose tunneling. Previously VXLAN could only be used for ramp switches. Please see documentation for details about limitations VXLAN introduces as compared to GENEVE and STT.  Performance Enhancements  Avoid using conntrack in certain scenarios. Conntrack is known to introduce latency. The following scenarios have been optimized to not use conntrack:  When sending packets from a logical switch to logical router when a load balancer is used. When sending packets through a logical switch with a load balancer when the destination IP is not the load balancer VIP.   Avoid nb_cfg notification flooding. This significantly lowers the amount of time it takes for a northbound change to sync to all hypervisors. Probes for unix sockets are now disabled by default. This prevents unnecessary connection checks between processes on the same system. The set of OpenFlow flows sent to OVS is now incrementally processed. Parsed expressions are now cached in ovn-controller, meaning less CPU time is spent re-parsing expressions. The number of flows created for stateful ACLs has been reduced by a factor of 2 for allow-related ACLs and a factor of 3 for drop/reject ACLs.  "
 },
 {
 	"uri": "/en/categories/",

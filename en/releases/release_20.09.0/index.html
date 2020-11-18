@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>OVN, Open Virtual Network :: OVN project documentation website</title>
+    <title>Release 20.09.0 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1605724833" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/">
+  <body class="" data-url="/en/releases/release_20.09.0/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -172,7 +172,7 @@
   
     
     <li data-nav-id="/en/releases/" title="Releases" class="dd-item 
-        
+        parent
         
         
         ">
@@ -221,7 +221,7 @@
  
   
     
-      <li data-nav-id="/en/releases/release_20.09.0/" title="Release 20.09.0" class="dd-item ">
+      <li data-nav-id="/en/releases/release_20.09.0/" title="Release 20.09.0" class="dd-item active">
         <a href="/en/releases/release_20.09.0/">
         Release 20.09.0
         <i class="fas fa-check read-icon"></i>
@@ -374,22 +374,10 @@
                   
                     
                     
-                      <option id="en" value="/en/" selected>English</option>
+                      <option id="en" value="/en/releases/release_20.09.0/" selected>English</option>
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="es" value="/es/">Spanish</option>
-                    
                   
               
           
@@ -436,56 +424,118 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/release_20.09.0.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Release 20.09.0
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#new-features">New Features</a></li>
+        <li><a href="#performance-enhancements">Performance Enhancements</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
         <div id="body-inner">
           
+            <h1>
+              
+              Release 20.09.0
+            </h1>
+          
 
         
 
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
 
- 
-<h1 id="ovn">OVN</h1>
-<h2 id="open-virtual-network">Open Virtual Network</h2>
-<p>OVN (Open Virtual Network) is a series of daemons for the Open vSwitch that
-translate virtual network configurations into OpenFlow. OVN is licensed under
-the open source Apache 2 license.</p>
-<p>OVN provides a higher-layer of abstraction than Open vSwitch, working with
-logical routers and logical switches, rather than flows. OVN is intended to be
-used by cloud management software (CMS). For details about the architecture of
-OVN, see the ovn-architecture manpage. Some high-level features offered by OVN
-include:</p>
+<p>In addition to numerous bug fixes, the 20.09.0 release of OVN contains a mix of new features and performance improvements.</p>
+<h3 id="new-features">New Features</h3>
 <ul>
-<li>Distributed virtual routers</li>
-<li>Distributed logical switches</li>
-<li>Access Control Lists</li>
-<li>DHCP</li>
-<li>DNS server</li>
+<li>Allow the lb_force_snat_ip and dnat_force_snat_ip options to take an IPv4 and IPv6 address pair. This may be needed for dual stack setups.</li>
+<li>DHCP now understands DHCPDECLINE</li>
+<li>External IP based NAT. This allows for a set of IPs to be used for SNAT instead of always SNATting to a single external IP address. It also allows for a range of IPs to be matched for DNATting.</li>
+<li>VXLAN support has been added for general-purpose tunneling. Previously VXLAN could only be used for ramp switches. Please see documentation for details about limitations VXLAN introduces as compared to GENEVE and STT.</li>
 </ul>
-<p>Like Open vSwitch, OVN is written in platform-independent C. OVN runs entirely
-in userspace and therefore requires no kernel modules to be installed.</p>
-<h2 id="latest-release">Latest Release</h2>
-<p>Download the latest release of OVN on the <a href="releases">releases</a> page on the left.
-For a summary of changes in the latest release, see <a href="releases/release_20.09.0">here</a></p>
-<h4 id="irc-meetings">IRC meetings</h4>
-<p>We have weekly IRC meetings you can participate in:</p>
-<p><a href="http://eavesdrop.openstack.org/meetings/ovn_community_development_discussion/2020/">OVN weekly</a>
-IRC meeting every Thu 1715 UTC</p>
-<p>Freenode <strong>#openvswitch</strong></p>
+<h3 id="performance-enhancements">Performance Enhancements</h3>
+<ul>
+<li>Avoid using conntrack in certain scenarios. Conntrack is known to introduce latency. The following scenarios have been optimized to not use conntrack:
+<ul>
+<li>When sending packets from a logical switch to logical router when a load balancer is used.</li>
+<li>When sending packets through a logical switch with a load balancer when the destination IP is not the load balancer VIP.</li>
+</ul>
+</li>
+<li>Avoid nb_cfg notification flooding. This significantly lowers the amount of time it takes for a northbound change to sync to all hypervisors.</li>
+<li>Probes for unix sockets are now disabled by default. This prevents unnecessary connection checks between processes on the same system.</li>
+<li>The set of OpenFlow flows sent to OVS is now incrementally processed.</li>
+<li>Parsed expressions are now cached in ovn-controller, meaning less CPU time is spent re-parsing expressions.</li>
+<li>The number of flows created for stateful ACLs has been reduced by a factor of 2 for allow-related ACLs and a factor of 3 for drop/reject ACLs.</li>
+</ul>
 
-<div class="notices info" ><p>Until recently, OVN code lived within the Open vSwitch codebase. OVN was
-recently <a href="https://github.com/openvswitch/ovs/commit/f3e24610ea18eb873dc860f1710432e9aacd27fd">split</a>
-into its <a href="https://github.com/ovn-org/ovn">own repo</a>.</p>
-</div>
 
+<footer class="footline">
 	
-  
+</footer>
+
         
         </div> 
         
@@ -570,6 +620,7 @@ into its <a href="https://github.com/ovn-org/ovn">own repo</a>.</p>
             
                 
                     
+                    
                 
                 
 
@@ -582,6 +633,9 @@ into its <a href="https://github.com/ovn-org/ovn">own repo</a>.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -599,6 +653,7 @@ into its <a href="https://github.com/ovn-org/ovn">own repo</a>.</p>
             
                 
                     
+                    
                 
                 
 
@@ -617,6 +672,9 @@ into its <a href="https://github.com/ovn-org/ovn">own repo</a>.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -672,8 +730,10 @@ into its <a href="https://github.com/ovn-org/ovn">own repo</a>.</p>
 	 
 	 
 		
+			<a class="nav nav-prev" href="/en/releases/previous_releases/" title="Previous Releases"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/en/architecture/" title="Architecture" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/en/contributing/" title="Contributing" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

@@ -17,5 +17,15 @@
    Series Release Release Date     OVN 20.06 OVN 20.06.1 08 Jul 2020    OVN 20.06.0 09 Jun 2020   OVN 20.03 OVN 20.03.0 02 Mar 2020    Prior to the 20.03 series, OVN was included as part of the Open vSwitch project.</description>
     </item>
     
+    <item>
+      <title>Release 20.09.0</title>
+      <link>/en/releases/release_20.09.0/</link>
+      <pubDate>Thu, 09 Jul 2020 08:53:23 -0400</pubDate>
+      
+      <guid>/en/releases/release_20.09.0/</guid>
+      <description>In addition to numerous bug fixes, the 20.09.0 release of OVN contains a mix of new features and performance improvements.
+New Features  Allow the lb_force_snat_ip and dnat_force_snat_ip options to take an IPv4 and IPv6 address pair. This may be needed for dual stack setups. DHCP now understands DHCPDECLINE External IP based NAT. This allows for a set of IPs to be used for SNAT instead of always SNATting to a single external IP address.</description>
+    </item>
+    
   </channel>
 </rss>
