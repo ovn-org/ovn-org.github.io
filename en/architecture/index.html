@@ -12,20 +12,20 @@
     <title>Architecture :: OVN project documentation website</title>
 
     
-    <link href="/css/nucleus.css?1605724833" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1605724833" rel="stylesheet">
-    <link href="/css/hybrid.css?1605724833" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1605724833" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1605724833" rel="stylesheet">
-    <link href="/css/auto-complete.css?1605724833" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1605724833" rel="stylesheet">
-    <link href="/css/theme.css?1605724833" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1605724833" rel="stylesheet">
+    <link href="/css/nucleus.css?1605728959" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1605728959" rel="stylesheet">
+    <link href="/css/hybrid.css?1605728959" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1605728959" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1605728959" rel="stylesheet">
+    <link href="/css/auto-complete.css?1605728959" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1605728959" rel="stylesheet">
+    <link href="/css/theme.css?1605728959" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1605728959" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1605724833" rel="stylesheet">
+      <link href="/css/theme-blue.css?1605728959" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1605724833"></script>
+    <script src="/js/jquery-3.3.1.min.js?1605728959"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1605724833"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1605724833"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1605728959"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1605728959"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1605724833"></script>
+<script type="text/javascript" src="/js/search.js?1605728959"></script>
 
     
   </div>
@@ -83,80 +83,12 @@
         
         ">
       <a href="/en/architecture/">
-          <b>3. </b>Architecture
+          <b>1. </b>Architecture
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/architecture/network/" title="Network" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/architecture/network/">
-          Network
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/architecture/components/" title="OVN components" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/architecture/components/">
-          OVN components
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
               
     </li>
   
@@ -177,7 +109,7 @@
         
         ">
       <a href="/en/releases/">
-          <b>4. </b>Releases
+          <b>2. </b>Releases
           
             <i class="fas fa-check read-icon"></i>
           
@@ -190,27 +122,6 @@
           
           
         
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/en/releases/previous_releases/" title="Previous Releases" class="dd-item ">
-        <a href="/en/releases/previous_releases/">
-        Previous Releases
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
           
             
             
@@ -255,7 +166,7 @@
         
         ">
       <a href="/en/contributing/">
-          <b>5. </b>Contributing
+          <b>3. </b>Contributing
           
             <i class="fas fa-check read-icon"></i>
           
@@ -469,7 +380,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#learn-more-about-ovn">Learn more about OVN</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -494,7 +413,84 @@
 
 
 
-	
+	<p>OVN, the Open Virtual Network, is a system to support logical network abstraction
+in virtual machine and container environments.  OVN complements
+the existing capabilities of OVS to add native support for logical network
+abstractions, such as logical L2 and L3 overlays and security groups.
+Services such as DHCP are also desirable features.  Just like OVS, OVN&rsquo;s
+design goal is to have a production-quality implementation that can operate
+at significant scale.</p>
+<p>A physical network comprises physical wires, switches, and routers.  A
+<em>virtual network</em> extends a physical network into a hypervisor or
+container platform, bridging VMs or containers into the physical network.
+An OVN <em>logical network</em> is a network implemented in software that
+is insulated from physical (and thus virtual) networks by tunnels or other
+encapsulations.  This allows IP and other address spaces used in logical
+networks to overlap with those used on physical networks without causing
+conflicts.  Logical network topologies can be arranged without regard for
+the topologies of the physical networks on which they run.  Thus, VMs that
+are part of a logical network can migrate from one physical machine to
+another without network disruption.</p>
+<p>The encapsulation layer prevents VMs and containers connected to a logical
+network from communicating with nodes on physical networks.  For clustering
+VMs and containers, this can be acceptable or even desirable, but in many
+cases VMs and containers do need connectivity to physical networks.  OVN
+provides multiple forms of <em>gateways</em> for this purpose.</p>
+<p>An OVN deployment consists of several components:</p>
+<ul>
+<li>Cloud Management System (CMS): integrates OVN into a physical network by
+managing the OVN logical network elements and connecting the OVN logical network
+infrastructure to physical network elements. Exmaples include OpenStack Neutron&rsquo;s
+<a href="https://docs.openstack.org/project-deploy-guide/charm-deployment-guide/latest/app-ovn.html">ml2/ovn</a>
+plugin and the <a href="https://github.com/ovn-org/ovn-kubernetes">ovn-kubernetes</a> project.</li>
+<li>OVN Databases: stores data representing the OVN logical and physical networks.</li>
+<li>Hypervisors: run Open vSwitch and translate the OVN logical network into
+OpenFlow on a physical or virtual machine.</li>
+<li>Gateways: extends a tunnel-based OVN logical network into a physical network
+by forwarding packets between tunnels and the physical network infrastructure.</li>
+</ul>
+<pre><code>                                         CMS
+                                          |
+                                          |
+                              +-----------|-----------+
+                              |           |           |
+                              |     OVN/CMS Plugin    |
+                              |           |           |
+                              |           |           |
+                              |   OVN Northbound DB   |
+                              |           |           |
+                              |           |           |
+                              |       ovn-northd      |
+                              |           |           |
+                              +-----------|-----------+
+                                          |
+                                          |
+                                +-------------------+
+                                | OVN Southbound DB |
+                                +-------------------+
+                                          |
+                                          |
+                       +------------------+------------------+
+                       |                  |                  |
+         HV 1          |                  |    HV n          |
+       +---------------|---------------+  .  +---------------|---------------+
+       |               |               |  .  |               |               |
+       |        ovn-controller         |  .  |        ovn-controller         |
+       |         |          |          |  .  |         |          |          |
+       |         |          |          |     |         |          |          |
+       |  ovs-vswitchd   ovsdb-server  |     |  ovs-vswitchd   ovsdb-server  |
+       |                               |     |                               |
+       +-------------------------------+     +-------------------------------+
+</code></pre><p>A detailed reference of OVN&rsquo;s architecture can be found on the
+<a href="https://www.ovn.org/support/dist-docs/ovn-architecture.7.html">ovn-architecture manpage</a>.</p>
+<h3 id="learn-more-about-ovn">Learn more about OVN</h3>
+<ul>
+<li><a href="http://openvswitch.org/support/slides/OVN-Vancouver.pdf">OVN Overview</a></li>
+<li><a href="https://www.openvswitch.org/support/slides/OVN_Barcelona.pdf">OVN Overview</a></li>
+<li><a href="https://benpfaff.org/~blp/ovn-lbnl.pdf">OVN Overview</a></li>
+<li><a href="https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/presentation-media/OpenStack-Boston.pdf">OVN and OpenStack</a></li>
+</ul>
+
 
 
 
@@ -540,24 +536,6 @@
 
                     
                     
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
                     
 
                     
@@ -569,37 +547,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -608,9 +557,6 @@
                     
                     
 
-                    
-            
-        
                     
                         
             
@@ -693,7 +639,7 @@
 			<a class="nav nav-prev" href="/en/" title="OVN, Open Virtual Network"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/architecture/network/" title="Network" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/releases/" title="Releases" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -703,19 +649,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1605724833"></script>
-    <script src="/js/perfect-scrollbar.min.js?1605724833"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1605724833"></script>
-    <script src="/js/jquery.sticky.js?1605724833"></script>
-    <script src="/js/featherlight.min.js?1605724833"></script>
-    <script src="/js/highlight.pack.js?1605724833"></script>
+    <script src="/js/clipboard.min.js?1605728959"></script>
+    <script src="/js/perfect-scrollbar.min.js?1605728959"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1605728959"></script>
+    <script src="/js/jquery.sticky.js?1605728959"></script>
+    <script src="/js/featherlight.min.js?1605728959"></script>
+    <script src="/js/highlight.pack.js?1605728959"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1605724833"></script>
-    <script src="/js/learn.js?1605724833"></script>
-    <script src="/js/hugo-learn.js?1605724833"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1605728959"></script>
+    <script src="/js/learn.js?1605728959"></script>
+    <script src="/js/hugo-learn.js?1605728959"></script>
 
-    <link href="/mermaid/mermaid.css?1605724833" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1605724833"></script>
+    <link href="/mermaid/mermaid.css?1605728959" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1605728959"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
