@@ -6,7 +6,17 @@
     <description>Recent content in OVN, Open Virtual Network on OVN project documentation website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 09 Jul 2020 08:53:23 -0400</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Dec 2020 08:53:48 -0500</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Release 20.12.0</title>
+      <link>/en/releases/release_20.12.0/</link>
+      <pubDate>Thu, 17 Dec 2020 08:53:48 -0500</pubDate>
+      
+      <guid>/en/releases/release_20.12.0/</guid>
+      <description>In addition to numerous bug fixes, the 20.12.0 release of OVN contains a mix of new features and performance improvements.
+New Features  Add support for DHCP RENEW/REBIND for IPv6 prefix delegation (RFC 3633). DHCP iPXE support has been added. A new vlan-passthru option has been added to logical switches to allow vlan-tagged incoming traffic. DHCP option 28 (broadcast address) support has been added. The conntrack zone used by a gateway router for SNAT can now be explicitly configured.</description>
+    </item>
+    
     <item>
       <title>Release 20.09.0</title>
       <link>/en/releases/release_20.09.0/</link>

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Release 20.09.0 :: OVN project documentation website</title>
+    <title>Release 20.12.0 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1608301642" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/releases/release_20.09.0/">
+  <body class="" data-url="/en/releases/release_20.12.0/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -132,7 +132,7 @@
  
   
     
-      <li data-nav-id="/en/releases/release_20.12.0/" title="Release 20.12.0" class="dd-item ">
+      <li data-nav-id="/en/releases/release_20.12.0/" title="Release 20.12.0" class="dd-item active">
         <a href="/en/releases/release_20.12.0/">
         Release 20.12.0
         <i class="fas fa-check read-icon"></i>
@@ -153,7 +153,7 @@
  
   
     
-      <li data-nav-id="/en/releases/release_20.09.0/" title="Release 20.09.0" class="dd-item active">
+      <li data-nav-id="/en/releases/release_20.09.0/" title="Release 20.09.0" class="dd-item ">
         <a href="/en/releases/release_20.09.0/">
         Release 20.09.0
         <i class="fas fa-check read-icon"></i>
@@ -306,7 +306,7 @@
                   
                     
                     
-                      <option id="en" value="/en/releases/release_20.09.0/" selected>English</option>
+                      <option id="en" value="/en/releases/release_20.12.0/" selected>English</option>
                     
                   
               
@@ -363,7 +363,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/release_20.09.0.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/release_20.12.0.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -394,7 +394,7 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Release 20.09.0
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Release 20.12.0
           
          
           
@@ -432,7 +432,7 @@
           
             <h1>
               
-              Release 20.09.0
+              Release 20.12.0
             </h1>
           
 
@@ -440,27 +440,25 @@
 
 
 
-<p>In addition to numerous bug fixes, the 20.09.0 release of OVN contains a mix of new features and performance improvements.</p>
+<p>In addition to numerous bug fixes, the 20.12.0 release of OVN contains a mix of new features and performance improvements.</p>
 <h3 id="new-features">New Features</h3>
 <ul>
-<li>Allow the lb_force_snat_ip and dnat_force_snat_ip options to take an IPv4 and IPv6 address pair. This may be needed for dual stack setups.</li>
-<li>DHCP now understands DHCPDECLINE</li>
-<li>External IP based NAT. This allows for a set of IPs to be used for SNAT instead of always SNATting to a single external IP address. It also allows for a range of IPs to be matched for DNATting.</li>
-<li>VXLAN support has been added for general-purpose tunneling. Previously VXLAN could only be used for ramp switches. Please see documentation for details about limitations VXLAN introduces as compared to GENEVE and STT.</li>
+<li>Add support for DHCP RENEW/REBIND for IPv6 prefix delegation (RFC 3633).</li>
+<li>DHCP iPXE support has been added.</li>
+<li>A new vlan-passthru option has been added to logical switches to allow vlan-tagged incoming traffic.</li>
+<li>DHCP option 28 (broadcast address) support has been added.</li>
+<li>The conntrack zone used by a gateway router for SNAT can now be explicitly configured.</li>
+<li>The nb_cfg value is now propagated to the OVS database.</li>
+<li>It is possible to pin ovn-northd or ovn-controller to a specific version. This can allow for less downtime during upgrades if the central components are updated before the ovn-controllers in a cluster.</li>
+<li>Support for &ldquo;fair&rdquo; meters, which allows for multiple ACL logs to use the same meter while being rate-limited independently.</li>
 </ul>
 <h3 id="performance-enhancements">Performance Enhancements</h3>
 <ul>
-<li>Avoid using conntrack in certain scenarios. Conntrack is known to introduce latency. The following scenarios have been optimized to not use conntrack:
-<ul>
-<li>When sending packets from a logical switch to logical router when a load balancer is used.</li>
-<li>When sending packets through a logical switch with a load balancer when the destination IP is not the load balancer VIP.</li>
-</ul>
-</li>
-<li>Avoid nb_cfg notification flooding. This significantly lowers the amount of time it takes for a northbound change to sync to all hypervisors.</li>
-<li>Probes for unix sockets are now disabled by default. This prevents unnecessary connection checks between processes on the same system.</li>
-<li>The set of OpenFlow flows sent to OVS is now incrementally processed.</li>
-<li>Parsed expressions are now cached in ovn-controller, meaning less CPU time is spent re-parsing expressions.</li>
-<li>The number of flows created for stateful ACLs has been reduced by a factor of 2 for allow-related ACLs and a factor of 3 for drop/reject ACLs.</li>
+<li>&ldquo;reject&rdquo; ACLs have been reduced from generating 4 logical flows to generating 1.</li>
+<li>MAC bindings are updated for directly-connected logical routers, saving the need for unnecessary ARPs/NDs.</li>
+<li>The number of flows required for hairpin traffic to load balancers has been reduced.</li>
+<li>ovn-northd can now group logical flows that are shared between multiple datapaths using datapath groups. This has been shown to dramatically reduce the number of logical flows in the southbound database in large deployments. The option is disabled by default but likely will be switched to be enabled by default in a later release.</li>
+<li>Some OVSDB operations have been updated to use partial map updates, reducing the size of the data being sent and processed in a transaction.</li>
 </ul>
 
 
@@ -532,8 +530,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -551,6 +547,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -570,9 +568,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -628,10 +623,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/releases/release_20.12.0/" title="Release 20.12.0"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/releases/" title="Releases"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/contributing/" title="Contributing" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/releases/release_20.09.0/" title="Release 20.09.0" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
