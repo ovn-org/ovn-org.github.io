@@ -18,7 +18,7 @@
 	"title": "Releases",
 	"tags": [],
 	"description": "",
-	"content": "This page lists the current supported OVN release, and previous obsoleted releases, for each series. To learn more about the release scheme for OVN, please see the versioning document located here.\n   Series Release Release Date Release Notes     OVN 21.03 OVN 21.03.0 12 Mar 2021 Release 21.03.0   OVN 20.12 OVN 20.12.0 18 Dec 2020 Release 20.12.0   OVN 20.09 OVN 20.09.0 29 Sep 2020 Release 20.09.0   OVN 20.06 OVN 20.06.2 21 Aug 2020     OVN 20.06.1 08 Jul 2020     OVN 20.06.0 09 Jun 2020    OVN 20.03 OVN 20.03.1 11 Jun 2020     OVN 20.03.0 02 Mar 2020     Prior to the 20.03 series, OVN was included as part of the Open vSwitch project. To get versions prior to 20.03.0, please retrieve them from the Open vSwitch github repository\n"
+	"content": "This page lists the current supported OVN release, and previous obsoleted releases, for each series. To learn more about the release scheme for OVN, please see the versioning document located here.\n   Series Release Release Date Release Notes     OVN 21.06 OVN 21.06.0 18 Jun 2021 Release 21.06.0   OVN 21.03 OVN 21.03.0 12 Mar 2021 Release 21.03.0   OVN 20.12 OVN 20.12.0 18 Dec 2020 Release 20.12.0   OVN 20.09 OVN 20.09.0 29 Sep 2020 Release 20.09.0   OVN 20.06 OVN 20.06.2 21 Aug 2020     OVN 20.06.1 08 Jul 2020     OVN 20.06.0 09 Jun 2020    OVN 20.03 OVN 20.03.1 11 Jun 2020     OVN 20.03.0 02 Mar 2020     Prior to the 20.03 series, OVN was included as part of the Open vSwitch project. To get versions prior to 20.03.0, please retrieve them from the Open vSwitch github repository\n"
 },
 {
 	"uri": "/en/contributing/code-of-conduct/",
@@ -40,6 +40,13 @@
 	"tags": [],
 	"description": "",
 	"content": "OVN Open Virtual Network OVN (Open Virtual Network) is a series of daemons for the Open vSwitch that translate virtual network configurations into OpenFlow. OVN is licensed under the open source Apache 2 license.\nOVN provides a higher-layer of abstraction than Open vSwitch, working with logical routers and logical switches, rather than flows. OVN is intended to be used by cloud management software (CMS). For details about the architecture of OVN, see the ovn-architecture manpage. Some high-level features offered by OVN include:\n Distributed virtual routers Distributed logical switches Access Control Lists DHCP DNS server  Like Open vSwitch, OVN is written in platform-independent C. OVN runs entirely in userspace and therefore requires no kernel modules to be installed.\nLatest Release Download the latest release of OVN on the releases page on the left. For a summary of changes in the latest release, see here.\nDistribution documentation (aka man pages) is available here.\nIRC meetings We have weekly IRC meetings you can participate in:\nOVN weekly IRC meeting every Thu 1715 UTC in #openvswitch on irc.libera.chat\nUntil recently, OVN code lived within the Open vSwitch codebase. OVN was recently split into its own repo.\n "
+},
+{
+	"uri": "/en/releases/release_21.06.0/",
+	"title": "Release 21.06.0",
+	"tags": [],
+	"description": "",
+	"content": "In addition to bug fixes, the 21.06.0 release of OVN contains a mix of new features and performance improvements.\nNew Features  A new version of ovn-northd is included. This version is written in Differential Datalog instead of C and processes incrementally. VLAN passthru mode is supported. Custom 802.11ad support for localnet ports is added. An \u0026ldquo;allow-stateless\u0026rdquo; ACL option has been added that will always bypass conntrack. DNS now responds to PTR requests. There is now a \u0026ldquo;\u0026ndash;dry-run\u0026rdquo; option for ovn-northd and ovn-northd-ddlog.  Performance Enhancements  The C version of ovn-northd can now process data in parallel threads. ct.inv can be disabled for deployments where offloading to smart NICs is desired. Similar to the ovn-nbctl daemon, ovn-sbctl has a daemon mode.  "
 },
 {
 	"uri": "/en/releases/release_21.03.0/",

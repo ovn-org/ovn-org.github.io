@@ -6,7 +6,17 @@
     <description>Recent content in OVN, Open Virtual Network on OVN project documentation website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 15 Mar 2021 08:53:48 -0500</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Jun 2021 08:53:48 -0500</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Release 21.06.0</title>
+      <link>/en/releases/release_21.06.0/</link>
+      <pubDate>Fri, 18 Jun 2021 08:53:48 -0500</pubDate>
+      
+      <guid>/en/releases/release_21.06.0/</guid>
+      <description>In addition to bug fixes, the 21.06.0 release of OVN contains a mix of new features and performance improvements.
+New Features  A new version of ovn-northd is included. This version is written in Differential Datalog instead of C and processes incrementally. VLAN passthru mode is supported. Custom 802.11ad support for localnet ports is added. An &amp;ldquo;allow-stateless&amp;rdquo; ACL option has been added that will always bypass conntrack. DNS now responds to PTR requests.</description>
+    </item>
+    
     <item>
       <title>Release 21.03.0</title>
       <link>/en/releases/release_21.03.0/</link>
