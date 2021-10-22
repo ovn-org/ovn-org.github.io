@@ -6,7 +6,17 @@
     <description>Recent content in OVN, Open Virtual Network on OVN project documentation website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 18 Jun 2021 08:53:48 -0500</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Oct 2021 08:53:48 -0500</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Release 21.09.0</title>
+      <link>/en/releases/release_21.09.0/</link>
+      <pubDate>Thu, 21 Oct 2021 08:53:48 -0500</pubDate>
+      
+      <guid>/en/releases/release_21.09.0/</guid>
+      <description>In addition to bug fixes, the 21.09.0 release of OVN contains a mix of new features and performance improvements.
+New Features  OVN can now detect datapath features in OVS using the &amp;ldquo;Datapath&amp;rdquo; table in OVS. This is used to detect if all-zero SNAT is available. DHCP now supports option 12 (hostname). A limitation has been removed that now allows the full TCP/UDP port range (1-65535) rather than only half the range (1-32767) for Service Monitors.</description>
+    </item>
+    
     <item>
       <title>Release 21.06.0</title>
       <link>/en/releases/release_21.06.0/</link>
