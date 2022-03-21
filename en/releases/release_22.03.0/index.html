@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Release 20.09.0 :: OVN project documentation website</title>
+    <title>Release 22.03.0 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1647871658" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/releases/release_20.09.0/">
+  <body class="" data-url="/en/releases/release_22.03.0/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -132,7 +132,7 @@
  
   
     
-      <li data-nav-id="/en/releases/release_22.03.0/" title="Release 22.03.0" class="dd-item ">
+      <li data-nav-id="/en/releases/release_22.03.0/" title="Release 22.03.0" class="dd-item active">
         <a href="/en/releases/release_22.03.0/">
         Release 22.03.0
         <i class="fas fa-check read-icon"></i>
@@ -237,7 +237,7 @@
  
   
     
-      <li data-nav-id="/en/releases/release_20.09.0/" title="Release 20.09.0" class="dd-item active">
+      <li data-nav-id="/en/releases/release_20.09.0/" title="Release 20.09.0" class="dd-item ">
         <a href="/en/releases/release_20.09.0/">
         Release 20.09.0
         <i class="fas fa-check read-icon"></i>
@@ -390,7 +390,7 @@
                   
                     
                     
-                      <option id="en" value="/en/releases/release_20.09.0/" selected>English</option>
+                      <option id="en" value="/en/releases/release_22.03.0/" selected>English</option>
                     
                   
               
@@ -447,7 +447,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/release_20.09.0.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/release_22.03.0.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -478,7 +478,7 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Release 20.09.0
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Release 22.03.0
           
          
           
@@ -497,6 +497,7 @@
       <ul>
         <li><a href="#new-features">New Features</a></li>
         <li><a href="#performance-enhancements">Performance Enhancements</a></li>
+        <li><a href="#documentation">Documentation</a></li>
       </ul>
     </li>
   </ul>
@@ -516,7 +517,7 @@
           
             <h1>
               
-              Release 20.09.0
+              Release 22.03.0
             </h1>
           
 
@@ -524,28 +525,27 @@
 
 
 
-<p>In addition to numerous bug fixes, the 20.09.0 release of OVN contains a mix of new features and performance improvements.</p>
+<p>OVN 22.03.0 is a long term support (LTS) release. This version will receive bug fix support until the release of OVN 24.03.0, at which point it will receive one additional year of critical fixes.</p>
+<p>In addition to bug fixes, the 22.03.0 release of OVN contains a mix of new features and performance improvements.</p>
 <h3 id="new-features">New Features</h3>
 <ul>
-<li>Allow the lb_force_snat_ip and dnat_force_snat_ip options to take an IPv4 and IPv6 address pair. This may be needed for dual stack setups.</li>
-<li>DHCP now understands DHCPDECLINE</li>
-<li>External IP based NAT. This allows for a set of IPs to be used for SNAT instead of always SNATting to a single external IP address. It also allows for a range of IPs to be matched for DNATting.</li>
-<li>VXLAN support has been added for general-purpose tunneling. Previously VXLAN could only be used for ramp switches. Please see documentation for details about limitations VXLAN introduces as compared to GENEVE and STT.</li>
+<li>ovn-ic now supports multicast flooding between AZs.</li>
+<li>The &ndash;dummy-numa option for ovn-northd has been added.</li>
+<li>Control plan protection (CoPP) can now be named, allowing for easier referencing of policies.</li>
+<li>Solicited router advertisements now include rdnss, dnssl, and route_info, just like periodic router advertisements.</li>
+<li>When ACL logging is enabled, the direction of the traffic is now included in the logs.</li>
+<li>A new &ldquo;exclude-lb-vips-from-garp&rdquo; option has been added so that if options:nat-addresses is set to &ldquo;router&rdquo; on a logical switch port, we will not send GARPs for load balancer VIPs on the connected logical router.</li>
+<li>ACLs have a new log-related option that allows for reply and related traffic to be logged for stateful ACLs.</li>
+<li>from-lport ACLs can now optionally be applied after load balancing, in the case where an ACL might match on a load balancer backend.</li>
 </ul>
 <h3 id="performance-enhancements">Performance Enhancements</h3>
 <ul>
-<li>Avoid using conntrack in certain scenarios. Conntrack is known to introduce latency. The following scenarios have been optimized to not use conntrack:
-<ul>
-<li>When sending packets from a logical switch to logical router when a load balancer is used.</li>
-<li>When sending packets through a logical switch with a load balancer when the destination IP is not the load balancer VIP.</li>
+<li>Incremental processing of address sets has been enhanced to be more fine-grained, resulting in fewer computations required when address sets are updated.</li>
+<li>Meters are now incrementally processed. This functions both as a bug fix as well as a performance enhancement.</li>
 </ul>
-</li>
-<li>Avoid nb_cfg notification flooding. This significantly lowers the amount of time it takes for a northbound change to sync to all hypervisors.</li>
-<li>Probes for unix sockets are now disabled by default. This prevents unnecessary connection checks between processes on the same system.</li>
-<li>The set of OpenFlow flows sent to OVS is now incrementally processed.</li>
-<li>Parsed expressions are now cached in ovn-controller, meaning less CPU time is spent re-parsing expressions.</li>
-<li>The number of flows created for stateful ACLs has been reduced by a factor of 2 for allow-related ACLs and a factor of 3 for drop/reject ACLs.</li>
-</ul>
+<h3 id="documentation">Documentation</h3>
+<p>Distribution documentation (aka man pages) specific to this release is
+<a href="https://www.ovn.org/support/dist-docs-branch-21.09/">available here</a>.</p>
 
 
 <footer class="footline">
@@ -616,6 +616,23 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -694,23 +711,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -718,9 +718,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -776,10 +773,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/releases/release_20.12.0/" title="Release 20.12.0"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/releases/" title="Releases"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/contributing/" title="Contributing" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/releases/release_21.09.0/" title="Release 21.09.0" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
