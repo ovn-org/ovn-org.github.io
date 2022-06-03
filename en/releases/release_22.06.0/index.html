@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Contributing to the OVN website :: OVN project documentation website</title>
+    <title>Release 22.06.0 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1654288592" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/contributing/website/">
+  <body class="" data-url="/en/releases/release_22.06.0/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -104,7 +104,7 @@
   
     
     <li data-nav-id="/en/releases/" title="Releases" class="dd-item 
-        
+        parent
         
         
         ">
@@ -132,7 +132,7 @@
  
   
     
-      <li data-nav-id="/en/releases/release_22.06.0/" title="Release 22.06.0" class="dd-item ">
+      <li data-nav-id="/en/releases/release_22.06.0/" title="Release 22.06.0" class="dd-item active">
         <a href="/en/releases/release_22.06.0/">
         Release 22.06.0
         <i class="fas fa-check read-icon"></i>
@@ -287,7 +287,7 @@
   
     
     <li data-nav-id="/en/contributing/" title="Contributing" class="dd-item 
-        parent
+        
         
         
         ">
@@ -319,7 +319,7 @@
     
     <li data-nav-id="/en/contributing/website/" title="Contributing to the OVN website" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/en/contributing/website/">
@@ -411,7 +411,7 @@
                   
                     
                     
-                      <option id="en" value="/en/contributing/website/" selected>English</option>
+                      <option id="en" value="/en/releases/release_22.06.0/" selected>English</option>
                     
                   
               
@@ -468,7 +468,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/contributing/website/_index.en.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/release_22.06.0.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -499,7 +499,7 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/contributing/'>Contributing</a> > Contributing to the OVN website
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Release 22.06.0
           
          
           
@@ -512,7 +512,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#new-features">New Features</a></li>
+        <li><a href="#performance-enhancements">Performance Enhancements</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -528,7 +537,7 @@
           
             <h1>
               
-              Contributing to the OVN website
+              Release 22.06.0
             </h1>
           
 
@@ -536,42 +545,28 @@
 
 
 
-
-	<p>The OVN documentation website is based on hugo, grav, and the
-hugo-learn-theme and written in markdown format.</p>
-<p>If you want to contribute I recommend reading the
-<a href="https://themes.gohugo.io//theme/hugo-theme-learn/en/cont/pages/">hugo-learn-theme documentation</a></p>
-<p>You can always click the &ldquo;Edit this page link&rdquo; at the top right of each page, but
-if you want to test your changes locally before submitting you can:</p>
-<ol>
-<li>
-<p>Fork the <a href="https://github.com/ovn-org/ovn-website/fork">ovn-org/ovn-website</a> on github</p>
-</li>
-<li>
-<p>Checkout your copy locally</p>
-</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git clone ssh://git@github.com/&lt;your-user&gt;/ovn-website.git
-</span></span><span style="display:flex;"><span>$ cd ovn-website
-</span></span><span style="display:flex;"><span>$ make server
-</span></span></code></pre></div><ol start="4">
-<li>
-<p>Open your browser on <a href="http://localhost:1313">http://localhost:1313</a></p>
-</li>
-<li>
-<p>Edit files in src, the browser should automatically reload changes.</p>
-</li>
-<li>
-<p>Eventually commit, push, and pull-request your changes. You can find a good guide about the
-github workflow here: <a href="https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project">contributing to a github project</a></p>
-</li>
-</ol>
+<p>In addition to bug fixes, the 22.06.0 release of OVN contains a mix of new features and performance improvements.</p>
+<h3 id="new-features">New Features</h3>
+<ul>
+<li>Many features that made use of ct_label now use ct_mark. This allows for easier hardware offloading.</li>
+<li>NAT may now be configured on routers with multiple distributed gateway ports.</li>
+<li>MAC bindings may now be configured via the northbound database.</li>
+<li>&ldquo;requested-chassis&rdquo; now accepts a comma-separated list to allow for a port to be bound to multiple chassis.</li>
+<li>ACLs may now be configured to drop by default instead of allowing by default.</li>
+<li>QOS may now be configured to allow for a minimum bandwidth guarantee.</li>
+<li>An option has been added to regulate whether load balancer VIPs have ARP responder flows added by default.</li>
+<li>ovn-northd parallelization options have been overhauled.</li>
+<li>The &ldquo;next-server&rdquo; field can now be sent in DHCP replies sent by OVN.</li>
+</ul>
+<h3 id="performance-enhancements">Performance Enhancements</h3>
+<ul>
+<li>Flow installation has been modified to minimize dataplan downstime during an upgrade/restart.</li>
+<li>load balancer gateway router flows have been optimized, bringing ovn-northd loop execution down.</li>
+<li>Port security flows are calculated in ovn-controller instad of ovn-northd now. This results in both ovn-northd and ovn-controller running more efficiently.</li>
+</ul>
 
 
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -625,6 +620,7 @@ github workflow here: <a href="https://git-scm.com/book/en/v2/GitHub-Contributin
             
                 
                     
+                    
                 
                 
 
@@ -637,6 +633,26 @@ github workflow here: <a href="https://git-scm.com/book/en/v2/GitHub-Contributin
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -729,6 +745,24 @@ github workflow here: <a href="https://git-scm.com/book/en/v2/GitHub-Contributin
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
                         
             
             
@@ -745,49 +779,10 @@ github workflow here: <a href="https://git-scm.com/book/en/v2/GitHub-Contributin
             
         
                     
-            
-        
-                    
                         
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -812,10 +807,10 @@ github workflow here: <a href="https://git-scm.com/book/en/v2/GitHub-Contributin
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/contributing/" title="Contributing"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/releases/" title="Releases"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/contributing/code-of-conduct/" title="Code of Conduct" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/releases/release_22.03.0/" title="Release 22.03.0" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -845,3 +840,4 @@ github workflow here: <a href="https://git-scm.com/book/en/v2/GitHub-Contributin
 
   </body>
 </html>
+

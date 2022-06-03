@@ -8,6 +8,16 @@
     <language>en-US</language>
     <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate><atom:link href="/en/releases/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Release 22.06.0</title>
+      <link>/en/releases/release_22.06.0/</link>
+      <pubDate>Fri, 03 Jun 2022 08:53:48 -0500</pubDate>
+      
+      <guid>/en/releases/release_22.06.0/</guid>
+      <description>In addition to bug fixes, the 22.06.0 release of OVN contains a mix of new features and performance improvements.
+New Features Many features that made use of ct_label now use ct_mark. This allows for easier hardware offloading. NAT may now be configured on routers with multiple distributed gateway ports. MAC bindings may now be configured via the northbound database. &amp;ldquo;requested-chassis&amp;rdquo; now accepts a comma-separated list to allow for a port to be bound to multiple chassis.</description>
+    </item>
+    
+    <item>
       <title>Release 22.03.0</title>
       <link>/en/releases/release_22.03.0/</link>
       <pubDate>Thu, 10 Mar 2022 08:53:48 -0500</pubDate>
@@ -15,7 +25,7 @@
       <guid>/en/releases/release_22.03.0/</guid>
       <description>OVN 22.03.0 is a long term support (LTS) release. This version will receive bug fix support until the release of OVN 24.03.0, at which point it will receive one additional year of critical fixes.
 In addition to bug fixes, the 22.03.0 release of OVN contains a mix of new features and performance improvements.
-New Features  ovn-ic now supports multicast flooding between AZs. The &amp;ndash;dummy-numa option for ovn-northd has been added.</description>
+New Features ovn-ic now supports multicast flooding between AZs. The &amp;ndash;dummy-numa option for ovn-northd has been added. Control plan protection (CoPP) can now be named, allowing for easier referencing of policies.</description>
     </item>
     
     <item>
@@ -25,7 +35,7 @@ New Features  ovn-ic now supports multicast flooding between AZs. The &amp;ndash
       
       <guid>/en/releases/release_21.09.0/</guid>
       <description>In addition to bug fixes, the 21.09.0 release of OVN contains a mix of new features and performance improvements.
-New Features  OVN can now detect datapath features in OVS using the &amp;ldquo;Datapath&amp;rdquo; table in OVS. This is used to detect if all-zero SNAT is available. DHCP now supports option 12 (hostname). A limitation has been removed that now allows the full TCP/UDP port range (1-65535) rather than only half the range (1-32767) for Service Monitors.</description>
+New Features OVN can now detect datapath features in OVS using the &amp;ldquo;Datapath&amp;rdquo; table in OVS. This is used to detect if all-zero SNAT is available. DHCP now supports option 12 (hostname). A limitation has been removed that now allows the full TCP/UDP port range (1-65535) rather than only half the range (1-32767) for Service Monitors.</description>
     </item>
     
     <item>
@@ -35,7 +45,7 @@ New Features  OVN can now detect datapath features in OVS using the &amp;ldquo;D
       
       <guid>/en/releases/release_21.06.0/</guid>
       <description>In addition to bug fixes, the 21.06.0 release of OVN contains a mix of new features and performance improvements.
-New Features  A new version of ovn-northd is included. This version is written in Differential Datalog instead of C and processes incrementally. VLAN passthru mode is supported. Custom 802.11ad support for localnet ports is added. An &amp;ldquo;allow-stateless&amp;rdquo; ACL option has been added that will always bypass conntrack. DNS now responds to PTR requests.</description>
+New Features A new version of ovn-northd is included. This version is written in Differential Datalog instead of C and processes incrementally. VLAN passthru mode is supported. Custom 802.11ad support for localnet ports is added. An &amp;ldquo;allow-stateless&amp;rdquo; ACL option has been added that will always bypass conntrack. DNS now responds to PTR requests.</description>
     </item>
     
     <item>
@@ -45,7 +55,7 @@ New Features  A new version of ovn-northd is included. This version is written i
       
       <guid>/en/releases/release_21.03.0/</guid>
       <description>In addition to bug fixes, the 21.03.0 release of OVN contains a mix of new features and performance improvements.
-New Features  When using the &amp;ldquo;reject&amp;rdquo; ACL verdict with SCTP, OVN now responds with an SCTP ABORT. OVN now supports &amp;ldquo;memory/show&amp;rdquo; via ovn-appct similar to OVS. OVN now supports using BFD on static routes to test liveness. See ovn-nb documentation for more details. Various ovn-nbctl enhancements  lr-route-list gives a BFD report lr-route-list gives ECMP and ECMP symmetric reply information lr-lb-add option now has an &amp;ndash;event option to enable controller events for empty backends.</description>
+New Features When using the &amp;ldquo;reject&amp;rdquo; ACL verdict with SCTP, OVN now responds with an SCTP ABORT. OVN now supports &amp;ldquo;memory/show&amp;rdquo; via ovn-appct similar to OVS. OVN now supports using BFD on static routes to test liveness. See ovn-nb documentation for more details. Various ovn-nbctl enhancements lr-route-list gives a BFD report lr-route-list gives ECMP and ECMP symmetric reply information lr-lb-add option now has an &amp;ndash;event option to enable controller events for empty backends.</description>
     </item>
     
     <item>
@@ -55,7 +65,7 @@ New Features  When using the &amp;ldquo;reject&amp;rdquo; ACL verdict with SCTP,
       
       <guid>/en/releases/release_20.12.0/</guid>
       <description>In addition to numerous bug fixes, the 20.12.0 release of OVN contains a mix of new features and performance improvements.
-New Features  Add support for DHCP RENEW/REBIND for IPv6 prefix delegation (RFC 3633). DHCP iPXE support has been added. A new vlan-passthru option has been added to logical switches to allow vlan-tagged incoming traffic. DHCP option 28 (broadcast address) support has been added. The conntrack zone used by a gateway router for SNAT can now be explicitly configured.</description>
+New Features Add support for DHCP RENEW/REBIND for IPv6 prefix delegation (RFC 3633). DHCP iPXE support has been added. A new vlan-passthru option has been added to logical switches to allow vlan-tagged incoming traffic. DHCP option 28 (broadcast address) support has been added. The conntrack zone used by a gateway router for SNAT can now be explicitly configured.</description>
     </item>
     
     <item>
@@ -65,7 +75,7 @@ New Features  Add support for DHCP RENEW/REBIND for IPv6 prefix delegation (RFC 
       
       <guid>/en/releases/release_20.09.0/</guid>
       <description>In addition to numerous bug fixes, the 20.09.0 release of OVN contains a mix of new features and performance improvements.
-New Features  Allow the lb_force_snat_ip and dnat_force_snat_ip options to take an IPv4 and IPv6 address pair. This may be needed for dual stack setups. DHCP now understands DHCPDECLINE External IP based NAT. This allows for a set of IPs to be used for SNAT instead of always SNATting to a single external IP address.</description>
+New Features Allow the lb_force_snat_ip and dnat_force_snat_ip options to take an IPv4 and IPv6 address pair. This may be needed for dual stack setups. DHCP now understands DHCPDECLINE External IP based NAT. This allows for a set of IPs to be used for SNAT instead of always SNATting to a single external IP address.</description>
     </item>
     
   </channel>
