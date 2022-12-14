@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Code of Conduct :: OVN project documentation website</title>
+    <title>Release 22.09.0 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1671046566" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/contributing/code-of-conduct/">
+  <body class="" data-url="/en/releases/release_22.09.0/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -104,7 +104,7 @@
   
     
     <li data-nav-id="/en/releases/" title="Releases" class="dd-item 
-        
+        parent
         
         
         ">
@@ -132,7 +132,7 @@
  
   
     
-      <li data-nav-id="/en/releases/release_22.09.0/" title="Release 22.09.0" class="dd-item ">
+      <li data-nav-id="/en/releases/release_22.09.0/" title="Release 22.09.0" class="dd-item active">
         <a href="/en/releases/release_22.09.0/">
         Release 22.09.0
         <i class="fas fa-check read-icon"></i>
@@ -308,7 +308,7 @@
   
     
     <li data-nav-id="/en/contributing/" title="Contributing" class="dd-item 
-        parent
+        
         
         
         ">
@@ -368,7 +368,7 @@
     
     <li data-nav-id="/en/contributing/code-of-conduct/" title="Code of Conduct" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/en/contributing/code-of-conduct/">
@@ -432,7 +432,7 @@
                   
                     
                     
-                      <option id="en" value="/en/contributing/code-of-conduct/" selected>English</option>
+                      <option id="en" value="/en/releases/release_22.09.0/" selected>English</option>
                     
                   
               
@@ -489,7 +489,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/contributing/code-of-conduct/_index.en.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/release_22.09.0.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -520,7 +520,7 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/contributing/'>Contributing</a> > Code of Conduct
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Release 22.09.0
           
          
           
@@ -533,7 +533,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#new-features">New Features</a></li>
+        <li><a href="#performance-enhancements">Performance Enhancements</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -549,7 +558,7 @@
           
             <h1>
               
-              Code of Conduct
+              Release 22.09.0
             </h1>
           
 
@@ -557,13 +566,26 @@
 
 
 
+<p>In addition to bug fixes, the 22.09.0 release of OVN contains a mix of new features and performance improvements.</p>
+<h3 id="new-features">New Features</h3>
+<ul>
+<li>Load balancers attached to logical routers have the option to automatically be applied to connected logical switches as well.</li>
+<li>When multiple requested chassis are used for a switch port, a RARP activation strategy has been implemented to allow for automatic switchover between the chassis.</li>
+<li>An IPsec option has been added to force NAT-T encapsulation.</li>
+<li>ovn-ctl can now accept arbitrary args, which can be passed along to the daemons it starts.</li>
+<li>An aging mechanism has been added to MAC_Bindings so that they are removed after a certain amount of idleness.</li>
+</ul>
+<h3 id="performance-enhancements">Performance Enhancements</h3>
+<ul>
+<li>Logical datapath groups are no longer an option to be enabled. Instead, they are always used, resulting in performance improvements without having to set an option.</li>
+<li>Datapath groups are used for southbound load balancers, resulting in improved southbound database and ovn-northd performance, and decreased memory usage.</li>
+<li>Several improvements have been made to avoid downtime of the dataplane during upgrades and restarts.</li>
+<li>ovn-northd will attempt to accumulate more database updates before blindly processing the first one it sees.</li>
+<li>Changes to the data structures used in ovn-northd for datapath groups resulted in a near 3x speedup of ovn-northd, and nearly halving the memory used.</li>
+</ul>
 
-	
 
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -617,6 +639,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -629,6 +652,26 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -737,6 +780,24 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
                         
             
             
@@ -753,49 +814,10 @@
             
         
                     
-            
-        
-                    
                         
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -820,10 +842,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/contributing/website/" title="Contributing to the OVN website"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/releases/" title="Releases"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/contributing/website/" title="Contributing to the OVN website" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/releases/release_22.06.0/" title="Release 22.06.0" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -853,3 +875,4 @@
 
   </body>
 </html>
+
