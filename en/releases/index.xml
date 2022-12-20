@@ -39,6 +39,17 @@ New Features ovn-ic now supports multicast flooding between AZs. The &amp;ndash;
     </item>
     
     <item>
+      <title>Release 21.12.0</title>
+      <link>/en/releases/release_22.12.0/</link>
+      <pubDate>Tue, 14 Dec 2021 16:02:35 -0500</pubDate>
+      
+      <guid>/en/releases/release_22.12.0/</guid>
+      <description>22.12.0 is mainly a stability release. The vast majority of commits were made with stabilization and fixing issues in mind.
+In addition to bug fixes, the 21.12.0 release of OVN contains a mix of new features and performance improvements.
+New Features There is a new option to automatically inherit load balancer groups from a logical router to its connected logical switches. A new load balancer affinity option has been added, which allows for a new load balancer backend to automatically be chosen after a configured time.</description>
+    </item>
+    
+    <item>
       <title>Release 21.09.0</title>
       <link>/en/releases/release_21.09.0/</link>
       <pubDate>Thu, 21 Oct 2021 08:53:48 -0500</pubDate>
