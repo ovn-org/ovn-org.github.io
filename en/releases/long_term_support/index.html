@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Releases :: OVN project documentation website</title>
+    <title>Long Term Support Releases :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1673979640" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/releases/">
+  <body class="" data-url="/en/releases/long_term_support/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -104,8 +104,8 @@
   
     
     <li data-nav-id="/en/releases/" title="Releases" class="dd-item 
+        parent
         
-        active
         
         ">
       <a href="/en/releases/">
@@ -132,7 +132,7 @@
  
   
     
-      <li data-nav-id="/en/releases/long_term_support/" title="Long Term Support Releases" class="dd-item ">
+      <li data-nav-id="/en/releases/long_term_support/" title="Long Term Support Releases" class="dd-item active">
         <a href="/en/releases/long_term_support/">
         Long Term Support Releases
         <i class="fas fa-check read-icon"></i>
@@ -474,7 +474,7 @@
                   
                     
                     
-                      <option id="en" value="/en/releases/" selected>English</option>
+                      <option id="en" value="/en/releases/long_term_support/" selected>English</option>
                     
                   
               
@@ -531,7 +531,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/_index.en.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/long_term_support.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -558,7 +558,13 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > Releases
+            
+            
+          
+          
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Long Term Support Releases
+          
+         
           
          
           
@@ -571,9 +577,8 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#latest-version">Latest Version</a></li>
-    <li><a href="#long-term-support-lts-version">Long Term Support (LTS) Version</a></li>
-    <li><a href="#other-releases">Other Releases</a></li>
+    <li><a href="#current-lts-release">Current LTS release</a></li>
+    <li><a href="#previous-lts-releases">Previous LTS releases</a></li>
   </ul>
 </nav>
     </div>
@@ -591,7 +596,7 @@
           
             <h1>
               
-              Releases
+              Long Term Support Releases
             </h1>
           
 
@@ -599,16 +604,19 @@
 
 
 
-
-	<p>This page lists the current supported OVN release, and previous obsoleted releases, for each series.
-To learn more about the release scheme for OVN, please see the versioning document
-located <a href="https://github.com/ovn-org/ovn/blob/master/Documentation/internals/release-process.rst">here</a>.</p>
-<h2 id="latest-version">Latest Version</h2>
-<p>Source: <a href="https://github.com/ovn-org/ovn/releases/tag/v22.12.0">OVN 22.12.0</a></p>
-<p><a href="release_22.12.0">Release Notes</a></p>
-<h2 id="long-term-support-lts-version">Long Term Support (LTS) Version</h2>
-<p>Long term support release information can be found <a href="long_term_support">here</a>.</p>
-<h2 id="other-releases">Other Releases</h2>
+<p>The OVN project will periodically designate a release as &ldquo;long-term support&rdquo; or
+LTS for short. An LTS release has the distinction of being maintained for
+longer than a standard release.</p>
+<p>LTS releases will receive bug fixes until the point that another LTS is
+released. At that point, the old LTS will receive an additional year of
+critical and security fixes. Critical fixes are those that are required to
+ensure basic operation (e.g. memory leak fixes, crash fixes). Security fixes
+are those that address concerns about exploitable flaws in OVN and that have a
+corresponding CVE report.</p>
+<p>LTS releases are scheduled to be released once every two years. This means
+that any given LTS will receive bug fix support for two years, followed by
+one year of critical bug fixes and security fixes.</p>
+<h2 id="current-lts-release">Current LTS release</h2>
 <table>
 <thead>
 <tr>
@@ -616,105 +624,24 @@ located <a href="https://github.com/ovn-org/ovn/blob/master/Documentation/intern
 <th>Release</th>
 <th>Release Date</th>
 <th>Release Notes</th>
-<th>Manpages</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>OVN 22.12</td>
-<td><a href="https://github.com/ovn-org/ovn/releases/tag/v22.12.0">OVN 22.12.0</a></td>
-<td>16 Dec 2022</td>
-<td><a href="release_22.12.0">Release 22.12.0</a></td>
-<td><a href="https://www.ovn.org/support/dist-docs-branch-22.12/">Doc 22.12.0</a></td>
-</tr>
-<tr>
-<td>OVN 22.09</td>
-<td><a href="https://github.com/ovn-org/ovn/releases/tag/v22.09.1">OVN 22.09.1</a></td>
-<td>20 Dec 2022</td>
-<td>N/A</td>
-<td><a href="https://www.ovn.org/support/dist-docs-branch-22.09/">Doc 22.09.1</a></td>
-</tr>
-<tr>
-<td>OVN 22.06</td>
-<td><a href="https://github.com/ovn-org/ovn/releases/tag/v22.06.1">OVN 22.06.1</a></td>
-<td>20 Dec 2022</td>
-<td>N/A</td>
-<td><a href="https://www.ovn.org/support/dist-docs-branch-22.06/">Doc 22.06.0</a></td>
-</tr>
 <tr>
 <td>OVN 22.03</td>
 <td><a href="https://github.com/ovn-org/ovn/releases/tag/v22.03.2">OVN 22.03.2 (LTS)</a></td>
 <td>20 Dec 2022</td>
 <td>N/A</td>
-<td><a href="https://www.ovn.org/support/dist-docs-branch-22.03/">Doc 22.03.0</a></td>
-</tr>
-<tr>
-<td>OVN 21.12</td>
-<td><a href="https://github.com/ovn-org/ovn/releases/tag/v21.12.2">OVN 21.12.2</a></td>
-<td>03 Jun 2022</td>
-<td>N/A</td>
-<td></td>
-</tr>
-<tr>
-<td>OVN 21.09</td>
-<td><a href="https://github.com/ovn-org/ovn/releases/tag/v21.09.0">OVN 21.09.0</a></td>
-<td>04 Oct 2021</td>
-<td><a href="release_21.09.0">Release 21.09.0</a></td>
-<td><a href="https://www.ovn.org/support/dist-docs-branch-21.09/">Doc 21.09.0</a></td>
-</tr>
-<tr>
-<td>OVN 21.06</td>
-<td><a href="https://github.com/ovn-org/ovn/releases/tag/v21.06.0">OVN 21.06.0</a></td>
-<td>18 Jun 2021</td>
-<td><a href="release_21.06.0">Release 21.06.0</a></td>
-<td><a href="https://www.ovn.org/support/dist-docs-branch-21.06/">Doc 21.06.0</a></td>
-</tr>
-<tr>
-<td>OVN 21.03</td>
-<td><a href="https://github.com/ovn-org/ovn/releases/tag/v21.03.0">OVN 21.03.0</a></td>
-<td>12 Mar 2021</td>
-<td><a href="release_21.03.0">Release 21.03.0</a></td>
-<td><a href="https://www.ovn.org/support/dist-docs-branch-21.03/">Doc 21.03.0</a></td>
-</tr>
-<tr>
-<td>OVN 20.12</td>
-<td><a href="https://github.com/ovn-org/ovn/releases/tag/v20.12.0">OVN 20.12.0</a></td>
-<td>18 Dec 2020</td>
-<td><a href="release_20.12.0">Release 20.12.0</a></td>
-<td></td>
-</tr>
-<tr>
-<td>OVN 20.09</td>
-<td><a href="https://github.com/ovn-org/ovn/releases/tag/v20.09.0">OVN 20.09.0</a></td>
-<td>29 Sep 2020</td>
-<td><a href="release_20.09.0">Release 20.09.0</a></td>
-<td></td>
-</tr>
-<tr>
-<td>OVN 20.06</td>
-<td><a href="https://github.com/ovn-org/ovn/releases/tag/v20.06.2">OVN 20.06.2</a></td>
-<td>21 Aug 2020</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>OVN 20.03</td>
-<td><a href="https://github.com/ovn-org/ovn/releases/tag/v20.03.1">OVN 20.03.1</a></td>
-<td>11 Jun 2020</td>
-<td></td>
-<td></td>
+<td><a href="https://www.ovn.org/support/dist-docs-branch-22.03/">Doc 22.03.2</a></td>
 </tr>
 </tbody>
 </table>
-<p>Prior to the 20.03 series, OVN was included as part of the Open vSwitch project.
-To get versions prior to 20.03.0, please retrieve them from the Open vSwitch
-<a href="https://github.com/openvswitch/ovs/releases">github repository</a></p>
+<h2 id="previous-lts-releases">Previous LTS releases</h2>
+<p>There are no previous LTS release series.</p>
 
 
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -782,8 +709,6 @@ To get versions prior to 20.03.0, please retrieve them from the Open vSwitch
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -800,6 +725,9 @@ To get versions prior to 20.03.0, please retrieve them from the Open vSwitch
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1002,10 +930,10 @@ To get versions prior to 20.03.0, please retrieve them from the Open vSwitch
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/architecture/" title="Architecture"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/releases/" title="Releases"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/releases/long_term_support/" title="Long Term Support Releases" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/releases/release_22.09.0/" title="Release 22.09.0" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1035,3 +963,4 @@ To get versions prior to 20.03.0, please retrieve them from the Open vSwitch
 
   </body>
 </html>
+
