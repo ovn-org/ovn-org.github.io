@@ -33,6 +33,9 @@
                 href="/en/"
                 />
   </url><url>
+    <loc>/en/releases/release_22.12.0/</loc>
+    <lastmod>2022-12-14T16:02:35-05:00</lastmod>
+  </url><url>
     <loc>/en/releases/release_22.09.0/</loc>
     <lastmod>2022-10-03T08:53:48-05:00</lastmod>
   </url><url>
@@ -41,9 +44,6 @@
   </url><url>
     <loc>/en/releases/release_22.03.0/</loc>
     <lastmod>2022-03-10T08:53:48-05:00</lastmod>
-  </url><url>
-    <loc>/en/releases/release_22.12.0/</loc>
-    <lastmod>2021-12-14T16:02:35-05:00</lastmod>
   </url><url>
     <loc>/en/releases/release_21.09.0/</loc>
     <lastmod>2021-10-21T08:53:48-05:00</lastmod>

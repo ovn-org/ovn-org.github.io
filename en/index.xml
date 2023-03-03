@@ -18,6 +18,17 @@ LTS releases will receive bug fixes until the point that another LTS is released
     </item>
     
     <item>
+      <title>Release 22.12.0</title>
+      <link>/en/releases/release_22.12.0/</link>
+      <pubDate>Wed, 14 Dec 2022 16:02:35 -0500</pubDate>
+      
+      <guid>/en/releases/release_22.12.0/</guid>
+      <description>22.12.0 is mainly a stability release. The vast majority of commits were made with stabilization and fixing issues in mind.
+In addition to bug fixes, the 21.12.0 release of OVN contains a mix of new features and performance improvements.
+New Features There is a new option to automatically inherit load balancer groups from a logical router to its connected logical switches. A new load balancer affinity option has been added, which allows for a new load balancer backend to automatically be chosen after a configured time.</description>
+    </item>
+    
+    <item>
       <title>Release 22.09.0</title>
       <link>/en/releases/release_22.09.0/</link>
       <pubDate>Mon, 03 Oct 2022 08:53:48 -0500</pubDate>
@@ -46,17 +57,6 @@ New Features Many features that made use of ct_label now use ct_mark. This allow
       <description>OVN 22.03.0 is a long term support (LTS) release. This version will receive bug fix support until the release of OVN 24.03.0, at which point it will receive one additional year of critical fixes.
 In addition to bug fixes, the 22.03.0 release of OVN contains a mix of new features and performance improvements.
 New Features ovn-ic now supports multicast flooding between AZs. The &amp;ndash;dummy-numa option for ovn-northd has been added. Control plan protection (CoPP) can now be named, allowing for easier referencing of policies.</description>
-    </item>
-    
-    <item>
-      <title>Release 21.12.0</title>
-      <link>/en/releases/release_22.12.0/</link>
-      <pubDate>Tue, 14 Dec 2021 16:02:35 -0500</pubDate>
-      
-      <guid>/en/releases/release_22.12.0/</guid>
-      <description>22.12.0 is mainly a stability release. The vast majority of commits were made with stabilization and fixing issues in mind.
-In addition to bug fixes, the 21.12.0 release of OVN contains a mix of new features and performance improvements.
-New Features There is a new option to automatically inherit load balancer groups from a logical router to its connected logical switches. A new load balancer affinity option has been added, which allows for a new load balancer backend to automatically be chosen after a configured time.</description>
     </item>
     
     <item>
