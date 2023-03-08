@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Release 21.06.0 :: OVN project documentation website</title>
+    <title>Release 23.03.0 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1678307393" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/releases/release_21.06.0/">
+  <body class="" data-url="/en/releases/release_23.03.0/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -132,7 +132,7 @@
  
   
     
-      <li data-nav-id="/en/releases/release_23.03.0/" title="Release 23.03.0" class="dd-item ">
+      <li data-nav-id="/en/releases/release_23.03.0/" title="Release 23.03.0" class="dd-item active">
         <a href="/en/releases/release_23.03.0/">
         Release 23.03.0
         <i class="fas fa-check read-icon"></i>
@@ -279,7 +279,7 @@
  
   
     
-      <li data-nav-id="/en/releases/release_21.06.0/" title="Release 21.06.0" class="dd-item active">
+      <li data-nav-id="/en/releases/release_21.06.0/" title="Release 21.06.0" class="dd-item ">
         <a href="/en/releases/release_21.06.0/">
         Release 21.06.0
         <i class="fas fa-check read-icon"></i>
@@ -495,7 +495,7 @@
                   
                     
                     
-                      <option id="en" value="/en/releases/release_21.06.0/" selected>English</option>
+                      <option id="en" value="/en/releases/release_23.03.0/" selected>English</option>
                     
                   
               
@@ -552,7 +552,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/release_21.06.0.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/release_23.03.0.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -583,7 +583,7 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Release 21.06.0
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Release 23.03.0
           
          
           
@@ -601,8 +601,7 @@
     <li>
       <ul>
         <li><a href="#new-features">New Features</a></li>
-        <li><a href="#performance-enhancements">Performance Enhancements</a></li>
-        <li><a href="#documentation">Documentation</a></li>
+        <li><a href="#performance-enhancement">Performance Enhancement</a></li>
       </ul>
     </li>
   </ul>
@@ -622,7 +621,7 @@
           
             <h1>
               
-              Release 21.06.0
+              Release 23.03.0
             </h1>
           
 
@@ -630,25 +629,26 @@
 
 
 
-<p>In addition to bug fixes, the 21.06.0 release of OVN contains a mix of new features and performance improvements.</p>
+<p>In addition to bug fixes, the 23.03.0 release of OVN contains a mix of new
+features and performance improvements.</p>
 <h3 id="new-features">New Features</h3>
 <ul>
-<li>A new version of ovn-northd is included. This version is written in Differential Datalog instead of C and processes incrementally.</li>
-<li>VLAN passthru mode is supported.</li>
-<li>Custom 802.11ad support for localnet ports is added.</li>
-<li>An &ldquo;allow-stateless&rdquo; ACL option has been added that will always bypass conntrack.</li>
-<li>DNS now responds to PTR requests.</li>
-<li>There is now a &ldquo;&ndash;dry-run&rdquo; option for ovn-northd and ovn-northd-ddlog.</li>
+<li>Remote port mirroring support has been added as an experimental feature.</li>
+<li>Support for running multiple instances of ovn-controller on the same
+hypervisor has been added as an experimental feature.</li>
+<li>Load balancer health checks now also support IPv6.</li>
 </ul>
-<h3 id="performance-enhancements">Performance Enhancements</h3>
+<h3 id="performance-enhancement">Performance Enhancement</h3>
 <ul>
-<li>The C version of ovn-northd can now process data in parallel threads.</li>
-<li>ct.inv can be disabled for deployments where offloading to smart NICs is desired.</li>
-<li>Similar to the ovn-nbctl daemon, ovn-sbctl has a daemon mode.</li>
+<li>ovn-northd now uses bitmaps instead of hash tables for datapaths. This
+greatly reduces the lookup speed of datapaths and reduces memory usage
+as well.</li>
+<li>Unneeded calls to strlen have been replaced. Many of these were done as a
+means of ensuring the string was not zero-length. Now we just check the first
+byte of the string for the null character instead.</li>
+<li>When using IPFIX sampling, we now only sample if a collector set exists. This
+reduces unnecessary upcalls for cases where we are unable to actually sample.</li>
 </ul>
-<h3 id="documentation">Documentation</h3>
-<p>Distribution documentation (aka man pages) specific to this release is
-<a href="https://www.ovn.org/support/dist-docs-branch-21.06/">available here</a>.</p>
 
 
 <footer class="footline">
@@ -719,6 +719,23 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -833,26 +850,6 @@
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -959,10 +956,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/releases/release_21.09.0/" title="Release 21.09.0"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/releases/" title="Releases"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/releases/release_21.03.0/" title="Release 21.03.0" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/releases/long_term_support/" title="Long Term Support Releases" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

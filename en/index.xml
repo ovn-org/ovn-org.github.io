@@ -6,7 +6,17 @@
     <description>Recent content in OVN, Open Virtual Network on OVN project documentation website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 17 Jan 2023 09:46:30 -0500</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Mar 2023 16:02:35 -0500</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Release 23.03.0</title>
+      <link>/en/releases/release_23.03.0/</link>
+      <pubDate>Fri, 03 Mar 2023 16:02:35 -0500</pubDate>
+      
+      <guid>/en/releases/release_23.03.0/</guid>
+      <description>In addition to bug fixes, the 23.03.0 release of OVN contains a mix of new features and performance improvements.
+New Features Remote port mirroring support has been added as an experimental feature. Support for running multiple instances of ovn-controller on the same hypervisor has been added as an experimental feature. Load balancer health checks now also support IPv6. Performance Enhancement ovn-northd now uses bitmaps instead of hash tables for datapaths. This greatly reduces the lookup speed of datapaths and reduces memory usage as well.</description>
+    </item>
+    
     <item>
       <title>Long Term Support Releases</title>
       <link>/en/releases/long_term_support/</link>
