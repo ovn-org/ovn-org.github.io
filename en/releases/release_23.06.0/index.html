@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Tags :: OVN project documentation website</title>
+    <title>Release 23.06.0 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1686758343" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/tags/">
+  <body class="" data-url="/en/releases/release_23.06.0/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -104,7 +104,7 @@
   
     
     <li data-nav-id="/en/releases/" title="Releases" class="dd-item 
-        
+        parent
         
         
         ">
@@ -132,7 +132,7 @@
  
   
     
-      <li data-nav-id="/en/releases/release_23.06.0/" title="Release 23.06.0" class="dd-item ">
+      <li data-nav-id="/en/releases/release_23.06.0/" title="Release 23.06.0" class="dd-item active">
         <a href="/en/releases/release_23.06.0/">
         Release 23.06.0
         <i class="fas fa-check read-icon"></i>
@@ -516,22 +516,10 @@
                   
                     
                     
-                      <option id="en" value="/en/tags/" selected>English</option>
+                      <option id="en" value="/en/releases/release_23.06.0/" selected>English</option>
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="es" value="/es/tags/">Spanish</option>
-                    
                   
               
           
@@ -581,6 +569,17 @@
               <div>
                 <div id="top-bar">
                 
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/release_23.06.0.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -601,7 +600,13 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > Tags
+            
+            
+          
+          
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Release 23.06.0
+          
+         
           
          
           
@@ -612,7 +617,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#new-features">New Features</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -628,9 +641,7 @@
           
             <h1>
               
-                taxonomy ::
-              
-              Tags
+              Release 23.06.0
             </h1>
           
 
@@ -638,15 +649,27 @@
 
 
 
-
-
-
+<p>In addition to bug fixes, the 23.06.0 release of OVN contains a multitude of
+new features.</p>
+<h3 id="new-features">New Features</h3>
 <ul>
-	
+<li>Logical switch port&rsquo;s options:arp_proxy has been expanded to support IPv6, configurable MAC addresses, and CIDRs.</li>
+<li>A new &ldquo;ct_flush&rdquo; option has been added for load balancers to flush connection tracking entries due to certain load balancer updates.</li>
+<li>ovn-ic now has configurable OVSDB probe intervals.</li>
+<li>ovn-controller-vtep now has configurable OVSDB probe intervals.</li>
+<li>ovn-controller-vtep has new ovn-appctl commands &ldquo;sb-connection-status&rdquo; and &ldquo;vtep-connection-status&rdquo;.</li>
+<li>ovn-ic has new ovn-appctl commands &ldquo;nb-connection-status&rdquo;, &ldquo;sb-connection-status&rdquo;, &ldquo;ic-nb-connection-status&rdquo;, and &ldquo;ic-sb-connection-status&rdquo;.</li>
+<li>logical switches now have an other_config:broadcast-arps-to-all-routers option.</li>
+<li>IPv6 iPXE support for &ldquo;bootfile_name&rdquo; and &ldquo;bootfile_name_alt&rdquo; has been added for DHCPv6.</li>
+<li>Mirroring support has been expanded to be able to use a local OVS port as a target.</li>
+<li>Mirroring has been updated to allow &ldquo;both&rdquo; as a direction on the &ldquo;filter&rdquo; field.</li>
+<li>ovn-ic-nbctl, ovn-ic-sbctl, ovn-nbctl, and ovn-sbctl&rsquo;s default probe intervals have been increased from 5000 ms to 120000 ms.</li>
+<li>QoS no longer directly configures linux-htb qdiscs. Instead, OVN configures QoS via OVS.</li>
+<li>Support for tiered hierarchical ACLs. ACLs have a new &ldquo;pass&rdquo; verdict to move to the next</li>
 </ul>
 
 
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -700,6 +723,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -712,6 +736,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -728,6 +753,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -962,8 +990,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/en/releases/" title="Releases"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/en/architecture/" title="Architecture" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/en/releases/release_23.03.0/" title="Release 23.03.0" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -993,3 +1023,4 @@
 
   </body>
 </html>
+
