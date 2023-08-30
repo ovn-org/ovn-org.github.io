@@ -8,17 +8,26 @@
     <loc>/en/architecture/</loc>
     <lastmod>2020-02-19T21:00:30+01:00</lastmod>
   </url><url>
-    <loc>/en/releases/</loc>
-    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
-  </url><url>
     <loc>/en/contributing/code-of-conduct/</loc>
     <lastmod>2020-02-19T21:43:46+01:00</lastmod>
+  </url><url>
+    <loc>/en/releases/</loc>
   </url><url>
     <loc>/en/contributing/</loc>
     <lastmod>2020-02-19T20:24:34+01:00</lastmod>
   </url><url>
+    <loc>/en/releases/23.06/</loc>
+  </url><url>
+    <loc>/en/releases/23.03/</loc>
+  </url><url>
+    <loc>/en/releases/22.12/</loc>
+  </url><url>
+    <loc>/en/releases/22.09/</loc>
+  </url><url>
+    <loc>/en/releases/22.03/</loc>
+  </url><url>
     <loc>/en/</loc>
-    <lastmod>2023-06-14T09:30:35-04:00</lastmod>
+    <lastmod>2020-02-19T22:03:26+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -30,41 +39,7 @@
                 href="/en/"
                 />
   </url><url>
-    <loc>/en/releases/release_23.06.0/</loc>
-    <lastmod>2023-06-14T09:30:35-04:00</lastmod>
-  </url><url>
-    <loc>/en/releases/release_23.03.0/</loc>
-    <lastmod>2023-03-03T16:02:35-05:00</lastmod>
-  </url><url>
-    <loc>/en/releases/long_term_support/</loc>
-    <lastmod>2023-01-17T09:46:30-05:00</lastmod>
-  </url><url>
-    <loc>/en/releases/release_22.12.0/</loc>
-    <lastmod>2022-12-14T16:02:35-05:00</lastmod>
-  </url><url>
-    <loc>/en/releases/release_22.09.0/</loc>
-    <lastmod>2022-10-03T08:53:48-05:00</lastmod>
-  </url><url>
-    <loc>/en/releases/release_22.06.0/</loc>
-    <lastmod>2022-06-03T08:53:48-05:00</lastmod>
-  </url><url>
-    <loc>/en/releases/release_22.03.0/</loc>
-    <lastmod>2022-03-10T08:53:48-05:00</lastmod>
-  </url><url>
-    <loc>/en/releases/release_21.09.0/</loc>
-    <lastmod>2021-10-21T08:53:48-05:00</lastmod>
-  </url><url>
-    <loc>/en/releases/release_21.06.0/</loc>
-    <lastmod>2021-06-18T08:53:48-05:00</lastmod>
-  </url><url>
-    <loc>/en/releases/release_21.03.0/</loc>
-    <lastmod>2021-03-15T08:53:48-05:00</lastmod>
-  </url><url>
-    <loc>/en/releases/release_20.12.0/</loc>
-    <lastmod>2020-12-17T08:53:48-05:00</lastmod>
-  </url><url>
-    <loc>/en/releases/release_20.09.0/</loc>
-    <lastmod>2020-07-09T08:53:23-04:00</lastmod>
+    <loc>/en/releases/all_releases/</loc>
   </url><url>
     <loc>/en/categories/</loc>
     <xhtml:link

@@ -5,128 +5,80 @@
     <link>/en/releases/</link>
     <description>Recent content in Releases on OVN project documentation website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate><atom:link href="/en/releases/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/en/releases/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Release 23.06.0</title>
-      <link>/en/releases/release_23.06.0/</link>
-      <pubDate>Wed, 14 Jun 2023 09:30:35 -0400</pubDate>
+      <title>23.06</title>
+      <link>/en/releases/23.06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/releases/release_23.06.0/</guid>
-      <description>In addition to bug fixes, the 23.06.0 release of OVN contains a multitude of new features.
-New Features Logical switch port&amp;rsquo;s options:arp_proxy has been expanded to support IPv6, configurable MAC addresses, and CIDRs. A new &amp;ldquo;ct_flush&amp;rdquo; option has been added for load balancers to flush connection tracking entries due to certain load balancer updates. ovn-ic now has configurable OVSDB probe intervals. ovn-controller-vtep now has configurable OVSDB probe intervals. ovn-controller-vtep has new ovn-appctl commands &amp;ldquo;sb-connection-status&amp;rdquo; and &amp;ldquo;vtep-connection-status&amp;rdquo;.</description>
+      <guid>/en/releases/23.06/</guid>
+      <description>OVN 23.06 OVN 23.06 was initially released on 2 June, 2023. This version of OVN is currently supported for all bug fixes. Support for this version will end on 2 June, 2024.
+v23.06.1 v23.06.1 was released on 29 August, 2023.
+Github link
+Release Notes:
+OVN v23.06.1 - 29 Aug 2023 -------------------------- - Bug fixes - ECMP routes use L4_SYM dp-hash by default if the datapath supports it. Existing sessions might get re-hashed to a different ECMP path when OVN detects the algorithm support in the datapath during an upgrade or restart of ovn-controller.</description>
     </item>
     
     <item>
-      <title>Release 23.03.0</title>
-      <link>/en/releases/release_23.03.0/</link>
-      <pubDate>Fri, 03 Mar 2023 16:02:35 -0500</pubDate>
+      <title>23.03</title>
+      <link>/en/releases/23.03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/releases/release_23.03.0/</guid>
-      <description>In addition to bug fixes, the 23.03.0 release of OVN contains a mix of new features and performance improvements.
-New Features Remote port mirroring support has been added as an experimental feature. Support for running multiple instances of ovn-controller on the same hypervisor has been added as an experimental feature. Load balancer health checks now also support IPv6. Performance Enhancement ovn-northd now uses bitmaps instead of hash tables for datapaths. This greatly reduces the lookup speed of datapaths and reduces memory usage as well.</description>
+      <guid>/en/releases/23.03/</guid>
+      <description>OVN 23.03 OVN 23.03 was initially released on 3 March, 2023. This version of OVN is currently supported for all bug fixes. Support for this version will end on 3 March, 2024.
+v23.03.1 v23.03.1 was released on 29 August, 2023.
+Github link
+Release Notes:
+OVN v23.03.1 - 29 Aug 2023 -------------------------- - Bug fixes - CT entries are not flushed by default anymore whenever a load balancer backend is removed. A new, per-LB, option &amp;#39;ct_flush&amp;#39; can be used to restore the previous behavior.</description>
     </item>
     
     <item>
-      <title>Long Term Support Releases</title>
-      <link>/en/releases/long_term_support/</link>
-      <pubDate>Tue, 17 Jan 2023 09:46:30 -0500</pubDate>
+      <title>22.12</title>
+      <link>/en/releases/22.12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/releases/long_term_support/</guid>
-      <description>The OVN project will periodically designate a release as &amp;ldquo;long-term support&amp;rdquo; or LTS for short. An LTS release has the distinction of being maintained for longer than a standard release.
-LTS releases will receive bug fixes until the point that another LTS is released. At that point, the old LTS will receive an additional year of critical and security fixes. Critical fixes are those that are required to ensure basic operation (e.</description>
+      <guid>/en/releases/22.12/</guid>
+      <description>OVN 22.12 OVN 22.12 was initially released on 16 December, 2022. This version of OVN is currently supported for all bug fixes. Support for this version will end on 16 December, 2023.
+v22.12.1 v22.12.1 was released on 29 August, 2023.
+Github link
+Release Notes:
+OVN v22.12.1 - 29 Aug 2023 -------------------------- - Bug fixes - Always allow IPv6 Router Discovery, Neighbor Discovery, and Multicast Listener Discovery protocols, regardless of ACLs defined.</description>
     </item>
     
     <item>
-      <title>Release 22.12.0</title>
-      <link>/en/releases/release_22.12.0/</link>
-      <pubDate>Wed, 14 Dec 2022 16:02:35 -0500</pubDate>
+      <title>22.09</title>
+      <link>/en/releases/22.09/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/releases/release_22.12.0/</guid>
-      <description>22.12.0 is mainly a stability release. The vast majority of commits were made with stabilization and fixing issues in mind.
-In addition to bug fixes, the 21.12.0 release of OVN contains a mix of new features and performance improvements.
-New Features There is a new option to automatically inherit load balancer groups from a logical router to its connected logical switches. A new load balancer affinity option has been added, which allows for a new load balancer backend to automatically be chosen after a configured time.</description>
+      <guid>/en/releases/22.09/</guid>
+      <description>OVN 22.09 OVN 22.09 was initially released on 16 September, 2022. This version of OVN is currently supported for all bug fixes. Support for this version will end on 16 September, 2023.
+v22.09.2 v22.09.2 was released on 29 August, 2023.
+Github link
+Release Notes:
+OVN v22.09.2 - 29 Aug 2023 -------------------------- - Bug fixes - Always allow IPv6 Router Discovery, Neighbor Discovery, and Multicast Listener Discovery protocols, regardless of ACLs defined.</description>
     </item>
     
     <item>
-      <title>Release 22.09.0</title>
-      <link>/en/releases/release_22.09.0/</link>
-      <pubDate>Mon, 03 Oct 2022 08:53:48 -0500</pubDate>
+      <title>22.03</title>
+      <link>/en/releases/22.03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/releases/release_22.09.0/</guid>
-      <description>In addition to bug fixes, the 22.09.0 release of OVN contains a mix of new features and performance improvements.
-New Features Load balancers attached to logical routers have the option to automatically be applied to connected logical switches as well. When multiple requested chassis are used for a switch port, a RARP activation strategy has been implemented to allow for automatic switchover between the chassis. An IPsec option has been added to force NAT-T encapsulation.</description>
+      <guid>/en/releases/22.03/</guid>
+      <description>OVN 22.03 OVN 22.03 was initially released on 11 March, 2022. This version of OVN is currently supported for all bug fixes. This version will enter critical fix mode on 11 March, 2024. Support for this version will end on 11 March, 2025.
+v22.03.3 v22.03.3 was released on 29 August, 2023.
+Github link
+Release Notes:
+OVN v22.03.3 - 29 Aug 2023 -------------------------- - Bug fixes - Always allow IPv6 Router Discovery, Neighbor Discovery, and Multicast Listener Discovery protocols, regardless of ACLs defined.</description>
     </item>
     
     <item>
-      <title>Release 22.06.0</title>
-      <link>/en/releases/release_22.06.0/</link>
-      <pubDate>Fri, 03 Jun 2022 08:53:48 -0500</pubDate>
+      <title>All Releases</title>
+      <link>/en/releases/all_releases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/releases/release_22.06.0/</guid>
-      <description>In addition to bug fixes, the 22.06.0 release of OVN contains a mix of new features and performance improvements.
-New Features Many features that made use of ct_label now use ct_mark. This allows for easier hardware offloading. NAT may now be configured on routers with multiple distributed gateway ports. MAC bindings may now be configured via the northbound database. &amp;ldquo;requested-chassis&amp;rdquo; now accepts a comma-separated list to allow for a port to be bound to multiple chassis.</description>
-    </item>
-    
-    <item>
-      <title>Release 22.03.0</title>
-      <link>/en/releases/release_22.03.0/</link>
-      <pubDate>Thu, 10 Mar 2022 08:53:48 -0500</pubDate>
-      
-      <guid>/en/releases/release_22.03.0/</guid>
-      <description>OVN 22.03.0 is a long term support (LTS) release. This version will receive bug fix support until the release of OVN 24.03.0, at which point it will receive one additional year of critical fixes.
-In addition to bug fixes, the 22.03.0 release of OVN contains a mix of new features and performance improvements.
-New Features ovn-ic now supports multicast flooding between AZs. The &amp;ndash;dummy-numa option for ovn-northd has been added. Control plan protection (CoPP) can now be named, allowing for easier referencing of policies.</description>
-    </item>
-    
-    <item>
-      <title>Release 21.09.0</title>
-      <link>/en/releases/release_21.09.0/</link>
-      <pubDate>Thu, 21 Oct 2021 08:53:48 -0500</pubDate>
-      
-      <guid>/en/releases/release_21.09.0/</guid>
-      <description>In addition to bug fixes, the 21.09.0 release of OVN contains a mix of new features and performance improvements.
-New Features OVN can now detect datapath features in OVS using the &amp;ldquo;Datapath&amp;rdquo; table in OVS. This is used to detect if all-zero SNAT is available. DHCP now supports option 12 (hostname). A limitation has been removed that now allows the full TCP/UDP port range (1-65535) rather than only half the range (1-32767) for Service Monitors.</description>
-    </item>
-    
-    <item>
-      <title>Release 21.06.0</title>
-      <link>/en/releases/release_21.06.0/</link>
-      <pubDate>Fri, 18 Jun 2021 08:53:48 -0500</pubDate>
-      
-      <guid>/en/releases/release_21.06.0/</guid>
-      <description>In addition to bug fixes, the 21.06.0 release of OVN contains a mix of new features and performance improvements.
-New Features A new version of ovn-northd is included. This version is written in Differential Datalog instead of C and processes incrementally. VLAN passthru mode is supported. Custom 802.11ad support for localnet ports is added. An &amp;ldquo;allow-stateless&amp;rdquo; ACL option has been added that will always bypass conntrack. DNS now responds to PTR requests.</description>
-    </item>
-    
-    <item>
-      <title>Release 21.03.0</title>
-      <link>/en/releases/release_21.03.0/</link>
-      <pubDate>Mon, 15 Mar 2021 08:53:48 -0500</pubDate>
-      
-      <guid>/en/releases/release_21.03.0/</guid>
-      <description>In addition to bug fixes, the 21.03.0 release of OVN contains a mix of new features and performance improvements.
-New Features When using the &amp;ldquo;reject&amp;rdquo; ACL verdict with SCTP, OVN now responds with an SCTP ABORT. OVN now supports &amp;ldquo;memory/show&amp;rdquo; via ovn-appct similar to OVS. OVN now supports using BFD on static routes to test liveness. See ovn-nb documentation for more details. Various ovn-nbctl enhancements lr-route-list gives a BFD report lr-route-list gives ECMP and ECMP symmetric reply information lr-lb-add option now has an &amp;ndash;event option to enable controller events for empty backends.</description>
-    </item>
-    
-    <item>
-      <title>Release 20.12.0</title>
-      <link>/en/releases/release_20.12.0/</link>
-      <pubDate>Thu, 17 Dec 2020 08:53:48 -0500</pubDate>
-      
-      <guid>/en/releases/release_20.12.0/</guid>
-      <description>In addition to numerous bug fixes, the 20.12.0 release of OVN contains a mix of new features and performance improvements.
-New Features Add support for DHCP RENEW/REBIND for IPv6 prefix delegation (RFC 3633). DHCP iPXE support has been added. A new vlan-passthru option has been added to logical switches to allow vlan-tagged incoming traffic. DHCP option 28 (broadcast address) support has been added. The conntrack zone used by a gateway router for SNAT can now be explicitly configured.</description>
-    </item>
-    
-    <item>
-      <title>Release 20.09.0</title>
-      <link>/en/releases/release_20.09.0/</link>
-      <pubDate>Thu, 09 Jul 2020 08:53:23 -0400</pubDate>
-      
-      <guid>/en/releases/release_20.09.0/</guid>
-      <description>In addition to numerous bug fixes, the 20.09.0 release of OVN contains a mix of new features and performance improvements.
-New Features Allow the lb_force_snat_ip and dnat_force_snat_ip options to take an IPv4 and IPv6 address pair. This may be needed for dual stack setups. DHCP now understands DHCPDECLINE External IP based NAT. This allows for a set of IPs to be used for SNAT instead of always SNATting to a single external IP address.</description>
+      <guid>/en/releases/all_releases/</guid>
+      <description>Supported Releases The following OVN release series are still receiving upstream support.
+OVN 23.06 For more details, see 23.06 OVN 23.03 For more details, see 23.03 OVN 22.12 For more details, see 22.12 OVN 22.09 For more details, see 22.09 OVN 22.03 For more details, see 22.03 No Longer Supported Releases The following OVN release series are no longer supported. This means that they will not receive any future bug fixes, including critical or security fixes.</description>
     </item>
     
   </channel>
