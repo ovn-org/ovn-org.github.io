@@ -8,6 +8,19 @@
     <language>en</language>
     <lastBuildDate>Wed, 19 Feb 2020 22:03:26 +0100</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>23.09</title>
+      <link>/en/releases/23.09/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/releases/23.09/</guid>
+      <description>OVN 23.09 OVN 23.09 was initially released on 15 September, 2023. This version of OVN is currently supported for all bug fixes. Support for this version will end on 15 September, 2024.
+v23.09.0 v23.09.0 was released on 15 September, 2023.
+Github link
+Release Notes:
+OVN v23.09.0 - 15 Sep 2023 ---------------------------- - Added FDB aging mechanism, that is disabled by default. It can be enabled per logical switch with other_config &amp;#34;fdb_age_threshold&amp;#34;.</description>
+    </item>
+    
+    <item>
       <title>23.06</title>
       <link>/en/releases/23.06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -79,7 +92,7 @@ OVN v22.03.3 - 29 Aug 2023 -------------------------- - Bug fixes - Always allow
       
       <guid>/en/releases/all_releases/</guid>
       <description>Supported Releases The following OVN release series are still receiving upstream support.
-OVN 23.06 For more details, see 23.06 OVN 23.03 For more details, see 23.03 OVN 22.12 For more details, see 22.12 OVN 22.09 For more details, see 22.09 OVN 22.03 For more details, see 22.03 No Longer Supported Releases The following OVN release series are no longer supported. This means that they will not receive any future bug fixes, including critical or security fixes.</description>
+OVN 23.09 For more details, see 23.09 OVN 23.06 For more details, see 23.06 OVN 23.03 For more details, see 23.03 OVN 22.12 For more details, see 22.12 OVN 22.09 For more details, see 22.09 OVN 22.03 For more details, see 22.03 No Longer Supported Releases The following OVN release series are no longer supported. This means that they will not receive any future bug fixes, including critical or security fixes.</description>
     </item>
     
   </channel>
