@@ -5,25 +5,27 @@
     <link>/en/releases/</link>
     <description>Recent content in Releases on OVN project documentation website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/en/releases/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="/en/releases/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>23.09</title>
       <link>/en/releases/23.09/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/en/releases/23.09/</guid>
       <description>OVN 23.09 OVN 23.09 was initially released on 15 September, 2023. This version of OVN is currently supported for all bug fixes. Support for this version will end on 15 September, 2024.
+v23.09.1 v23.09.1 was released on 1 December, 2023.
+Github link
+Release Notes:
+OVN v23.09.1 - 01 Dec 2023 -------------------------- - Bug fixes Changelog
 v23.09.0 v23.09.0 was released on 15 September, 2023.
 Github link
 Release Notes:
-OVN v23.09.0 - 15 Sep 2023 ---------------------------- - Added FDB aging mechanism, that is disabled by default. It can be enabled per logical switch with other_config &amp;#34;fdb_age_threshold&amp;#34;.</description>
+OVN v23.09.0 - 15 Sep 2023 ---------------------------- - Added FDB aging mechanism, that is disabled by default.</description>
     </item>
-    
     <item>
       <title>23.06</title>
       <link>/en/releases/23.06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/en/releases/23.06/</guid>
       <description>OVN 23.06 OVN 23.06 was initially released on 2 June, 2023. This version of OVN is currently supported for all bug fixes. Support for this version will end on 2 June, 2024.
 v23.06.2 v23.06.2 was released on 15 September, 2023.
@@ -35,12 +37,10 @@ Github link
 Release Notes:
 OVN v23.06.1 - 29 Aug 2023 -------------------------- - Bug fixes - ECMP routes use L4_SYM dp-hash by default if the datapath supports it.</description>
     </item>
-    
     <item>
       <title>23.03</title>
       <link>/en/releases/23.03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/en/releases/23.03/</guid>
       <description>OVN 23.03 OVN 23.03 was initially released on 3 March, 2023. This version of OVN is currently supported for all bug fixes. Support for this version will end on 3 March, 2024.
 v23.03.2 v23.03.2 was released on 15 September, 2023.
@@ -52,12 +52,10 @@ Github link
 Release Notes:
 OVN v23.03.1 - 29 Aug 2023 -------------------------- - Bug fixes - CT entries are not flushed by default anymore whenever a load balancer backend is removed.</description>
     </item>
-    
     <item>
       <title>22.12</title>
       <link>/en/releases/22.12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/en/releases/22.12/</guid>
       <description>OVN 22.12 OVN 22.12 was initially released on 16 December, 2022. This version of OVN is currently supported for all bug fixes. Support for this version will end on 16 December, 2023.
 v22.12.2 v22.12.2 was released on 15 September, 2023.
@@ -69,47 +67,25 @@ Github link
 Release Notes:
 OVN v22.12.1 - 29 Aug 2023 -------------------------- - Bug fixes - Always allow IPv6 Router Discovery, Neighbor Discovery, and Multicast Listener Discovery protocols, regardless of ACLs defined.</description>
     </item>
-    
-    <item>
-      <title>22.09</title>
-      <link>/en/releases/22.09/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/en/releases/22.09/</guid>
-      <description>OVN 22.09 OVN 22.09 was initially released on 16 September, 2022. This version of OVN is currently supported for all bug fixes. Support for this version will end on 16 September, 2023.
-v22.09.3 v22.09.3 was released on 15 September, 2023.
-Github link
-Release Notes:
-OVN v22.09.3 - 15 Sep 2023 -------------------------- - Bug fixes Changelog
-v22.09.2 v22.09.2 was released on 29 August, 2023.
-Github link
-Release Notes:
-OVN v22.09.2 - 29 Aug 2023 -------------------------- - Bug fixes - Always allow IPv6 Router Discovery, Neighbor Discovery, and Multicast Listener Discovery protocols, regardless of ACLs defined.</description>
-    </item>
-    
     <item>
       <title>22.03</title>
       <link>/en/releases/22.03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/en/releases/22.03/</guid>
       <description>OVN 22.03 OVN 22.03 was initially released on 11 March, 2022. This version of OVN is currently supported for all bug fixes. This version will enter critical fix mode on 11 March, 2024. Support for this version will end on 11 March, 2025.
-v22.03.4 v22.03.4 was released on 15 September, 2023.
+v22.03.5 v22.03.5 was released on 1 December, 2023.
 Github link
 Release Notes:
-OVN v22.03.4 - 15 Sep 2023 -------------------------- - Bug fixes Changelog
-v22.03.3 v22.03.3 was released on 29 August, 2023.</description>
+OVN v22.03.5 - 01 Dec 2023 -------------------------- - Bug fixes Changelog
+v22.03.4 v22.03.4 was released on 15 September, 2023.</description>
     </item>
-    
     <item>
       <title>All Releases</title>
       <link>/en/releases/all_releases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/en/releases/all_releases/</guid>
       <description>Supported Releases The following OVN release series are still receiving upstream support.
-OVN 23.09 For more details, see 23.09 OVN 23.06 For more details, see 23.06 OVN 23.03 For more details, see 23.03 OVN 22.12 For more details, see 22.12 OVN 22.09 For more details, see 22.09 OVN 22.03 For more details, see 22.03 No Longer Supported Releases The following OVN release series are no longer supported. This means that they will not receive any future bug fixes, including critical or security fixes.</description>
+OVN 23.09 For more details, see 23.09 OVN 23.06 For more details, see 23.06 OVN 23.03 For more details, see 23.03 OVN 22.12 For more details, see 22.12 OVN 22.03 For more details, see 22.03 No Longer Supported Releases The following OVN release series are no longer supported. This means that they will not receive any future bug fixes, including critical or security fixes.</description>
     </item>
-    
   </channel>
 </rss>
