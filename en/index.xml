@@ -9,6 +9,13 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>24.03</title>
+      <link>/en/releases/24.03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/releases/24.03/</guid>
+      <description>OVN 24.03 OVN 24.03 was initially released on 1 March, 2024. This version of OVN is currently supported for all bug fixes. This version will enter critical fix mode on 1 March, 2026. Support for this version will end on 1 March, 2027.&#xA;v24.03.0 v24.03.0 was released on 1 March, 2024.&#xA;Github link&#xA;Release Notes:&#xA;OVN v24.03.0 - 01 Mar 2024 -------------------------- - DNS now have an &amp;#34;options&amp;#34; column for configuration of extra options.</description>
+    </item>
+    <item>
       <title>23.09</title>
       <link>/en/releases/23.09/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -41,7 +48,7 @@
       <link>/en/releases/all_releases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/en/releases/all_releases/</guid>
-      <description>Supported Releases The following OVN release series are still receiving upstream support.&#xA;OVN 23.09 For more details, see 23.09 OVN 23.06 For more details, see 23.06 OVN 23.03 For more details, see 23.03 OVN 22.03 For more details, see 22.03 No Longer Supported Releases The following OVN release series are no longer supported. This means that they will not receive any future bug fixes, including critical or security fixes. It is not recommended to use these unless you absolutely must.</description>
+      <description>Supported Releases The following OVN release series are still receiving upstream support.&#xA;OVN 24.03 For more details, see 24.03 OVN 23.09 For more details, see 23.09 OVN 23.06 For more details, see 23.06 OVN 23.03 For more details, see 23.03 OVN 22.03 For more details, see 22.03 No Longer Supported Releases The following OVN release series are no longer supported. This means that they will not receive any future bug fixes, including critical or security fixes.</description>
     </item>
   </channel>
 </rss>
