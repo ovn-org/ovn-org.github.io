@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>20.12 :: OVN project documentation website</title>
+    <title>Changelog v22.03.7 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1710252284" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/releases/20.12/">
+  <body class="" data-url="/en/releases/changelog_v22.03.7/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -369,7 +369,7 @@
                   
                     
                     
-                      <option id="en" value="/en/releases/20.12/" selected>English</option>
+                      <option id="en" value="/en/releases/changelog_v22.03.7/" selected>English</option>
                     
                   
               
@@ -426,7 +426,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/20.12.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/website/edit/master/src/content/releases/changelog_v22.03.7.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -457,7 +457,7 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > 20.12
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Changelog v22.03.7
           
          
           
@@ -472,9 +472,9 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ovn-2012">OVN 20.12</a>
+    <li>
       <ul>
-        <li><a href="#v20120">v20.12.0</a></li>
+        <li><a href="#changes-from-v22036-to-v22037">Changes from v22.03.6 to v22.03.7</a></li>
       </ul>
     </li>
   </ul>
@@ -494,7 +494,7 @@
           
             <h1>
               
-              20.12
+              Changelog v22.03.7
             </h1>
           
 
@@ -502,36 +502,14 @@
 
 
 
-<h2 id="ovn-2012">OVN 20.12</h2>
-<p>OVN 20.12 was initially released on 17 December, 2020.
-This version of OVN is no longer supported. Support ended on 17 December, 2021.</p>
-<h3 id="v20120">v20.12.0</h3>
-<p>v20.12.0 was released on 17 December, 2020.</p>
-<p><a href="https://github.com/ovn-org/ovn/releases/tag/v20.12.0">Github link</a></p>
-<p>Release Notes:</p>
-<pre tabindex="0"><code>OVN v20.12.0 - 18 Dec 2020
---------------------------
-   - The &#34;datapath&#34; argument to ovn-trace is now optional, since the
-     datapath can be inferred from the inport (which is required).
-   - The obsolete &#34;redirect-chassis&#34; way to configure gateways has been
-     removed.  See ovn-nb(5) for advice on how to update your config if needed.
-   - Add IPv4 iPXE support introducing &#34;bootfile_name_alt&#34; option to ovn dhcp
-     server.
-   - Support other_config:vlan-passthru=true to allow VLAN tagged incoming
-     traffic.
-   - Propagate currently processed SB_Global.nb_cfg in ovn-controller to the
-     local OVS DB integration bridge external_ids:ovn-nb-cfg.
-   - Support version pinning between ovn-northd and ovn-controller as an
-     option. If the option is enabled and the versions don&#39;t match,
-     ovn-controller will not process any DB changes.
-   - Add &#34;fair&#34; column in Meter table to allow multiple ACL logs to use the
-     same Meter while being rate-limited independently.
-   - New configuration option for northd &#39;options:use_logical_dp_groups=true&#39;
-     to enable combining of logical flows by logical datapath.  This should
-     significantly decrease size of a Southbound DB.  However, in some cases,
-     it could have performance penalty for ovn-controller.  Disabled by
-     default.
-</code></pre><p><a href="../changelog_v20.12.0">Changelog</a></p>
+<h3 id="changes-from-v22036-to-v22037">Changes from v22.03.6 to v22.03.7</h3>
+<ul>
+<li><a href="https://github.com/ovn-org/ovn/commit/4174b78cedfa1cdcafba899098279e860ad185c4">4174b78c</a> Set release date for 22.03.7.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/4fdfb2ba84dbc05492a4e37efc1e7af62185ed05">4fdfb2ba</a> controller: Set check_tnl_key for BFD on tunnel ifaces.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2bc6ac5c99be94c0e5b00b8799ddce53adad2e48">2bc6ac5c</a> tests: Skip EDNS test if the scapy version doesn&rsquo;t support it.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/03db09a3a94dd30b33b0793a7edadcd58ae33a2c">03db09a3</a> northd: Don&rsquo;t skip the unSNAT stage for traffic towards VIPs.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/e60e5127d2601af2c99c9ad5283e45dbcdb36dbc">e60e5127</a> Prepare for 22.03.7.</li>
+</ul>
 
 
 <footer class="footline">

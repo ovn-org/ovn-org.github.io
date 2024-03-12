@@ -13,42 +13,35 @@
       <link>/en/releases/24.03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/en/releases/24.03/</guid>
-      <description>OVN 24.03 OVN 24.03 was initially released on 1 March, 2024. This version of OVN is currently supported for all bug fixes. This version will enter critical fix mode on 1 March, 2026. Support for this version will end on 1 March, 2027.&#xA;v24.03.0 v24.03.0 was released on 1 March, 2024.&#xA;Github link&#xA;Release Notes:&#xA;OVN v24.03.0 - 01 Mar 2024 -------------------------- - DNS now have an &amp;#34;options&amp;#34; column for configuration of extra options.</description>
+      <description>OVN 24.03 OVN 24.03 was initially released on 1 March, 2024. This version of OVN is currently supported for all bug fixes. This version will enter critical fix mode on 1 March, 2026. Support for this version will end on 1 March, 2027.&#xA;v24.03.1 v24.03.1 was released on 12 March, 2024.&#xA;Github link&#xA;Release Notes:&#xA;OVN v24.03.1 - 12 Mar 2024 -------------------------- - Bug fixes - Security: Fixed vulnerability CVE-2024-2182. Changelog</description>
     </item>
     <item>
       <title>23.09</title>
       <link>/en/releases/23.09/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/en/releases/23.09/</guid>
-      <description>OVN 23.09 OVN 23.09 was initially released on 15 September, 2023. This version of OVN is currently supported for all bug fixes. Support for this version will end on 15 September, 2024.&#xA;v23.09.2 v23.09.2 was released on 1 March, 2024.&#xA;Github link&#xA;Release Notes:&#xA;OVN v23.09.2 - 01 Mar 2024 -------------------------- - Bug fixes - Enable PMTU discovery on geneve/vxlan tunnels for E/W traffic. Changelog&#xA;v23.09.1 v23.09.1 was released on 1 December, 2023.</description>
+      <description>OVN 23.09 OVN 23.09 was initially released on 15 September, 2023. This version of OVN is currently supported for all bug fixes. Support for this version will end on 15 September, 2024.&#xA;v23.09.3 v23.09.3 was released on 12 March, 2024.&#xA;Github link&#xA;Release Notes:&#xA;OVN v23.09.3 - 12 Mar 2024 -------------------------- - Bug fixes - Security: Fixed vulnerability CVE-2024-2182. Changelog&#xA;v23.09.2 v23.09.2 was released on 1 March, 2024.&#xA;Github link</description>
     </item>
     <item>
       <title>23.06</title>
       <link>/en/releases/23.06/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/en/releases/23.06/</guid>
-      <description>OVN 23.06 OVN 23.06 was initially released on 2 June, 2023. This version of OVN is currently supported for all bug fixes. Support for this version will end on 2 June, 2024.&#xA;v23.06.2 v23.06.2 was released on 15 September, 2023.&#xA;Github link&#xA;Release Notes:&#xA;OVN v23.06.2 - 15 Sep 2023 -------------------------- - Bug fixes Changelog&#xA;v23.06.1 v23.06.1 was released on 29 August, 2023.&#xA;Github link&#xA;Release Notes:&#xA;OVN v23.06.1 - 29 Aug 2023 -------------------------- - Bug fixes - ECMP routes use L4_SYM dp-hash by default if the datapath supports it.</description>
-    </item>
-    <item>
-      <title>23.03</title>
-      <link>/en/releases/23.03/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/releases/23.03/</guid>
-      <description>OVN 23.03 OVN 23.03 was initially released on 3 March, 2023. This version of OVN is currently supported for all bug fixes. Support for this version will end on 3 March, 2024.&#xA;v23.03.2 v23.03.2 was released on 15 September, 2023.&#xA;Github link&#xA;Release Notes:&#xA;OVN v23.03.2 - 15 Sep 2023 -------------------------- - Bug fixes Changelog&#xA;v23.03.1 v23.03.1 was released on 29 August, 2023.&#xA;Github link&#xA;Release Notes:&#xA;OVN v23.03.1 - 29 Aug 2023 -------------------------- - Bug fixes - CT entries are not flushed by default anymore whenever a load balancer backend is removed.</description>
+      <description>OVN 23.06 OVN 23.06 was initially released on 2 June, 2023. This version of OVN is currently supported for all bug fixes. Support for this version will end on 2 June, 2024.&#xA;v23.06.3 v23.06.3 was released on 12 March, 2024.&#xA;Github link&#xA;Release Notes:&#xA;OVN v23.06.3 - 12 Mar 2024 -------------------------- - Bug fixes - Add &amp;#34;garp-max-timeout-sec&amp;#34; config option to vswitchd external-ids to cap the time between when ovn-controller sends gARP packets.</description>
     </item>
     <item>
       <title>22.03</title>
       <link>/en/releases/22.03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/en/releases/22.03/</guid>
-      <description>OVN 22.03 OVN 22.03 was initially released on 11 March, 2022. This version of OVN is currently supported for all bug fixes. This version will enter critical fix mode on 11 March, 2024. Support for this version will end on 11 March, 2025.&#xA;v22.03.6 v22.03.6 was released on 1 March, 2024.&#xA;Github link&#xA;Release Notes:&#xA;OVN v22.03.6 - 01 Mar 2024 -------------------------- - Bug fixes - Add &amp;#34;garp-max-timeout-sec&amp;#34; config option to vswitchd external-ids to cap the time between when ovn-controller sends gARP packets.</description>
+      <description>OVN 22.03 OVN 22.03 was initially released on 11 March, 2022. This version of OVN is currently supported for critical and security fixes only. Support will end on 11 March, 2025.&#xA;v22.03.7 v22.03.7 was released on 12 March, 2024.&#xA;Github link&#xA;Release Notes:&#xA;OVN v22.03.7 - 12 Mar 2024 -------------------------- - Bug fixes - Security: Fixed vulnerability CVE-2024-2182. Changelog&#xA;v22.03.6 v22.03.6 was released on 1 March, 2024.&#xA;Github link&#xA;Release Notes:</description>
     </item>
     <item>
       <title>All Releases</title>
       <link>/en/releases/all_releases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/en/releases/all_releases/</guid>
-      <description>Supported Releases The following OVN release series are still receiving upstream support.&#xA;OVN 24.03 For more details, see 24.03 OVN 23.09 For more details, see 23.09 OVN 23.06 For more details, see 23.06 OVN 23.03 For more details, see 23.03 OVN 22.03 For more details, see 22.03 No Longer Supported Releases The following OVN release series are no longer supported. This means that they will not receive any future bug fixes, including critical or security fixes.</description>
+      <description>Supported Releases The following OVN release series are still receiving upstream support.&#xA;OVN 24.03 For more details, see 24.03 OVN 23.09 For more details, see 23.09 OVN 23.06 For more details, see 23.06 OVN 22.03 For more details, see 22.03 No Longer Supported Releases The following OVN release series are no longer supported. This means that they will not receive any future bug fixes, including critical or security fixes. It is not recommended to use these unless you absolutely must.</description>
     </item>
   </channel>
 </rss>
