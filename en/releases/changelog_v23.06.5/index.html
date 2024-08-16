@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Changelog v20.06.1 :: OVN project documentation website</title>
+    <title>Changelog v23.06.5 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1723838627" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/releases/changelog_v20.06.1/">
+  <body class="" data-url="/en/releases/changelog_v23.06.5/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -348,7 +348,7 @@
                   
                     
                     
-                      <option id="en" value="/en/releases/changelog_v20.06.1/" selected>English</option>
+                      <option id="en" value="/en/releases/changelog_v23.06.5/" selected>English</option>
                     
                   
               
@@ -405,7 +405,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/ovn-website/edit/main/src/content/releases/changelog_v20.06.1.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/ovn-website/edit/main/src/content/releases/changelog_v23.06.5.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -436,7 +436,7 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Changelog v20.06.1
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Changelog v23.06.5
           
          
           
@@ -453,7 +453,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#changes-from-v20060-to-v20061">Changes from v20.06.0 to v20.06.1</a></li>
+        <li><a href="#changes-from-v23064-to-v23065">Changes from v23.06.4 to v23.06.5</a></li>
       </ul>
     </li>
   </ul>
@@ -473,7 +473,7 @@
           
             <h1>
               
-              Changelog v20.06.1
+              Changelog v23.06.5
             </h1>
           
 
@@ -481,35 +481,23 @@
 
 
 
-<h3 id="changes-from-v20060-to-v20061">Changes from v20.06.0 to v20.06.1</h3>
+<h3 id="changes-from-v23064-to-v23065">Changes from v23.06.4 to v23.06.5</h3>
 <ul>
-<li><a href="https://github.com/ovn-org/ovn/commit/c4d0d51368fb9857ab9aa068cc6f7db369c6b3e3">c4d0d513</a> Set release date for 20.06.1</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/7cc12230f1322ca98f37d396d9bcc93864751597">7cc12230</a> ovn-northd: Fix memory leak in build_lswitch_rport_arp_req_flows().</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/4b1b9624901c1dc71d6f9c01e2038644e3545bae">4b1b9624</a> ovn-controller: Fix the memory leak in ref lflow handling.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/fc816ff6007d9c79f37771538088c171f45ab9b9">fc816ff6</a> ovn-northd: Fix the missing lflow issue in LS_OUT_PRE_LB.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/2640b73ac7edb717331ff5256484a974d3473038">2640b73a</a> Fix selection fields for UDP and SCTP load balancers.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/0db5cbf65283fb41a7d28e5d0ad2f8ac14725d73">0db5cbf6</a> Split SB Port_Group per datapath.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/bad3cc972ed18066335bdd0da0fbca922fff0601">bad3cc97</a> chassis.c: Add comment to SB DB transaction only when needed.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/b738f8b0aa648b118c63e627fd75c40332dcc27a">b738f8b0</a> Cleanup <code>ovn-nbctl lr-route-add</code> IP normalization logic.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/da7aab095dc8c7ab34739a22001018de3fd2cad6">da7aab09</a> Use normalized IP addresses in <code>ovn-nbctl lr-nat-del</code></li>
-<li><a href="https://github.com/ovn-org/ovn/commit/0d624ca9e769b93650d11b9bf48caebb451a21f3">0d624ca9</a> Use normalized IP addreses in <code>ovn-nbctl lr-nat-add</code></li>
-<li><a href="https://github.com/ovn-org/ovn/commit/9367c5b49c0cd9a8917e1966b093581ed90d0fb2">9367c5b4</a> Add more IP address normalization functions.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/ef097892a3a3c5ad24afad81d3a5730d0c1b127c">ef097892</a> Use normalized IP addresses in <code>ovn-nbctl lrp-add</code></li>
-<li><a href="https://github.com/ovn-org/ovn/commit/7d19cc445e2956f75893c8ecd6b3b5380cb200de">7d19cc44</a> Avoid case-sensitive MAC address comparisons.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/427a8dcd2fe813cedd29b7248d3a97c4d2013c07">427a8dcd</a> ovn-controller: Fix memleak in lflow_add_flows_for_datapath.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/4982c7132c490f0cc65f147b72c85b1311948597">4982c713</a> binding.c: Reorder out params of some of the static functions.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/4dcc306581b7a2e108cf78b7c62d60e857e75019">4dcc3065</a> Add an util function get_unique_lport_key() for generating unique lport key.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/c573ae51062b9a73e847b71e9fac7acb0faafdb8">c573ae51</a> tests: Enhance ovn-performance testing by adding gw router port.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/a7c9df3c478ef844bb711a936310809789aa0ddf">a7c9df3c</a> ovn-controller: Use the tracked runtime data changes for flow calculation.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/3d096f833c4a7d6f688a58c0d57629806936a926">3d096f83</a> ovn-controller: Handle runtime data changes in flow output engine</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/8bc8fe85a5d51db21fa6aa183944c5a9d1189a12">8bc8fe85</a> ovn-controller: I-P for ct zone and OVS interface changes in flow output stage.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/c7ed2c73e3c986edbc10d5659fef39ad82d68bb3">c7ed2c73</a> I-P engine: Provide the option for an engine to clear tracked engine data in every run.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/80f50554f98eaef6d59fbbe390ab29327008b802">80f50554</a> northd: set packet length in check_pkt_larger()</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/aaf198b7fd2a4c85d02cfdd6125b6d87308fb269">aaf198b7</a> Honour router_preference for solicited RA</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/bb6bf9630b41e587db9fc05a46aede5c80ed5c3e">bb6bf963</a> Fix ovn-controller generated packets from getting dropped for reject ACL action.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/cc1ae396c6197daf8ac48b4eabe077dc72b65456">cc1ae396</a> northd: By pass IPv6 Router Adv and Router Solicitation packets from ACL stages.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/8242db7882584dae00fc8869e43ff7acd1139358">8242db78</a> ovn-controller: Fix I-P for SB Port_Binding and OVS Interface.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/fae8454f3312738e3c592bf27f95f1aee2dbb7d1">fae8454f</a> Prepare for 20.06.1</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/503a9e35952afa3c3c8a18c4c43a455f0e75ae69">503a9e35</a> Set release date for 23.06.5.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/91c9c1d35f6af87323ba5cf7f3190b1ec84d57b2">91c9c1d3</a> northd: Clean up SB MAC bindings for deleted ports.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/16541ab07bba84404d1d0db6bb442feb5a67f9e1">16541ab0</a> controller: Make sure the meter and group tables are initialized.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/de49d986eadb6672f5c6adc58a9a995931878973">de49d986</a> ci: ovn-kubernetes: Move to stable release-1.0 branch.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/d15c6fb4887961e7c3dbe9860605e04bf7f3ab92">d15c6fb4</a> logical-fields: Add missing multicast matches for MLD and IGMP.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/35c71773a9ab3ba25b130a394c6f0100b594fe61">35c71773</a> northd: Fix issues for Forwarding_Group.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/df8d8e11ed5094a2e72232f78106e42c77a3043f">df8d8e11</a> tests: Fix ssl-ciphers RO sb test with old openssl.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/9e9bd2ba53786853c1aeb3fc86233838e99f99ab">9e9bd2ba</a> controller: Store src_mac, src_ip in svc_monitor struct.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1c4cdc654f4a2ee9bbb41efc341a72eab2be16fb">1c4cdc65</a> controller: Fix issue with ct_commit encode.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/7973b41525d50d1cb86e426136c629622a21a974">7973b415</a> northd: Skip arp-proxy flows if the lsp is a router port.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/ab926ffe1b62a1a2baa67f8af8461ff63df5cc1f">ab926ffe</a> ovn-controller: Initialize bitmap to zero.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/d73982808c2059ea4686fef2dceebc7ff82f4aa8">d7398280</a> lflow: Add missing sample flow.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f1dcfeef80b0f55d87d778df6f0b219a19cd70ef">f1dcfeef</a> controller: Avoid use after free in LB I-P.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/a92e4bb38c54bba5e3c9eaf312b19eb86484995f">a92e4bb3</a> northd, ic: Fix handling of ovn-appctl resume.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/05a98ef911b5435edb4d44d8f0f9ef002c0cec8f">05a98ef9</a> Prepare for 23.06.5.</li>
 </ul>
 
 
