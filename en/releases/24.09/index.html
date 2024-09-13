@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>20.03 :: OVN project documentation website</title>
+    <title>24.09 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1726269672" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/releases/20.03/">
+  <body class="" data-url="/en/releases/24.09/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -132,7 +132,7 @@
  
   
     
-      <li data-nav-id="/en/releases/24.09/" title="24.09" class="dd-item ">
+      <li data-nav-id="/en/releases/24.09/" title="24.09" class="dd-item active">
         <a href="/en/releases/24.09/">
         24.09
         <i class="fas fa-check read-icon"></i>
@@ -369,7 +369,7 @@
                   
                     
                     
-                      <option id="en" value="/en/releases/20.03/" selected>English</option>
+                      <option id="en" value="/en/releases/24.09/" selected>English</option>
                     
                   
               
@@ -426,7 +426,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/ovn-website/edit/main/src/content/releases/20.03.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/ovn-website/edit/main/src/content/releases/24.09.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -457,7 +457,7 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > 20.03
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > 24.09
           
          
           
@@ -472,11 +472,9 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ovn-2003">OVN 20.03</a>
+    <li><a href="#ovn-2409">OVN 24.09</a>
       <ul>
-        <li><a href="#v20032">v20.03.2</a></li>
-        <li><a href="#v20031">v20.03.1</a></li>
-        <li><a href="#v20030">v20.03.0</a></li>
+        <li><a href="#v24090">v24.09.0</a></li>
       </ul>
     </li>
   </ul>
@@ -496,7 +494,7 @@
           
             <h1>
               
-              20.03
+              24.09
             </h1>
           
 
@@ -504,43 +502,85 @@
 
 
 
-<h2 id="ovn-2003">OVN 20.03</h2>
-<p>OVN 20.03 was initially released on 2 March, 2020.
-This version of OVN is no longer supported. Support ended on 2 March, 2023.</p>
-<h3 id="v20032">v20.03.2</h3>
-<p>v20.03.2 was released on 12 April, 2021.</p>
-<p><a href="https://github.com/ovn-org/ovn/releases/tag/v20.03.2">Github link</a></p>
+<h2 id="ovn-2409">OVN 24.09</h2>
+<p>OVN 24.09 was initially released on 13 September, 2024.
+This version of OVN is currently supported for all bug fixes.
+Support for this version will end on 13 September, 2025.</p>
+<h3 id="v24090">v24.09.0</h3>
+<p>v24.09.0 was released on 13 September, 2024.</p>
+<p><a href="https://github.com/ovn-org/ovn/releases/tag/v24.09.0">Github link</a></p>
 <p>Release Notes:</p>
-<pre tabindex="0"><code>OVN v20.03.2 - 12 Apr 2021
+<pre tabindex="0"><code>OVN v24.09.0 - 13 Sep 2024
 --------------------------
-   - Bug fixes
-</code></pre><p><a href="../changelog_v20.03.2">Changelog</a></p>
-<h3 id="v20031">v20.03.1</h3>
-<p>v20.03.1 was released on 11 June, 2020.</p>
-<p><a href="https://github.com/ovn-org/ovn/releases/tag/v20.03.1">Github link</a></p>
-<p>Release Notes:</p>
-<pre tabindex="0"><code>OVN v20.03.1 - 09 Jun 2020
---------------------------
-</code></pre><p><a href="../changelog_v20.03.1">Changelog</a></p>
-<h3 id="v20030">v20.03.0</h3>
-<p>v20.03.0 was released on 2 March, 2020.</p>
-<p><a href="https://github.com/ovn-org/ovn/releases/tag/v20.03.0">Github link</a></p>
-<p>Release Notes:</p>
-<pre tabindex="0"><code>OVN v20.03.0 - 28 Feb 2020
----------------------
-   - OVN was split out from the OVS repository and is now released
-     independently.
-   - Added IPv6 NAT support for OVN routers.
-   - Added Stateless Floating IP support in OVN.
-   - Added Forwarding Group support in OVN.
-   - Added support for MLD Snooping and MLD Querier.
-   - Added support for ECMP routes in OVN router.
-
-   - OVN Interconnection:
-     * Support for L3 interconnection of multiple OVN deployments with tunnels
-       managed by OVN.  See instructions in
-       Documentation/tutorials/ovn-interconnection.rst.
-</code></pre><p><a href="../changelog_v20.03.0">Changelog</a></p>
+  - Added a new logical switch port option &#34;pkt_clone_type&#34;.
+    If the value is set to &#34;mc_unknown&#34;, packets destined to the port gets
+    cloned to all unknown ports connected to the same Logical Switch.
+  - Added a new logical switch port option &#34;disable_arp_nd_rsp&#34; to
+    disable adding the ARP responder flows if set to true.
+  - IGMP_Group has new &#34;protocol&#34; column that displays the the group
+    protocol version.
+  - Add ovn-debug tool containing two commands.
+    &#34;lflow-stage-to-ltable STAGE_NAME&#34; that converts stage name into logical
+    flow table id.
+    &#34;lflow-stage-to-oftable STAGE_NAME&#34; that converts stage name into OpenFlow
+    table id.
+  - Rename the ovs-sandbox script to ovn-sandbox.
+  - Remove &#34;ovn-set-local-ip&#34; config option from vswitchd
+    external-ids, the option is no longer needed as it became effectively
+    &#34;true&#34; for all scenarios.
+  - Added DHCPv4 relay support.
+  - A new LSP option &#34;force_fdb_lookup&#34; has been added to ensure the additional
+    MAC addresses configured on the LSP with &#34;unknown&#34;, are learnt via the
+    OVN native FDB.
+  - Add support for ovsdb-server `--config-file` option in ovn-ctl.
+  - Add &#34;ovn-bridge-remote&#34; config option to vswitchd external-ids,
+    that allows to specify connection method to management bridge for
+    ovn-controller, defaulting to the unix socket.
+  - Add &#34;ovn-bridge-remote-probe-interval&#34; config option to vswitchd
+    external-ids, that sets probe interval for integration bridge connection,
+    disabled by default.
+  - The &#34;options:ic-route-blacklist&#34; option in the Northbound NB_Global table
+    has been renamed to &#34;options:ic-route-denylist&#34; in order to comply with
+    inclusive language guidelines. The previous name is still recognized to
+    aid with backwards compatibility.
+  - NATs can now be given an arbitrary match condition and priority. This
+    allows for conditional NATs to be configured. See the ovn-nb(5) man
+    page for more information.
+  - Added new global config option NB_Global:options:vxlan_mode to support
+    ability to disable &#34;VXLAN mode&#34; to extend available tunnel IDs space for
+    datapaths from 4095 to 16711680.  For more details see man ovn-nb(5) for
+    mentioned option.
+  - Added new global config option NB_Global:options:always_tunnel.  If set to
+    true, the traffic destined to a logical port of a provider logical switch
+    (having a localnet port) will be tunnelled instead of sending it via the
+    localnet port.
+  - Added support to define boundaries (min and max values) for selected ct
+    zones.
+  - Add support for CT zone limit that can be specified per LR
+    (options:ct-zone-limit), LS (other_config:ct-zone-limit) or LSP
+    (options:ct-zone-limit).
+  - A new LSP option &#34;disable_garp_rarp&#34; has been added to prevent OVN from
+    sending GARP or RARP announcements when a VIF is created on a bridged
+    logical switch.
+  - A new LRP option &#39;centralize_routing&#39; has been added to a
+    distributed gateway port to centralize routing if the logical
+    switch of its peer doesn&#39;t have a localnet port.
+  - The NB_Global.debug_drop_domain_id configured value is now overridden by
+    the ID associated with the Sampling_App record created for drop sampling
+    (Sampling_App.type configured as &#34;drop&#34;).
+  - Add support for ACL sampling through the new Sample_Collector and Sample
+    tables.  Sampling is supported for both traffic that creates new
+    connections and for traffic that is part of an existing connection.
+  - Add &#34;external_ids:ovn-encap-ip-default&#34; config for ovn-controller to
+    determine the default encap IP when there are multiple encap IPs
+    configured.
+  - Added a new column in the southbound database &#34;flow_desc&#34; to provide
+    human readable context to flows.
+  - Added two new experimental logical router port options,
+    &#34;routing-protocol-redirect&#34; and &#34;routing-protocols&#34;, that allow
+    redirection of routing protocol traffic received by a router port
+    to a different logical switch port.
+</code></pre><p><a href="../changelog_v24.09.0">Changelog</a></p>
 
 
 <footer class="footline">
@@ -611,8 +651,6 @@ This version of OVN is no longer supported. Support ended on 2 March, 2023.</p>
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -629,6 +667,9 @@ This version of OVN is no longer supported. Support ended on 2 March, 2023.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -751,10 +792,10 @@ This version of OVN is no longer supported. Support ended on 2 March, 2023.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/architecture/" title="Architecture"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/releases/" title="Releases"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/releases/24.09/" title="24.09" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/releases/24.03/" title="24.03" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
