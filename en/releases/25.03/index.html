@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>22.06 :: OVN project documentation website</title>
+    <title>25.03 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1741376770" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/releases/22.06/">
+  <body class="" data-url="/en/releases/25.03/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -132,7 +132,7 @@
  
   
     
-      <li data-nav-id="/en/releases/25.03/" title="25.03" class="dd-item ">
+      <li data-nav-id="/en/releases/25.03/" title="25.03" class="dd-item active">
         <a href="/en/releases/25.03/">
         25.03
         <i class="fas fa-check read-icon"></i>
@@ -369,7 +369,7 @@
                   
                     
                     
-                      <option id="en" value="/en/releases/22.06/" selected>English</option>
+                      <option id="en" value="/en/releases/25.03/" selected>English</option>
                     
                   
               
@@ -426,7 +426,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/ovn-website/edit/main/src/content/releases/22.06.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/ovn-website/edit/main/src/content/releases/25.03.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -457,7 +457,7 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > 22.06
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > 25.03
           
          
           
@@ -472,10 +472,9 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ovn-2206">OVN 22.06</a>
+    <li><a href="#ovn-2503">OVN 25.03</a>
       <ul>
-        <li><a href="#v22061">v22.06.1</a></li>
-        <li><a href="#v22060">v22.06.0</a></li>
+        <li><a href="#v25030">v25.03.0</a></li>
       </ul>
     </li>
   </ul>
@@ -495,7 +494,7 @@
           
             <h1>
               
-              22.06
+              25.03
             </h1>
           
 
@@ -503,55 +502,100 @@
 
 
 
-<h2 id="ovn-2206">OVN 22.06</h2>
-<p>OVN 22.06 was initially released on 3 June, 2022.
-This version of OVN is no longer supported. Support ended on 3 June, 2023.</p>
-<h3 id="v22061">v22.06.1</h3>
-<p>v22.06.1 was released on 20 December, 2022.</p>
-<p><a href="https://github.com/ovn-org/ovn/releases/tag/v22.06.1">Github link</a></p>
+<h2 id="ovn-2503">OVN 25.03</h2>
+<p>OVN 25.03 was initially released on 7 March, 2025.
+This version of OVN is currently supported for all bug fixes.
+Support for this version will end on 7 March, 2026.</p>
+<h3 id="v25030">v25.03.0</h3>
+<p>v25.03.0 was released on 7 March, 2025.</p>
+<p><a href="https://github.com/ovn-org/ovn/releases/tag/v25.03.0">Github link</a></p>
 <p>Release Notes:</p>
-<pre tabindex="0"><code>OVN v22.06.1 - 20 Dec 2022
+<pre tabindex="0"><code>OVN v25.03.0 - 07 Mar 2025
 --------------------------
-  - Bug fixes
-  - Added nb_global IPsec options ipsec_encapsulation=true (libreswan)
-    and ipsec_forceencaps=true (strongswan) to unconditionally enforce
-    NAT-T UDP encapsulation. Requires OVS support for IPsec custom tunnel
-    options (which is available in OVS 3.0).
-  - Bump python version required for building OVN to 3.6.
-</code></pre><p><a href="../changelog_v22.06.1">Changelog</a></p>
-<h3 id="v22060">v22.06.0</h3>
-<p>v22.06.0 was released on 3 June, 2022.</p>
-<p><a href="https://github.com/ovn-org/ovn/releases/tag/v22.06.0">Github link</a></p>
-<p>Release Notes:</p>
-<pre tabindex="0"><code>OVN v22.06.0 - 03 Jun 2022
---------------------------
-  - Support IGMP and MLD snooping on transit logical switches that connect
-    different OVN Interconnection availability zones.
-  - Replaced the usage of masked ct_label by ct_mark in most cases to work
-    better with hardware-offloading.
-  - Support NAT for logical routers with multiple distributed gateway ports.
-  - Add global option (NB_Global.options:default_acl_drop) to enable
-    implicit drop behavior on logical switches with ACLs applied.
-  - Support (LSP.options:qos_min_rate) to guarantee minimal bandwidth available
-    for a logical port.
-  - Add NB.Load_Balancer.options:neighbor_responder to allow the CMS to
-    explicitly request routers to reply to any ARP/ND request for a VIP
-    (when set to &#34;all&#34;) and only for reachable VIPs (when set to &#34;reachable&#34;
-    or by default).
-  - Changed the way to enable northd parallelization.
-    Removed support for:
-    - use_parallel_build in NBDB.
-    - --dummy-numa in northd cmdline.
-    Added support for:
-    -  --n-threads=&lt;N&gt; in northd cmdline.
-    - set-n-threads/get-n-threads unixctls.
-    - --ovn-northd-n-threads command line argument in ovn-ctl
-  - Added support for setting the Next server IP in the DHCP header
-    using the private DHCP option - 253 in native OVN DHCPv4 responder.
-  - Support list of chassis for Logical_Switch_Port:options:requested-chassis.
-  - Support Logical_Switch_Port:options:activation-strategy for live migration
-    scenarios.
-</code></pre><p><a href="../changelog_v22.06.0">Changelog</a></p>
+   - Added support to choose selection methods - dp_hash or
+     hash (with specified hash fields) for ECMP routes
+     while choosing nexthop.
+   - ovn-ic: Add support for route tag to prevent route learning.
+   - Support for STT tunnels in ovn-encap-type is deprecated and will be
+     removed in the next release.
+   - The LRP option &#39;centralize_routing&#39; has been removed. The behavior is now
+     enabled in all cases where it is needed.
+   - ovn-nb: Changed schema of ovn-nb to make networks optional within Logical
+     Router Ports.
+   - Added support for Spine-Leaf topology of logical switches by adding
+     a new LSP type &#39;switch&#39; that can directly connect two logical switches.
+     Supported for both distributed and transit switches.
+   - Bump python version required for building OVN to 3.7.
+   - SSL/TLS:
+     * TLSv1 and TLSv1.1 protocols are deprecated and disabled by default
+       on OpenFlow and database connections.  Use --ssl-protocols to turn
+       them back on.  Support will be fully removed in the next release.
+     * OpenSSL 1.1.1 or newer is now required for SSL/TLS support.
+     * The protocol list in --ssl-protocols or corresponding database column
+       now supports specifying simple protocol ranges like:
+         - &#34;TLSv1-TLSv1.2&#34; to enable all protocols between TLSv1 and TLSv1.2.
+         - &#34;TLSv1.2+&#34; to enable protocol TLSv1.2 and later.
+       The value must be a list of protocols or exactly one protocol range.
+     * Added explicit support for TLSv1.3.  It can now be enabled via
+       --ssl-protocols (TLSv1.3 was supported in earlier versions only when
+       this option was not set).  TLS ciphersuites for TLSv1.3 and later can
+       be configured via --ssl-ciphersuites (--ssl-ciphers only applies to
+       TLSv1.2 and earlier).
+   - Add &#34;arp-nd-max-timeout-sec&#34; config option to vswitchd external-ids to
+     configure the interval (in seconds) between ovn-controller originated
+     ARP/ND packets used for tracking ECMP next hop MAC addresses.
+   - Auto flush ECMP symmetric reply connection states when an ECMP route is
+     removed by the CMS.  This behavior is controlled by the
+     &#34;ecmp_nexthop_monitor_enable&#34; config option in the NB_Global table.
+     Disabled by default.
+   - Improved handling of IPv6 traffic by enabling address prefix tracking
+     in OVS for both IPv4 and IPv6 addresses, whenever possible, reducing
+     the amount of IPv6 datapath flows.
+   - Add concept of Transit Routers, users are now allowed to specify
+     options:requested-chassis for router ports; if the chassis is remote
+     then the router port will behave as a remote port.
+   - Added a new ACL option &#34;persist-established&#34; that allows for
+     established connections to bypass ACL matching. This way, if an ACL
+     match changes, traffic on the established connection can still pass.
+   - Logical router policies can now be arranged in chains. Using the new
+     &#34;jump&#34; action, combined with new &#34;chain&#34; and &#34;jump_chain&#34; columns,
+     allows for policies to be chained together.
+   - Reduce the max number of local datapath to 1024 when OVN is using VXLAN
+     encapsulation type in OVN-interconnect mode.
+   - Added vxlan_mode parameter in IC_NB_GLOBAL option column to enable or
+     disable VXLAN encapsulation type in OVN-interconnect mode.
+   - Dynamic Routing:
+     * Add the option &#34;dynamic-routing&#34; to Logical Routers. If set to true
+       static and connected routes matching the filter below are shared to the
+       southbound &#34;Advertised_Route&#34; table for sharing outside of OVN.
+       The routes can further be configured by setting
+       `dynamic-routing-redistribute` on the LR or LRP. The LRP settings
+       overwrite the LR settings for all routes using this interface to
+       forward traffic on.
+     * Allow Logical Routers to dynamically learn routes from outside the
+       fabric. Routes entered into the &#34;Learned_Route&#34; table in the southbound
+       database will be learned by the respective LR. They are included in the
+       route table with a lower priority than static routes.
+     * Add the option value &#34;connected-as-host&#34; to the
+       &#34;dynamic-routing-redistribute&#34; LR and LRP option. If set then connected
+       routes are announced as individual host routes.
+     * Add the option &#34;dynamic-routing-maintain-vrf&#34; to LRPs. If set the
+       ovn-controller will create a vrf named &#34;ovnvrf&#34; + datapath id that
+       includes all advertised and learned routes.
+       The vrf name can be overwritten with the &#34;dynamic-routing-vrf-name&#34;
+       setting.
+     * Add the option &#34;dynamic-routing-port-name&#34; to LRPs. If set only routes
+       learned from a linux interfaces that is locally bound to the referenced
+       LSP will be learned. Additionally support local overwrites for arbitrary
+       interface names using &#34;dynamic-routing-port-mapping&#34;.
+     * The logical router port options &#34;routing-protocol-redirect&#34; and
+       &#34;routing-protocols&#34; are now also usable on distributed gateway ports.
+     * Logical router port options &#34;routing-protocol-redirect&#34; and
+       &#34;routing-protocols&#34; are now considered stable. Their &#34;experimental&#34; tag
+       was removed.
+   - Add &#34;options:ct-commit-all&#34; to LR, that enables commit of all traffic
+     to DNAT and SNAT zone when LR is stateful.
+</code></pre><p><a href="../changelog_v25.03.0">Changelog</a></p>
 
 
 <footer class="footline">
@@ -622,8 +666,6 @@ This version of OVN is no longer supported. Support ended on 3 June, 2023.</p>
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -640,6 +682,9 @@ This version of OVN is no longer supported. Support ended on 3 June, 2023.</p>
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -762,10 +807,10 @@ This version of OVN is no longer supported. Support ended on 3 June, 2023.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/architecture/" title="Architecture"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/releases/" title="Releases"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/releases/25.03/" title="25.03" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/releases/24.09/" title="24.09" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
