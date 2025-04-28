@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.147.0">
+    <meta name="description" content="Documentation website for the OVN project">
+<meta name="author" content="The OVN community">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Changelog v20.12.0 :: OVN project documentation website</title>
+
+    
+    <link href="/css/nucleus.css?1745799907" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1745799907" rel="stylesheet">
+    <link href="/css/hybrid.css?1745799907" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1745799907" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1745799907" rel="stylesheet">
+    <link href="/css/auto-complete.css?1745799907" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1745799907" rel="stylesheet">
+    <link href="/css/theme.css?1745799907" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1745799907" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1745799907" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1745799907"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/en/releases/changelog_v20.12.0/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="/images/ovn-logo.png" alt="OVN, Open Virtual Network"/>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1745799907"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1745799907"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/\/en";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1745799907"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/architecture/" title="Architecture" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/architecture/">
+          <b>1. </b>Architecture
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/releases/" title="Releases" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/en/releases/">
+          <b>2. </b>Releases
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/releases/25.03/" title="25.03" class="dd-item ">
+        <a href="/en/releases/25.03/">
+        25.03
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/releases/24.09/" title="24.09" class="dd-item ">
+        <a href="/en/releases/24.09/">
+        24.09
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/releases/24.03/" title="24.03" class="dd-item ">
+        <a href="/en/releases/24.03/">
+        24.03
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/releases/22.03/" title="22.03" class="dd-item ">
+        <a href="/en/releases/22.03/">
+        22.03
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/releases/all_releases/" title="All Releases" class="dd-item ">
+        <a href="/en/releases/all_releases/">
+        All Releases
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/contributing/" title="Contributing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/contributing/">
+          <b>3. </b>Contributing
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/contributing/website/" title="Contributing to the OVN website" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/contributing/website/">
+          Contributing to the OVN website
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/contributing/code-of-conduct/" title="Code of Conduct" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/contributing/code-of-conduct/">
+          Code of Conduct
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://docs.ovn.org"><i class='fas fa-fw fa-book'></i> Documentation</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/ovn-org/"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="/en/releases/changelog_v20.12.0/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/ovn-org/ovn" data-icon="octicon-star" data-show-count="true" aria-label="Star ovn-org/ovn on GitHub">Star</a>
+
+    
+    <a class="github-button" href="https://github.com/ovn-org/ovn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork ovn-org/ovn on GitHub">Fork</a>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/ovn-website/edit/main/src/content/releases/changelog_v20.12.0.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Changelog v20.12.0
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#changes-from-20090-to-v20120">Changes from 20.09.0 to v20.12.0</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Changelog v20.12.0
+            </h1>
+          
+
+        
+
+
+
+<h3 id="changes-from-20090-to-v20120">Changes from 20.09.0 to v20.12.0</h3>
+<ul>
+<li><a href="https://github.com/ovn-org/ovn/commit/62163bdc4c797fb5a119b98ebb4c852b169f62a3">62163bdc</a> branch 20.12: Set release date for 20.12.0</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/4996556206800479855cc9f14b5f67669195b882">49965562</a> ovn-controller: Always run the I-P OVS Interface change handler.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/ab38ea893727e7e46bcc7c040bf16c318886b6d9">ab38ea89</a> ovn-controller: Use partial map updates for ct zones.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/c0ba3e24b6ab8bd9143b5acc507550c2b8fcfda8">c0ba3e24</a> Add missing documentation for router policy and ecmp sym reply stage.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/73b17bc0bd70bb53e0ab883195e853ba053a05b2">73b17bc0</a> lflow: Relax the condition that detects Load_Balancer hairpin.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f21ca506451dbdbec72d41806619b6f1276882c4">f21ca506</a> northd: Fix datapath swapping in logical flows.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/42e81c7df95a75fd3082e2374b6b03449a6d624e">42e81c7d</a> chassis: Do not try to guess system-id changes.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/17c7e82dc1a8a33998a9ab7aae0805e674da0e8d">17c7e82d</a> Prepare for 20.12.0.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/6e3d69e6b5153e26c869a03ec7dd1aaa40488005">6e3d69e6</a> tests: Fix test &ldquo;ovn &ndash; Superseding ACLs with conjunction&rdquo;.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/e6d5e29eb25e9a5b8c0f79d9c43787007bc114bb">e6d5e29e</a> tests: Remove unused system-userspace-packet-type-aware.at.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/0879a0aa9f332bdc689769a1bc2f156f1c3149a5">0879a0aa</a> tests: Add ofctl_strip_all() to filter OVS flow outputs.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/b468c2c1bd4732a6021975350d044d2a0bb36d4c">b468c2c1</a> northd: Use _add_unique() functions for all multicast related flows.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5c2d311b8b7b4d5c3a619de72be6a433aa4c44db">5c2d311b</a> northd: Fix iteration over vip backends.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/44c323a077af3709a111a6156850fd77f9302f5e">44c323a0</a> northd: Config option to enable use of Logical Datapath Groups.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/bfed224006750bfda6607da208096f2fbd5b5c98">bfed2240</a> northd: Add support for Logical Datapath Groups.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/8eb72802a94c879fea3744b1053e98b8abe2bb2b">8eb72802</a> utilities: Add support for Logical Datapath Groups.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/4b946b366c4ca4157ad24d17598ac67b96503074">4b946b36</a> controller: Add support for Logical Datapath Groups.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/9cfff277cebb186c4803e5192e28c731fec534ae">9cfff277</a> ovn-sb.ovsschema: Add Logical Datapath Groups.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/8787414b17a9f479e288af6faf8e6b8eaa44d38d">8787414b</a> tests: Sort flow and database dumps.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/0fea4d96b4fafbbf9213277d6e8852e876ed9508">0fea4d96</a> vtep tests: Fix the failing test - ovn-controller-vtep - binding 1.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/66417bf119c60fd0f1b4ac620439395402d7e28b">66417bf1</a> ofctrl: Wait for OVS updates to be processed before updating cur_cfg.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/58e5d32b011b1175643578e70e5aa29b56e256c0">58e5d32b</a> ovn-controller: Fix nb_cfg update with monitor_cond_change in flight.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/adff089b7347f185090b5963570b66488a7548e1">adff089b</a> pinctrl.c: Fix always_learn_from_arp_request for self created MAC_Bindings.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/ecdd790ecbffc446fb67031dbfecc94b3afcf804">ecdd790e</a> CI: Add github actions workflow.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/fdf295d5eb3af74ffb0c5ef950d6b1ad3902599a">fdf295d5</a> pinctrl: Honor always_learn_from_arp_request for self created MAC_Bindings.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5d63e034f8814a43d6ff9bc4e005ea226993820a">5d63e034</a> tests: Enable memory leak checking when running with AddressSanitizer.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/36dc71bea5175901de98f78895880b7a4184072c">36dc71be</a> ovn-controller-vtep: Fix leak of multicast macs.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/a0a9ee9fe2c14517ba2be109a05a38016203ae0c">a0a9ee9f</a> pinctrl: Fix race condition when accessing br_int_name.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2e28b8e5db89aa876ce5b7666df6f63be1eef4c9">2e28b8e5</a> pinctrl: Fix segfault seen when creating mac_binding for local GARPs.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/0b731c38e6703db8c48915e02ca7c3bb13c87b87">0b731c38</a> ovn-nbctl: Fix double-free of parsed commands on error path.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2a076386cd526d116d970f74ca63810541bef4de">2a076386</a> utilities: Free argv returned by ovs_cmdl_env_parse_all().</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/8fb54e16378c1b130d2e0e84bea6e0b80521cae3">8fb54e16</a> ovn-nbctl: Cleanup allocated memory to keep valgrind happy.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1447f1d405a812fa363b2ed52a64fae15a0f66cf">1447f1d4</a> ovn-nbctl: Fix memory leak when parsing LR policy options.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2ba8b950ad1497e52eb46086c928f0124b8bc357">2ba8b950</a> binding: Cleanup gateway port local binding in runtime data.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/53f60c7ab742cba0b3dd84b73658e0bbd44ec145">53f60c7a</a> Clear port binding flows when datapath CT zone changes.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/880dca99eaf73db7e783999c29386d03c82093bf">880dca99</a> northd: Enhance the implementation of ACL log meters (pre-ddlog merge).</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/4799f73fd6edbab01f33ffc181b12f24f55b2ac7">4799f73f</a> Fix OVN update issue when ovn-controller is updated first from 20.06 to 20.09.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/aa34b24e9b953422a8916a87d4b30ee8ae88b894">aa34b24e</a> controller: Allow pinctrl thread to handle packet-ins when version mismatch with northd.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/7ab0866081ed6c2119f1454714c3b4e9e35b9a87">7ab08660</a> ovs-macros: Port OVS_PAUSE_TEST support from OpenvSwitch.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f3b8cbb2f2c55f9debec56ff881190de7e9b2d63">f3b8cbb2</a> ovn-nbctl: Fix leak of array of new policies.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/47385c83f865306b5c85a61d530e2a9383640ceb">47385c83</a> ovn-nbctl: Fix IP leak on failure of lr policy addition.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/360b5bf20f23eb103edf86f3b13ab0a5fe0490db">360b5bf2</a> ovn-nbctl: Fix IP leak on router NAT addition failure.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f9e449fce78b2e0682cef53ba09cade492b4d260">f9e449fc</a> ovn-nbctl: Fix leak of IPs while configuring NAT.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/61d209bbf2abacb71cdb63555fe1fe6b0020daf3">61d209bb</a> actions: Fix leak of dynamic string on fwd group encoding failure.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/44f41669812c633bc180074e6d91e0d0f3a781a1">44f41669</a> northd: Fix leak of dynamic string for fwd group ports.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/6f4353df304cdf8e32afb32bf243599b99851d5a">6f4353df</a> ovn-nbctl: Fix error leak on duplicated switch port.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/11bd9d337b670f5a3fe3c6abb2dd932039a6518d">11bd9d33</a> ovn-controller: Fix leak of pending ct zones.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/79b946da70442ab2610c47752555dffbbce490a5">79b946da</a> pinctrl: Fix leak of DNS cache records.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/d058d9a08572520a4cb4ec4a4c6db5afdb35d515">d058d9a0</a> ofctrl: Fix leak of meter mod bands.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/18141dbcb023df9cac8c9a4d6aae63c77d8acc69">18141dbc</a> actions: Fix leak of select group members.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/9443464f7335cc8b8ec6299e70a5ad6266bef4c8">9443464f</a> actions: Fix leak of child ports in fwd group.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/3b1affc5b1b0fecb332a21221f4988a99c4e693f">3b1affc5</a> test-ovn: Fix expression leak.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/382af3deaaf156fd2d77acd720c8775547638ba7">382af3de</a> northd: Fix leaks of strings while formatting ecmp flows.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1dd27ea7aea40122c1edbff845e14abaa70c0413">1dd27ea7</a> Provide the option to pin ovn-controller and ovn-northd to a specific version.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/4da6881b6431d7101ea48518e3c071cb7ad27313">4da6881b</a> sbctl: Add Load Balancer support for vflows option.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/287605267f64daed845828d5f11b473f0cc98f33">28760526</a> ovn-detrace: Add SB Load Balancer cookier handler.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/3357ab14076f0a7e91fe690538b4315c7219de60">3357ab14</a> northd: Make use of new hairpin actions.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/fc219d84b667a48760c62e41dbc25fcb5748d41a">fc219d84</a> actions: Add new actions chk_lb_hairpin, chk_lb_hairpin_reply and ct_snat_to_vip.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/7da8145d9d4743b3d15f0d7f51b201e7ba87fe63">7da8145d</a> controller: Add load balancer hairpin OF flows.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f1119c1257652702e0ee88cf634f2ee19cc92c44">f1119c12</a> northd: Refactor load balancer vip parsing.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/42e694f03c187137852c2d7349daa0541a4f5e62">42e694f0</a> Add new table Load_Balancer in Southbound database.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/71e2fd244fcaf249cbf513124fdc7dbdb2a1a770">71e2fd24</a> ovn-controller: Propagate nb_cfg to the local OVS DB.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/515ef01f0a9b98eaa17f8ed0cb3d1597720333f4">515ef01f</a> northd: Fix leak of lflow scratchpads.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f9cab11d5fabe2ae321a3b4bad5972b61df958c0">f9cab11d</a> Allow explicit setting of the SNAT zone on a gateway router.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/e14b52a9f6ff455ccc0c8e6616ab474baa14643f">e14b52a9</a> tests: Improve &ldquo;ARP/ND request broadcast limiting&rdquo; test.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/909cf043c5738c3bab9fbf90686fe481771b55ad">909cf043</a> tests: Allow more arguments to wait_for_row_count(), wait_column().</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5ca3743038db15e562a4f330cc7cb0e1ca48a966">5ca37430</a> Use portable &ldquo;test a = b&rdquo;, not &ldquo;test a == b&rdquo;.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/534a0e5f90924555c4d2b6835703c0b5cde42b57">534a0e5f</a> ovn-northd: Reorganize lrouter flow processing.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1b240aefbafdf65155d3c2ad52c96bf39d31fab9">1b240aef</a> ovn-northd: migrate input port security flows to converged build.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/9893d3892ca14268eabc68f4d1a64aecbb1d27cf">9893d389</a> ovn-northd: Move lswitch admission control to a helper function.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/b16c7393fb27c18976f054f4cd56977c1a3eb0a0">b16c7393</a> ovn-northd: migrate build_fwd_group_lflows to build_converged.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/6285c6f144262bcb0eb1f915b73d387e43ba969f">6285c6f1</a> ovn-northd: move pre-acl and acl lswitch processing to a function.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/ddf9f1d7131908fafb6fd6e7e2a5a422e585d0e0">ddf9f1d7</a> ovn-northd: reorganize processing of lflows</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1f71a32d5ab617f274532b67b4a1d613de6bf7dc">1f71a32d</a> northd: Fix lb_action when there are no active backends for lb health_check.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/ed525538ad4bfbbc7b17b3a096b471cdcef153e3">ed525538</a> actions: Fix issues with fwd_group action.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/bb19811319f01a8dacb8a9716d5d7140f591cd54">bb198113</a> ovn-sb: Fix spelling error in documentation.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/36a8745de8595bd21eae3bd379321e5926f01c5f">36a8745d</a> Add support for DHCP options 28 (Broadcast Address)</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/c21c8c4cd008cf31244203d43f926e6b3c37316e">c21c8c4c</a> ovn-util: Remove redundant struct v46_ip.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/7e3f3a983cd6e33f592b1e426abe7b9a42073606">7e3f3a98</a> AUTHORS: Add Renat Nurgaliyev.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1e59feea933610b28fd4442243162ce35595cfee">1e59feea</a> northd: Don&rsquo;t poll ovsdb before the connection is fully established</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/c29221d9322a34501cb74e255023827220c23a8b">c29221d9</a> Allow VLAN traffic when LS:vlan-passthru=true</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/cd3c0e1c2ab3a230965987e6c2be6cf8218226f6">cd3c0e1c</a> ovn-nbctl: Make &ndash;wait=hv wait for southbound database in corner case.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/d6594a4695084e1b0f4fb3170547942876d3a81a">d6594a46</a> ovn.at: Make some of the tests more predictable.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/c108f23e1c10910031f9409b79001d001aae0c8f">c108f23e</a> Documentation: Document the system testsuites.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/b351688ec4fbfe1425f607f691ef17914cf5ae35">b351688e</a> tests: Improve checking in &ldquo;test unixctl&rdquo; test.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5fedcce6c3e03f1ebf6624163338aa8a29cfb7df">5fedcce6</a> tests: Remove explicit timeouts from most utility invocations.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/32dc3b7b7738d4577b8bc78b45163820e5911453">32dc3b7b</a> northd: Move functions from ovn-northd.c into ovn-util.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/cfb607af3c09458feef433aa6ed458ac73a5d13d">cfb607af</a> ovn-l7: Move ipv6_addr_is_routable_multicast() into new .c file.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/e076dd98b782c6a7c1d27417104b6149b0b0ab5b">e076dd98</a> Documentation: Update repo information and prerequisites.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/e1dc615932acf3402906b1e3c5119e8a134d39e1">e1dc6159</a> tests: Improve &ldquo;reject ACL&rdquo; test.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/c359b854c42dac31d9274189139e7e73a47f1ea6">c359b854</a> tests: Improve &ldquo;check allowed/disallowed external dnat&hellip;&rdquo; test.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/948acd66ce3c4cf23876e6cfdedf5a215e7bc050">948acd66</a> tests: More careful checking.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/729b6b9a5c2765f08a9a1fc6900c706ab5f21aab">729b6b9a</a> tests: Fix port numbering in &ldquo;1 LR with distributed gateway port&rdquo;.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/cc339e71804a0908ce77522f71f9ee70b193b413">cc339e71</a> tests: Improve &ldquo;ipam&rdquo; test.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/27d34b15bc4c7f71871605794ee607a1c38729d6">27d34b15</a> tests: Improve &ldquo;dhcpv4 : 1 HV, 2 LS, 2 LSPs/LS&rdquo;.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/8c6a5bc21847dab8ccbe18ab1e4b563ddca13379">8c6a5bc2</a> ovn-northd: Limit self originated ARP/ND broadcast domain.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/a2b88dc5136507e727e4bcdc4bf6fde559f519a9">a2b88dc5</a> pinctrl: Directly update MAC_Bindings created by self originated GARPs.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/b38e10f4b1bff788ebe6390e941532be29189ab7">b38e10f4</a> tests: Miscellaneous improvements.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/732b0759f484ff173afb498ff90c54be1b4b0dc5">732b0759</a> tests: Add some more network helper functions.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/659b1871a03afd50e74b4a2a1a6d55cecdca455b">659b1871</a> tests: Factor out ip_to_hex() common function.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f10b39801a7fb541f22637aab0aab8fd44843b87">f10b3980</a> tests: Spelling fixes in test names.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/004e9614d0a4f57436ffebf064aa003ab42563f8">004e9614</a> tests: Fix simple typos in tests.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/11a41d8af259f4403f31db634030aba55d7fa43f">11a41d8a</a> tests: Remove spurious check for HAVE_PYTHON.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/14b7d6eccabe2abf4e034df0b07bc3472ab38452">14b7d6ec</a> tests: Improve &ldquo;Load balancer health check and Service Monitor sync&rdquo;.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/cba034f4153fe8de77708dbd287e332d2da5f602">cba034f4</a> tests: Rewrite &ldquo;nb_cfg timestamp&rdquo; test.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/7db7982e8e3b8440e1786b1dba487c4eea572983">7db7982e</a> tests: Improve &ldquo;ovn &ndash; dhcpv4 : 1 HV, 2 LS, 2 LSPs/LS&rdquo; test.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/31bbc6ff13f4fcff7267752690e01e554c9b8af3">31bbc6ff</a> tests: Remove broken &ldquo;dhcpv4 : 1 HV, 2 LS, 2 LSP/LS&rdquo; bits.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5a6b5ce79c46c1dcc5d38bd4e32f8dc2ec55dd31">5a6b5ce7</a> tests: Remove incorrect check in &ldquo;ovn &ndash; external logical port&rdquo;</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/bc99518b1615cf56dd6c7ba7bdaf5ad8aef44a0b">bc99518b</a> tests: Comment out pointless bits of &ldquo;1 LR with HA distributed&hellip;&rdquo; test.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/508ba882d30b1bbea389343514acbbebb2fa7098">508ba882</a> tests: Improve logging in test framework.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/fb8146c1e2f2077c5d27df7b507303b60d67d5f3">fb8146c1</a> tests: Add some more &ldquo;wait&quot;s for ovn-northd synchronization.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/4afe409e95c72187a8f7a755fa19b17237d14818">4afe409e</a> tests: Introduce new testing helpers.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2870efff89337298ac1a56f892e63def331a162f">2870efff</a> tests: Drop support for glibc before version 2.11.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/24302dc5cad03a3618a4db92a203236789494ffa">24302dc5</a> ovn-detrace: Improve DB connection error messages.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/fcdac56feb20203e1bcc8e960624a8bdd9162cc7">fcdac56f</a> ovn-detrace: Only decode br-int OVS interfaces.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/b7c091ade02e934cdeb5f4bfa3f326358beae954">b7c091ad</a> tests: Only use POSIX-compliant comm flags.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/7901ef3e6485382d4062f6afb168d0c53fdff223">7901ef3e</a> pinctrl: Fix memory leak when handling empty lb backends.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1b7fe348cb63ca2079dcd386c06bbb69a9a16fbb">1b7fe348</a> pinctrl: Fix memory leak in controller_event_run().</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/3044132261d3927f96ac286e76c7670d6f357ff5">30441322</a> northd: Enhance implementation of port tunnel key requests.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/35a8d59909db3fd4b3f3a3fe37b3be5384df512d">35a8d599</a> northd: Enhance implementation of datapath tunnel key requests.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/7e2c35586f9fda3f98221afb8a7114df0ffbced1">7e2c3558</a> northd: Use address set for service monitor MAC.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/275cc245e581484afd4ee122171ea152891d3419">275cc245</a> northd: Don&rsquo;t redundantly set Port_Binding options.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/faf372b58c1d0035fe8ecd02cf2649bc9814ddc5">faf372b5</a> northd: Improve comments.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/10f137d3cc195a341e1daa869b5b805ec05d55e2">10f137d3</a> northd: Add missing space in log message.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/425cb0b9e76695130229d0a4a8ef5f0d7b6c8098">425cb0b9</a> northd: Count mask length and priority correctly for IPv6 addresses.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/76dbbd6933b8d416ce7d493fa94d968522f85053">76dbbd69</a> update NEWS file with iPXE support</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/9cbd79c9ebbd0b6d0ea08c2cc70e234e56bb0415">9cbd79c9</a> dhcp: add iPXE support to OVN</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f77db41dfdf900442139c111fe267eb9af696102">f77db41d</a> Remove support for obsolete redirect-chassis way to configure gateways.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5286933801ba76c70aefb7760102384d91768a01">52869338</a> ovn-sbctl: Sort flows in &ldquo;dump-flows&rdquo; output by datapath name.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/db2aa266133179f37f97b508d53c082ccf14f641">db2aa266</a> ovn-nbctl, ovn-sbctl: Add convenient names for more tables.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/aade361c7ebef294dfab2009d1d7b76c13c49088">aade361c</a> ovn-trace: Make the &ldquo;datapath&rdquo; command-line argument optional.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/d30b4233e695ad81c3cc852120127505de5b1cbf">d30b4233</a> ovn-ic: Improve comments for database transactions.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2064b9616f0e9e70efcd2bf62dad89364ec429ba">2064b961</a> Makefile: Remove duplicated -I compiler flags.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/3e3de6cb4ee342aea1d8663c5fd9e28ef9b4f650">3e3de6cb</a> Fix compilation error due to recent OVS commit.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/b7b393c3459b58cb775b6ddb7e9f5cae386d1157">b7b393c3</a> Makefile: Ensure OVN include directories come before OVS ones.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/8e7a0ecfbd3c61ec8166b257812c8a9b80debc3e">8e7a0ecf</a> ovn-sb: Document details of HA_Chassis_Group column ref_chassis.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/aca79715a98f6c9f19377cd135b0560227f1aedf">aca79715</a> ovn-sb: Update Service_Monitor documentation.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/826973ca56dcc0a79e090682d3c20d403c367685">826973ca</a> ovn-sb: Correct documentation about virtual_parent column.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/68940d9cc332bc0cd7fe89fc90a6ba93a7dba377">68940d9c</a> ovn-nb: Better document timestamp columns.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/dc0811c58c51d96f1a4c9793c2a9819e1806ea6a">dc0811c5</a> ovn-nb: Improve documentation of health checks.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f45646f435ab248554a925b4a1d0c54617604513">f45646f4</a> ovn-nb, ovn-sb: Document that LSPs and LRPs must not share names.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2291b176d578123209d69a3d5868c618de18f238">2291b176</a> ovn-nb: Better document dynamic addresses.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1ec3f51ff320ed17e5f268851c38eaa308d09c3f">1ec3f51f</a> ovn-northd: Handle IPv6 addresses with prefixes for port security.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/7dad8ad7f9676c99fa9981a6c114d7707763288c">7dad8ad7</a> ovn-ic: Fix route hash.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1f915da95dc725131b7df094d494af9fda88ea92">1f915da9</a> ovn-controller: Monitor chassis_private by chassis name.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/358d162c071cfb56ce9fd113ccc5e3b599022fe1">358d162c</a> Use the correct command name in ovn-nbctl &ndash;help</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/8e227bfc7280419433c8f1bc46607492ef2992cc">8e227bfc</a> ovn-trace: Fix the typo from &rsquo;lookback&rsquo; to &rsquo;loopback'.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/29b3fd650b99c0928951c4d537176c4924243cc4">29b3fd65</a> ovn-trace: Handle IPv6 packets for tcp_reset action.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/4e19493b3d4eb549fc52d6fb3cf004847b64d2de">4e19493b</a> ovn-northd: Optimize logical flow generation for reject ACLs.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/64f8c9e9ff1ce26d06831995514cf66319f16b34">64f8c9e9</a> actions: Add a new OVN action - reject {}.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/faa44a0c60a376d1f877459d5029da4659eadcbc">faa44a0c</a> controller: IPv6 Prefix-Delegation: introduce RENEW/REBIND msg support</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/986b3d5e4ad6f05245d021ba699c957246294a22">986b3d5e</a> ofctrl.c: Add a predictable resolution for conflicting flow actions.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/33c15c145988daa6172928dc870f3a0225515f50">33c15c14</a> ofctrl.c: Always log the most recent flow changes.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/7c59eb794a958bb177da71d5fcf196254b83bb15">7c59eb79</a> tests: Use ovn-nbctl &ndash;wait=hv for DHCP option tests.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/30fa6887f5ea9be57fb98c0a0b5d679293b0ddda">30fa6887</a> ovn-trace: Don&rsquo;t assert for next(stage=ingress,..).</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/4ab6b79a81b15d727b0a0f617f267d3169f7b486">4ab6b79a</a> northd: Use &rsquo;enum ovn_stage&rsquo; for the table value in the &rsquo;next&rsquo; OVN action.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/107bb25029350bd0f7dfeeb0ef3053adbd504e3e">107bb250</a> ofctrl.c: Simplify active desired flow selection.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/e49ce9a33f38f29c44e3c30afcc189b5f6a9ef8e">e49ce9a3</a> ofctrl.c: Do not change flow ordering when merging opposite changes.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/dadae4f800ccb1f2759378f0bd804dd002e31605">dadae4f8</a> ofctrl.c: Only merge actions for conjunctive flows.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/692e67fb1cd4be0a4bb5e41848f70d44fc72f78f">692e67fb</a> Correct to OVN, not OVS in README.rst.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/7892256082c7bccfb0f0a8982da950b8a65e5cac">78922560</a> vtep-controller: extract mac address in building umr</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/7cab7bd1268ba67429954da4f73de91090acf779">7cab7bd1</a> ofctrl.c: Avoid repeatedly linking an installed flow and a desired flow.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/97778ab3e422ac071faa67f9f477fd54977e9c04">97778ab3</a> ovn-northd: Add localnet ports to Multicast_Groups created by IGMP_Group.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/9d2e8d32fb9865513b70408a665184a67564390d">9d2e8d32</a> ofctrl.c: Fix duplicated flow handling in I-P while merging opposite changes.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/87876c2c10c011da720141db1188cd2cd2560e39">87876c2c</a> northd: properly reconfigure ipam when subnet is changed</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/46b23163a54abb8cef6ae12585985045735aff45">46b23163</a> lflow.c: Refactor function convert_match_to_expr.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/59a1cb2eb1e53a7fcbfe091f5e30db86f569ec9d">59a1cb2e</a> Set release date of 20.09.0</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/65d72206ffa88592856c6dc99ba1ed085f9b3377">65d72206</a> ovn-northd: Refactor processing of SNAT IPs.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/74a7af216272b28fbd2cc1b80085851b9389e57f">74a7af21</a> ovn-northd: Refactor parsing of *_force_snat_ip.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/20a20439219493f27eb222617f045ba54c95ebfc">20a20439</a> controller: Check for tunnel change in multi-vtep case is incorrect</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/da0a96008616b81682aabe32eeba29974459ea4d">da0a9600</a> ovn-nbctl: add &ndash;may-exist/&ndash;if-exists options for policy routing</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/ce034ef0f26f8e33e08e82f6453974a5e1a9950d">ce034ef0</a> binding: fix localnet QoS configuration after I-P</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/e8701206fd48d56468fa3ec49d7ea2ced3cee29b">e8701206</a> controller: binding: Ignore changes to OVS interfaces which doesn&rsquo;t belong to int bridge.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1559def2505a962e668fe7ad22b329012e2f81c9">1559def2</a> binding: Rely on qos_map for consider_localnet_lport.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/0bfa980ab087c09c538c7bbcac2c5f2c15019d36">0bfa980a</a> ovn-northd: move ipv6 input flows out of build_lrouter_flows()</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f0aa5a9dd450b44f434fd31b1d10297f89f7f992">f0aa5a9d</a> ovn-northd: move dhcpv6 reply in build_lrouter_flows() to a function</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/8158898d09f65b18415221f382b9b177b03c3f5e">8158898d</a> ovn-northd: Move out misc build_lrouter_flows() local deny rules into a function</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2cc24dc72df28f14fec1b5c1be29dfee3331b80e">2cc24dc7</a> ovn-northd: Move NAT ARP/ND resolution to separate functions.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/802f9275acb40343b5e78170e71550b20853a318">802f9275</a> ovn-northd: Drop IP packets destined to router owned IPs (after NAT).</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/d62d09add3c279e52aa58a0fa8a1ed081be52855">d62d09ad</a> inc-proc: Rename EN_VALID to EN_UNCHANGED</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5478caa48c9497f6603e04b1c09d3df1c2b64e01">5478caa4</a> ovn-northd: Fix router policy pkt mark over flow if the value is greater than signed int.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/194778dcae0ce1738f63c5a9fa65766a65708e3f">194778dc</a> debian/changelog: Fix data format</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5ca2e2f59784019332118f16d3d3ca43f4493823">5ca2e2f5</a> lflow.c: Release ref_lflow_node as soon as it is not needed.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5b0c2dc286770663656befb8080b309869845c4a">5b0c2dc2</a> lflow.c: Avoid adding redundant resource refs for port-bindings.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/4d0039ff7a50ee2988d1acd84c70f693de9aa61d">4d0039ff</a> build: Fix broken check-lcov target.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/4c392c1f80803e78457cac6d706442728602007b">4c392c1f</a> lflow.c: Rename function convert_acts_to_expr to convert_match_to_expr.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/b07f1bc3d068e231e40840b0d977bd57158987fd">b07f1bc3</a> Add VXLAN support for non-VTEP datapath bindings</li>
+</ul>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/en/architecture/" title="Architecture"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/en/releases/25.03/" title="25.03" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1745799907"></script>
+    <script src="/js/perfect-scrollbar.min.js?1745799907"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1745799907"></script>
+    <script src="/js/jquery.sticky.js?1745799907"></script>
+    <script src="/js/featherlight.min.js?1745799907"></script>
+    <script src="/js/highlight.pack.js?1745799907"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1745799907"></script>
+    <script src="/js/learn.js?1745799907"></script>
+    <script src="/js/hugo-learn.js?1745799907"></script>
+
+    <link href="/mermaid/mermaid.css?1745799907" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1745799907"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
