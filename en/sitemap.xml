@@ -16,6 +16,8 @@
     <loc>/en/contributing/</loc>
     <lastmod>2020-02-19T20:24:34+01:00</lastmod>
   </url><url>
+    <loc>/en/releases/26.03/</loc>
+  </url><url>
     <loc>/en/releases/25.09/</loc>
   </url><url>
     <loc>/en/releases/25.03/</loc>
@@ -31,7 +33,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="/en/"
                 />
   </url><url>
@@ -45,7 +47,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="/en/categories/"
                 />
   </url><url>
@@ -57,7 +59,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="/en/tags/"
                 />
   </url>
