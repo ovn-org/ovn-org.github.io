@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.160.1">
+    <meta name="description" content="Documentation website for the OVN project">
+<meta name="author" content="The OVN community">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Changelog v25.03.3 :: OVN project documentation website</title>
+
+    
+    <link href="/css/nucleus.css?1776687184" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1776687184" rel="stylesheet">
+    <link href="/css/hybrid.css?1776687184" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1776687184" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1776687184" rel="stylesheet">
+    <link href="/css/auto-complete.css?1776687184" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1776687184" rel="stylesheet">
+    <link href="/css/theme.css?1776687184" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1776687184" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1776687184" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1776687184"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/en/releases/changelog_v25.03.3/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="/images/ovn-logo.png" alt="OVN, Open Virtual Network"/>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1776687184"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1776687184"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/\/en";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1776687184"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/architecture/" title="Architecture" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/architecture/">
+          <b>1. </b>Architecture
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/releases/" title="Releases" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/en/releases/">
+          <b>2. </b>Releases
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/releases/26.03/" title="26.03" class="dd-item ">
+        <a href="/en/releases/26.03/">
+        26.03
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/releases/25.09/" title="25.09" class="dd-item ">
+        <a href="/en/releases/25.09/">
+        25.09
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/releases/24.03/" title="24.03" class="dd-item ">
+        <a href="/en/releases/24.03/">
+        24.03
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/en/releases/all_releases/" title="All Releases" class="dd-item ">
+        <a href="/en/releases/all_releases/">
+        All Releases
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/contributing/" title="Contributing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/contributing/">
+          <b>3. </b>Contributing
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/contributing/website/" title="Contributing to the OVN website" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/contributing/website/">
+          Contributing to the OVN website
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/en/contributing/code-of-conduct/" title="Code of Conduct" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/contributing/code-of-conduct/">
+          Code of Conduct
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://docs.ovn.org"><i class='fas fa-fw fa-book'></i> Documentation</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/ovn-org/"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="/en/releases/changelog_v25.03.3/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/ovn-org/ovn" data-icon="octicon-star" data-show-count="true" aria-label="Star ovn-org/ovn on GitHub">Star</a>
+
+    
+    <a class="github-button" href="https://github.com/ovn-org/ovn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork ovn-org/ovn on GitHub">Fork</a>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/ovn-website/edit/main/src/content/releases/changelog_v25.03.3.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Changelog v25.03.3
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#changes-from-v25032-to-v25033">Changes from v25.03.2 to v25.03.3</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Changelog v25.03.3
+            </h1>
+          
+
+        
+
+
+
+<h3 id="changes-from-v25032-to-v25033">Changes from v25.03.2 to v25.03.3</h3>
+<ul>
+<li><a href="https://github.com/ovn-org/ovn/commit/f6031b7e0319e2747d35bc70be3be9b7c7354cbb">f6031b7e</a> Set release date for 25.03.3.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2240815a919e46c958e22091bf10af34d7fccf1c">2240815a</a> pinctrl: Make sure the BFD packet contains correct amount of data.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f2f840df0f2fc52cacd96c928587c3c1a603c306">f2f840df</a> pinctrl: Unify handling of DHCPv6 options.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/609ef5e7cc81c1d01eed1b0b743bc3f2b1ba92c8">609ef5e7</a> pinctrl: Limit the IP packet size to buffer size for ICMP Need Frag.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/cb962cdd3dec5d91fe566c4fe200df636deecd1b">cb962cdd</a> controller: Make sure we free the route_data during change check.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/248eb277718b4f683ead8027d85e46fd4ae2cf8c">248eb277</a> northd: Don&rsquo;t forward IP multicast to routers without IGMP relay.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/3565016d2289adb1e990f6666ec8760e5193c8b9">3565016d</a> controller: Fix bfd up too early after unexpected reboot.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/eace8f301cff079255a78ac300764640f117abff">eace8f30</a> ci: Bump ovn-fake-multinode tag.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/b2dde4226685fa64cf11f5a23311740e8a64a5b3">b2dde422</a> Modified the CI to use ovn-fake-multinode v0.3.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/80d5c61a0ee3dfb0dcb4ca2f307d3ee5c56bc4bb">80d5c61a</a> .ci: ovn-fake-multinode-tests: Test upgrades from the latest LTS (24.03).</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/92ae411d0b4330596ca76a3b0bb77798ac7a4b71">92ae411d</a> tests: Stabilize localnet_learn_fdb packet-in count.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2d90bb49fc9efb2425c1de3ca09f76b273051f5d">2d90bb49</a> northd: Fix requested-tnl-key not reassigned after conflict resolved by deletion.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/ed4799b814133b76ab6dafd5e66ec638c13c322a">ed4799b8</a> northd: Introduce disable_garp_rarp option for logical_router table.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/a42ab4da6f37fa5267b51f097e10e3824d1cb1bb">a42ab4da</a> northd: Fix L3 EVPN when remote VTEP is not L2 adjacent.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/3b62bb96eb90dd0ff32edd07a4182b510f48933d">3b62bb96</a> northd: Learned route use nexthop address family for outport IP selection.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/c7602dfb8f6394876de6a05d1c45237b8fc64b7a">c7602dfb</a> northd: Use nexthop address family for ECMP symmetric reply flows.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/398785ae19659ed62949bf369da0a23b63c0c518">398785ae</a> northd: Use nexthop address family in find_static_route_outport.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/a13cbe7be9094fd594a48f4b36ae8384a52786fa">a13cbe7b</a> controller: Fix an assertion failure with multiple mirror types.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/c60341513c98136d1ae183d6ee4834fd7072edf6">c6034151</a> pinctrl: Update in-memory svc monitor structures on SB changes.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/33853c4a1f2bd4464101e4265e3163395a0abc84">33853c4a</a> rhel: Make version displayed to the user customizable.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/75456fa692bc9d302f9c15de5c4a9e88416b5dc6">75456fa6</a> ci: Bump action versions to support Node 24.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/d221ed5ee59064ca05abc34a1299eda6a14bb2bf">d221ed5e</a> northd: Drop traffic for ECMP group with &ldquo;discard&rdquo; route.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/52c458f9a2f3bc5f939a61a24ed4185944346c65">52c458f9</a> Add Dmitry Mityugov to AUTHORS.rst.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1f4442ba5bc1a1ac9d946c4b8427681d47c79d26">1f4442ba</a> northd: Fix a discarded qualifer warning.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/c49070e061ac68d1a8d8af847dd9e584e07b0579">c49070e0</a> mac-cache: Only refresh mac bindings for chassis local ports.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/172ae17bd4c50406ddeda6f410f2d9fc335b21fa">172ae17b</a> statctrl: Remove handler specific parameters.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/ba30df471373626bc188970643822e24a54ba234">ba30df47</a> ic: Fix infinite route learning with same prefix and nexthop.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/40a84428fb2b1cab270ad6d509f9341c62c12803">40a84428</a> pinctrl: Process packets even when the lock is taken.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/703dfcfd78eace6f83a52e9108b8491faf35031e">703dfcfd</a> tests: Fix two &ldquo;BGP learned routes&rdquo; tests.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/fe6850fb3c3b28005d8e0da55fa0ec587802273b">fe6850fb</a> tests: Fix multinode test using wrong system-id.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1c81129203cc0831071bccb37faa8eb93bab1c05">1c811292</a> ovs: Update submodule to v3.5.3.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/0e0efd09f8bc785516be0172eb615848b9d8583a">0e0efd09</a> northd: Do not fully parse LSP port security.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2fe98534a876c71f2cae165b5b6d70ece5d4ca80">2fe98534</a> tests: Sort output in flaky s390x tests.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/66b6acf129a58a09693a85fbe58752d51c5f4fb4">66b6acf1</a> northd: Remove redundant engine node input.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/f8c8b83701f515f14d77d05154eed8f59adc0021">f8c8b837</a> controller: ACL correctly handles fragmented traffic.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/04ab770ea9bfb25c0d70667991372f9207c30c58">04ab770e</a> controller: Add option to make port security compliant with RFC 9568.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/ff80db5fa11a2ed0ebcb46faad10b4579be5ff64">ff80db5f</a> ovn-util: Add helper for parsing and working with masked MACs.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/9f9eb9e6d15f869eaafc731dc0a61c987981a443">9f9eb9e6</a> lflow: Change the port security parsing log from INFO to WARN.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/15ef9a08f37fe218462f2c9c23c12947f4dfeff8">15ef9a08</a> northd: Do not forward unknown ether type to router ports.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/49496ed80fda1bafdcfc10acbe015f936077738e">49496ed8</a> inc-proc-eng: Assert that node states are in the right range.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/86075a018c394bcf53d2320f5c5dd624bf1a4668">86075a01</a> northd: Commit ECMP symmetric egress traffic earlier.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5e7b66aaad8269310f4e9f27f4501ad072be828b">5e7b66aa</a> controller: Prevent crash when SB_Global is empty.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/0df31be8b9e4f2ed304767536d0240264f7459fc">0df31be8</a> tests: Fix flaky &lsquo;Remote chassis flood flows&rsquo; test.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/d20cdcda017c121c58852d06074078aa013208e8">d20cdcda</a> tests: Don&rsquo;t use potentially unreachable IPs for IPFIX.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/664e6479bd14de7aa49fcdc6b0fe6d90f14635e1">664e6479</a> ci: Increase the disk size for CirrusCI VM.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/b3d1da26e7b9d57e1263e4ca31156f89349c8b39">b3d1da26</a> tests: Use <code>command -v</code> instead of <code>which</code>.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/3629cc450531f2d33584f0746a1b6f488c2ba6bc">3629cc45</a> tests: Use find_command to check for nft command.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5db58e70c9ca90b4fa7f1c966a0c72bc41b65efd">5db58e70</a> lflow: Add missing match on eth.src for ND port security.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5de4a635ee67702802582879097f4ba2b669ff83">5de4a635</a> northd: Do not send ICMP packet too big for multicast traffic.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/ea16734271e4c435996d4fdab4786600009da208">ea167342</a> ci: ovn-kubernetes: Consolidate to use ovn-kube&rsquo;s Dockerfile.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/9a5278378df38559cc478fbd47284785b0253cbb">9a527837</a> lflow: Enable default drop for ND NS in with port security enabled.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/153440f0ccecb399566388233a383e49540f945a">153440f0</a> northd: Improvements of ICMP TTL exceeded behavior.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/014dad66e89956b4c2456972583f033ef141b125">014dad66</a> controller: Avoid adv the same ip prefix and priority.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/605bccad07caafd3c91f4fd2bf0388a0154ede4e">605bccad</a> tests: Fix &ldquo;ACL log_related&rdquo; system-test.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/50950f6c93a966d7d6e7115f7a9a7a8904c97eeb">50950f6c</a> northd: Fix TCP connection in stateless nat.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/428d7be2e74a2ca3f6fca5864b269eedee9e1756">428d7be2</a> physical: Fix remote chassis flood ingress flows for multiple encaps.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/85eff8669788cea809d130c008e2463a8e3cb18f">85eff866</a> controller: Add missing nw_ttl field to match against legit NAs.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/97e3fbda05592dc843fe1b40d630a8d3981d9729">97e3fbda</a> pinctrl: Avoid unaligned access to dhcpv6 options.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/6c04edc67c5bdd07cc8e0d85cfe5dcb72bc9eb0f">6c04edc6</a> controller-vtep: Properly free the ovn version at the end.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/e4bcaf4696c3a153b6897287783d496490a5e63f">e4bcaf46</a> binding: Prevent maybe-uninitialized error for queue variable.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/b07b6e2c1254c573a53558c19ae0abb434646388">b07b6e2c</a> northd: Do not assign requested tunnel key to the derived CR port.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5a5527a0a4b4b5023c419d54e14380b8ffb02d21">5a5527a0</a> tests: Fix ACL direction consistency.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/bde62cfa6e59316002512a66183ba6e227d7bd02">bde62cfa</a> northd: Delete learned route with CR without chassis.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/51ad88748c22dc86db4b7ece98c89cece97f834f">51ad8874</a> controller: CT zone allocation for DGP LSPs enabled ACL.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/8fefb2c585169bd2bdea0c16a5133ab4a4d974d8">8fefb2c5</a> tests: Ignore AT_CHECK stderr for <code>grep ... | grep -q</code>.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/153b0b131d9b02932a8e1b6d7312319715759229">153b0b13</a> tests: Fix test for tc rounding behavior change.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/d2ab6b2cbb4c6a32a59f5c54d930f224c965b25d">d2ab6b2c</a> controller: Make sure we remove stale routes first.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/6f61f91d509b94b55ef3f3ef2755b5cb84c27241">6f61f91d</a> tests/ovn-ic: Add missing OVN_CLEANUP_IC call.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/6065499409118b4e0a2eda476b8194b8b4d0f839">60654994</a> tests/ovn-controller: Add missing cleanup.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5c6981a31703f3d43de1c2aaf3714ef5f1026f56">5c6981a3</a> tests/ovn: Add missing partial cleanups.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/2da897c815c20540ff6b4bb75589d1cbb9644afe">2da897c8</a> tests/ovn: Add missing OVN_CLEANUP calls.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/be628b81693a95865c838ae8a511efe71ba0fecb">be628b81</a> tests: Add OVN_CLEANUP_DBS and use it in tests that already stopped northd.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/ffab32b0d775e66a1856758c40215490d45d261d">ffab32b0</a> tests/ovn-controller-vtep: Remove unused test net.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/1e245b652b22bf507e2dcf891bebb785c8dd67c8">1e245b65</a> tests/ovn-controller-vtep: Add missing OVN_CONTROLLER_VTEP_STOP calls.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/9b6565ad4f7d578312e33ed09dce4bb59cfaa1c5">9b6565ad</a> tests: Add missing OVN_CLEANUP_NORTHD calls.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/5823ec66cbbe385f18721babbe9c935ed899d7fd">5823ec66</a> tests: Require scapy for &lsquo;IP packet buffering&rsquo;.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/079b0c36887e379b08fecba361b699746c4fbe27">079b0c36</a> ovs: Bump to include fix for non-existent rows in idl uuid lookup.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/dc74c128f26bb83859f01b6c0453b280c17b4ea2">dc74c128</a> controller: Prevent learning of static routes in BGP.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/fb4e0f9feffadc36ca35d65f98637a098f0291f4">fb4e0f9f</a> northd: Skip transient SB datapath IDL records.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/e62f7156b0dd23c60124b384a37028de05bbebe8">e62f7156</a> pinctrl: Make sure we can learn IGMP groups only on switches.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/fc888fd146d516cd2f645116feba5a870b2258d9">fc888fd1</a> pinctrl: Fix Service_Monitor reported online very slowly.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/826f2e2ccd70f3c406b046906b05aef499f3f3f6">826f2e2c</a> pinctrl: Fix Service_Monitor status change not updated.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/89712b6f9741556cf4eec42fcfa52d214e22ead5">89712b6f</a> pinctrl: Speed up Service_Monitor updates.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/d95e1809c886802ecb30d9a43b89d8f30c34c438">d95e1809</a> pinctrl: Avoid waking-up pinctrl thread too often.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/099dc7911559ac6e460bd653980a55cc9ec70868">099dc791</a> pinctrl: Fix wrong value in timer_wait_until().</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/bbe771a721d0f1491501cfa2fca9eae37120d09b">bbe771a7</a> pinctrl: Use proper drop counter for FDB.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/b75aa38e249968f7e08a62063dfff8674684eb15">b75aa38e</a> northd: Delete learned routes when dynamic-routing is false.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/81c317eaf51c51c61b8ae94b2dfd96d2817322a2">81c317ea</a> tests: Ensure all central components stop at the end of the test.</li>
+<li><a href="https://github.com/ovn-org/ovn/commit/12e50879e88d8df60d49229d4a7042baf4caa016">12e50879</a> Prepare for 25.03.3.</li>
+</ul>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/en/architecture/" title="Architecture"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/en/releases/26.03/" title="26.03" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1776687184"></script>
+    <script src="/js/perfect-scrollbar.min.js?1776687184"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1776687184"></script>
+    <script src="/js/jquery.sticky.js?1776687184"></script>
+    <script src="/js/featherlight.min.js?1776687184"></script>
+    <script src="/js/highlight.pack.js?1776687184"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1776687184"></script>
+    <script src="/js/learn.js?1776687184"></script>
+    <script src="/js/hugo-learn.js?1776687184"></script>
+
+    <link href="/mermaid/mermaid.css?1776687184" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1776687184"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
