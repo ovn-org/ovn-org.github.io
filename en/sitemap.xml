@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -26,13 +27,13 @@
     <lastmod>2020-02-19T22:03:26+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="/es/"
+                hreflang="en-US"
+                href="/en/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="/en/"
+                hreflang="es"
+                href="/es/"
                 />
   </url><url>
     <loc>/en/releases/all_releases/</loc>
@@ -40,25 +41,25 @@
     <loc>/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="/es/categories/"
+                hreflang="en-US"
+                href="/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="/en/categories/"
+                hreflang="es"
+                href="/es/categories/"
                 />
   </url><url>
     <loc>/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="/es/tags/"
+                hreflang="en-US"
+                href="/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="/en/tags/"
+                hreflang="es"
+                href="/es/tags/"
                 />
   </url>
 </urlset>

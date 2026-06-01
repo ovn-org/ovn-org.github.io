@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Releases on OVN project documentation website</title>
-    <link>/en/releases/</link>
-    <description>Recent content in Releases on OVN project documentation website</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <atom:link href="/en/releases/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>26.03</title>
-      <link>/en/releases/26.03/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/releases/26.03/</guid>
-      <description>&lt;h2 id=&#34;ovn-2603&#34;&gt;OVN 26.03&lt;/h2&gt;&#xA;&lt;p&gt;OVN 26.03 was initially released on 20 March, 2026.&#xA;This version of OVN is currently supported for all bug fixes.&#xA;This version will enter critical fix mode on 20 March, 2028.&#xA;Support for this version will end on 20 March, 2029.&lt;/p&gt;&#xA;&lt;h3 id=&#34;v26031&#34;&gt;v26.03.1&lt;/h3&gt;&#xA;&lt;p&gt;v26.03.1 was released on 20 April, 2026.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/ovn-org/ovn/releases/tag/v26.03.1&#34;&gt;Github link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Release Notes:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;OVN v26.03.1 - 20 Apr 2026&#xA;--------------------------&#xA;  - Security: Fixed vulnerability CVE-2026-5265.&#xA;  - Security: Fixed vulnerability CVE-2026-5367.&#xA;  - Bug fixes&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;../changelog_v26.03.1&#34;&gt;Changelog&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>25.09</title>
-      <link>/en/releases/25.09/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/releases/25.09/</guid>
-      <description>&lt;h2 id=&#34;ovn-2509&#34;&gt;OVN 25.09&lt;/h2&gt;&#xA;&lt;p&gt;OVN 25.09 was initially released on 5 September, 2025.&#xA;This version of OVN is currently supported for all bug fixes.&#xA;Support for this version will end on 5 September, 2026.&lt;/p&gt;&#xA;&lt;h3 id=&#34;v25093&#34;&gt;v25.09.3&lt;/h3&gt;&#xA;&lt;p&gt;v25.09.3 was released on 20 April, 2026.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/ovn-org/ovn/releases/tag/v25.09.3&#34;&gt;Github link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Release Notes:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;OVN v25.09.3 - 20 Apr 2026&#xA;--------------------------&#xA;   - Security: Fixed vulnerability CVE-2026-5265.&#xA;   - Security: Fixed vulnerability CVE-2026-5367.&#xA;   - Bug fixes&#xA;   - Add support for special port_security prefix &amp;#34;VRRPv3&amp;#34;. This prefix allows&#xA;     CMS to allow all required traffic for a VRRPv3 virtual router behind LSP.&#xA;     See ovn-nb(5) man page for more details.&#xA;   - Fixed support for fragmented traffic in the userspace datapath. Added the&#xA;     &amp;#34;acl_ct_translation&amp;#34; NB_Global option to enable connection tracking&#xA;     based L4 field translation for stateful ACLs. When enabled allows proper&#xA;     handling of IP fragmentation in userspace datapaths. This option may break&#xA;     hardware offloading and is disabled by default.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;../changelog_v25.09.3&#34;&gt;Changelog&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>24.03</title>
-      <link>/en/releases/24.03/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/releases/24.03/</guid>
-      <description>&lt;h2 id=&#34;ovn-2403&#34;&gt;OVN 24.03&lt;/h2&gt;&#xA;&lt;p&gt;OVN 24.03 was initially released on 1 March, 2024.&#xA;This version of OVN is currently supported for critical and security fixes only.&#xA;Support will end on 1 March, 2027.&lt;/p&gt;&#xA;&lt;h3 id=&#34;v24038&#34;&gt;v24.03.8&lt;/h3&gt;&#xA;&lt;p&gt;v24.03.8 was released on 20 April, 2026.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/ovn-org/ovn/releases/tag/v24.03.8&#34;&gt;Github link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Release Notes:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;OVN v24.03.8 - 20 Apr 2026&#xA;--------------------------&#xA;  - Security: Fixed vulnerability CVE-2026-5265.&#xA;  - Security: Fixed vulnerability CVE-2026-5367.&#xA;  - Bug fixes&#xA;  - Add support for special port_security prefix &amp;#34;VRRPv3&amp;#34;. This prefix allows&#xA;    CMS to allow all required traffic for a VRRPv3 virtual router behind LSP.&#xA;    See ovn-nb(5) man page for more details.&#xA;  - Fixed support for fragmented traffic in the userspace datapath. Added the&#xA;    &amp;#34;acl_ct_translation&amp;#34; NB_Global option to enable connection tracking&#xA;    based L4 field translation for stateful ACLs. When enabled allows proper&#xA;    handling of IP fragmentation in userspace datapaths. This option may break&#xA;    hardware offloading and is disabled by default.&#xA;  - Added disable_garp_rarp option to logical_router table in order to disable&#xA;    GARP/RARP announcements by all the peer ports of this logical router.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;../changelog_v24.03.8&#34;&gt;Changelog&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>All Releases</title>
-      <link>/en/releases/all_releases/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/releases/all_releases/</guid>
-      <description>&lt;h2 id=&#34;supported-releases&#34;&gt;Supported Releases&lt;/h2&gt;&#xA;&lt;p&gt;The following OVN release series are still receiving upstream support.&lt;/p&gt;&#xA;&lt;h3 id=&#34;ovn-2603&#34;&gt;OVN 26.03&lt;/h3&gt;&#xA;&lt;p&gt;For more details, see &lt;a href=&#34;../26.03&#34;&gt;26.03 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;ovn-2509&#34;&gt;OVN 25.09&lt;/h3&gt;&#xA;&lt;p&gt;For more details, see &lt;a href=&#34;../25.09&#34;&gt;25.09 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;ovn-2403&#34;&gt;OVN 24.03&lt;/h3&gt;&#xA;&lt;p&gt;For more details, see &lt;a href=&#34;../24.03&#34;&gt;24.03 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;no-longer-supported-releases&#34;&gt;No Longer Supported Releases&lt;/h2&gt;&#xA;&lt;p&gt;The following OVN release series are no longer supported. This means that they&#xA;will not receive any future bug fixes, including critical or security fixes.&#xA;It is not recommended to use these unless you absolutely must. Use these at&#xA;your own risk.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Releases on OVN project documentation website</title>
+		<link>/en/releases/</link>
+		<description>Recent content in Releases on OVN project documentation website</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<atom:link href="/en/releases/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>26.03</title>
+				<link>/en/releases/26.03/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>/en/releases/26.03/</guid>
+				<description>&lt;h2 id=&#34;ovn-2603&#34;&gt;OVN 26.03&lt;/h2&gt;&#xA;&lt;p&gt;OVN 26.03 was initially released on 20 March, 2026.&#xA;This version of OVN is currently supported for all bug fixes.&#xA;This version will enter critical fix mode on 20 March, 2028.&#xA;Support for this version will end on 20 March, 2029.&lt;/p&gt;&#xA;&lt;h3 id=&#34;v26031&#34;&gt;v26.03.1&lt;/h3&gt;&#xA;&lt;p&gt;v26.03.1 was released on 20 April, 2026.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/ovn-org/ovn/releases/tag/v26.03.1&#34;&gt;Github link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Release Notes:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;OVN v26.03.1 - 20 Apr 2026&#xA;--------------------------&#xA;  - Security: Fixed vulnerability CVE-2026-5265.&#xA;  - Security: Fixed vulnerability CVE-2026-5367.&#xA;  - Bug fixes&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;../changelog_v26.03.1&#34;&gt;Changelog&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>25.09</title>
+				<link>/en/releases/25.09/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>/en/releases/25.09/</guid>
+				<description>&lt;h2 id=&#34;ovn-2509&#34;&gt;OVN 25.09&lt;/h2&gt;&#xA;&lt;p&gt;OVN 25.09 was initially released on 5 September, 2025.&#xA;This version of OVN is currently supported for all bug fixes.&#xA;Support for this version will end on 5 September, 2026.&lt;/p&gt;&#xA;&lt;h3 id=&#34;v25093&#34;&gt;v25.09.3&lt;/h3&gt;&#xA;&lt;p&gt;v25.09.3 was released on 20 April, 2026.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/ovn-org/ovn/releases/tag/v25.09.3&#34;&gt;Github link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Release Notes:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;OVN v25.09.3 - 20 Apr 2026&#xA;--------------------------&#xA;   - Security: Fixed vulnerability CVE-2026-5265.&#xA;   - Security: Fixed vulnerability CVE-2026-5367.&#xA;   - Bug fixes&#xA;   - Add support for special port_security prefix &amp;#34;VRRPv3&amp;#34;. This prefix allows&#xA;     CMS to allow all required traffic for a VRRPv3 virtual router behind LSP.&#xA;     See ovn-nb(5) man page for more details.&#xA;   - Fixed support for fragmented traffic in the userspace datapath. Added the&#xA;     &amp;#34;acl_ct_translation&amp;#34; NB_Global option to enable connection tracking&#xA;     based L4 field translation for stateful ACLs. When enabled allows proper&#xA;     handling of IP fragmentation in userspace datapaths. This option may break&#xA;     hardware offloading and is disabled by default.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;../changelog_v25.09.3&#34;&gt;Changelog&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>24.03</title>
+				<link>/en/releases/24.03/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>/en/releases/24.03/</guid>
+				<description>&lt;h2 id=&#34;ovn-2403&#34;&gt;OVN 24.03&lt;/h2&gt;&#xA;&lt;p&gt;OVN 24.03 was initially released on 1 March, 2024.&#xA;This version of OVN is currently supported for critical and security fixes only.&#xA;Support will end on 1 March, 2027.&lt;/p&gt;&#xA;&lt;h3 id=&#34;v24038&#34;&gt;v24.03.8&lt;/h3&gt;&#xA;&lt;p&gt;v24.03.8 was released on 20 April, 2026.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/ovn-org/ovn/releases/tag/v24.03.8&#34;&gt;Github link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Release Notes:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;OVN v24.03.8 - 20 Apr 2026&#xA;--------------------------&#xA;  - Security: Fixed vulnerability CVE-2026-5265.&#xA;  - Security: Fixed vulnerability CVE-2026-5367.&#xA;  - Bug fixes&#xA;  - Add support for special port_security prefix &amp;#34;VRRPv3&amp;#34;. This prefix allows&#xA;    CMS to allow all required traffic for a VRRPv3 virtual router behind LSP.&#xA;    See ovn-nb(5) man page for more details.&#xA;  - Fixed support for fragmented traffic in the userspace datapath. Added the&#xA;    &amp;#34;acl_ct_translation&amp;#34; NB_Global option to enable connection tracking&#xA;    based L4 field translation for stateful ACLs. When enabled allows proper&#xA;    handling of IP fragmentation in userspace datapaths. This option may break&#xA;    hardware offloading and is disabled by default.&#xA;  - Added disable_garp_rarp option to logical_router table in order to disable&#xA;    GARP/RARP announcements by all the peer ports of this logical router.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;../changelog_v24.03.8&#34;&gt;Changelog&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>All Releases</title>
+				<link>/en/releases/all_releases/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>/en/releases/all_releases/</guid>
+				<description>&lt;h2 id=&#34;supported-releases&#34;&gt;Supported Releases&lt;/h2&gt;&#xA;&lt;p&gt;The following OVN release series are still receiving upstream support.&lt;/p&gt;&#xA;&lt;h3 id=&#34;ovn-2603&#34;&gt;OVN 26.03&lt;/h3&gt;&#xA;&lt;p&gt;For more details, see &lt;a href=&#34;../26.03&#34;&gt;26.03 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;ovn-2509&#34;&gt;OVN 25.09&lt;/h3&gt;&#xA;&lt;p&gt;For more details, see &lt;a href=&#34;../25.09&#34;&gt;25.09 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;ovn-2403&#34;&gt;OVN 24.03&lt;/h3&gt;&#xA;&lt;p&gt;For more details, see &lt;a href=&#34;../24.03&#34;&gt;24.03 &lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;no-longer-supported-releases&#34;&gt;No Longer Supported Releases&lt;/h2&gt;&#xA;&lt;p&gt;The following OVN release series are no longer supported. This means that they&#xA;will not receive any future bug fixes, including critical or security fixes.&#xA;It is not recommended to use these unless you absolutely must. Use these at&#xA;your own risk.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
