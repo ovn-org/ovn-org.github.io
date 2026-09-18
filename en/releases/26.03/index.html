@@ -12,20 +12,20 @@
     <title>26.03 :: OVN project documentation website</title>
 
     
-    <link href="/css/nucleus.css?1789345979" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1789345979" rel="stylesheet">
-    <link href="/css/hybrid.css?1789345979" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1789345979" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1789345979" rel="stylesheet">
-    <link href="/css/auto-complete.css?1789345979" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1789345979" rel="stylesheet">
-    <link href="/css/theme.css?1789345979" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1789345979" rel="stylesheet">
+    <link href="/css/nucleus.css?1789731933" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1789731933" rel="stylesheet">
+    <link href="/css/hybrid.css?1789731933" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1789731933" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1789731933" rel="stylesheet">
+    <link href="/css/auto-complete.css?1789731933" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1789731933" rel="stylesheet">
+    <link href="/css/theme.css?1789731933" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1789731933" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1789345979" rel="stylesheet">
+      <link href="/css/theme-blue.css?1789731933" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1789345979"></script>
+    <script src="/js/jquery-3.3.1.min.js?1789731933"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1789345979"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1789345979"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1789731933"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1789731933"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1789345979"></script>
+<script type="text/javascript" src="/js/search.js?1789731933"></script>
 
     
   </div>
@@ -132,9 +132,9 @@
  
   
     
-      <li data-nav-id="/en/releases/26.03/" title="26.03" class="dd-item active">
-        <a href="/en/releases/26.03/">
-        26.03
+      <li data-nav-id="/en/releases/26.09/" title="26.09" class="dd-item ">
+        <a href="/en/releases/26.09/">
+        26.09
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -153,9 +153,9 @@
  
   
     
-      <li data-nav-id="/en/releases/25.09/" title="25.09" class="dd-item ">
-        <a href="/en/releases/25.09/">
-        25.09
+      <li data-nav-id="/en/releases/26.03/" title="26.03" class="dd-item active">
+        <a href="/en/releases/26.03/">
+        26.03
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -453,6 +453,7 @@
   <ul>
     <li><a href="#ovn-2603">OVN 26.03</a>
       <ul>
+        <li><a href="#v26033">v26.03.3</a></li>
         <li><a href="#v26032">v26.03.2</a></li>
         <li><a href="#v26031">v26.03.1</a></li>
         <li><a href="#v26030">v26.03.0</a></li>
@@ -488,6 +489,29 @@
 This version of OVN is currently supported for all bug fixes.
 This version will enter critical fix mode on 20 March, 2028.
 Support for this version will end on 20 March, 2029.</p>
+<h3 id="v26033">v26.03.3</h3>
+<p>v26.03.3 was released on 18 September, 2026.</p>
+<p><a href="https://github.com/ovn-org/ovn/releases/tag/v26.03.3">Github link</a></p>
+<p>Release Notes:</p>
+<pre tabindex="0"><code>OVN v26.03.3 - 18 Sep 2026
+--------------------------
+  - Bug fixes
+  - Reverted fix for Load_Balancer health check replies for baremetal
+    pool members whose backend LSP is type=external.  This was causing
+    a packet loop.
+  - Mark tunnel ports as transient (other_config:transient=true) when the
+    local chassis is a member of an HA chassis group.
+    Systems which invoke ovs-ctl --delete-transient-ports during OVS startup
+    (e.g. via the ovs-delete-transient-ports.service on RHEL/Fedora) will
+    automatically remove stale tunnel ports on reboot, preventing them from
+    interfering with BFD and HA failover after a gateway chassis reboot.
+  - Dynamic Routing:
+    * Remove the &#34;other_config:dynamic-routing-arp-prefer-local&#34;
+      option from Logical Switches.  EVPN-learned MAC bindings are
+      now written to the SB MAC_Binding table and consumed at the
+      same priority as dynamic entries, making the preference option
+      obsolete.
+</code></pre><p><a href="../changelog_v26.03.3">Changelog</a></p>
 <h3 id="v26032">v26.03.2</h3>
 <p>v26.03.2 was released on 16 June, 2026.</p>
 <p><a href="https://github.com/ovn-org/ovn/releases/tag/v26.03.2">Github link</a></p>
@@ -590,7 +614,7 @@ Support for this version will end on 20 March, 2029.</p>
      and support both ingress (from-lport) and egress (to-lport) traffic flows.
      Two new options have been added to Logical_Switch_Port which need to
      be set to false for ports used as network function inport or outport.
-     - &#34;lsp_learn_mac&#34;: This can be used to control mac learning on the port.
+     - &#34;lsp_learn_fdb&#34;: This can be used to control mac learning on the port.
      - &#34;receive_multicast&#34;: This can used to control whether multicast packets
        can be received by the port.
      NOTE:
@@ -711,6 +735,25 @@ Support for this version will end on 20 March, 2029.</p>
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -730,22 +773,6 @@ Support for this version will end on 20 March, 2029.</p>
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -836,10 +863,10 @@ Support for this version will end on 20 March, 2029.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/releases/" title="Releases"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/releases/26.09/" title="26.09"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/releases/25.09/" title="25.09" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/releases/24.03/" title="24.03" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -849,19 +876,19 @@ Support for this version will end on 20 March, 2029.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1789345979"></script>
-    <script src="/js/perfect-scrollbar.min.js?1789345979"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1789345979"></script>
-    <script src="/js/jquery.sticky.js?1789345979"></script>
-    <script src="/js/featherlight.min.js?1789345979"></script>
-    <script src="/js/highlight.pack.js?1789345979"></script>
+    <script src="/js/clipboard.min.js?1789731933"></script>
+    <script src="/js/perfect-scrollbar.min.js?1789731933"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1789731933"></script>
+    <script src="/js/jquery.sticky.js?1789731933"></script>
+    <script src="/js/featherlight.min.js?1789731933"></script>
+    <script src="/js/highlight.pack.js?1789731933"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1789345979"></script>
-    <script src="/js/learn.js?1789345979"></script>
-    <script src="/js/hugo-learn.js?1789345979"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1789731933"></script>
+    <script src="/js/learn.js?1789731933"></script>
+    <script src="/js/hugo-learn.js?1789731933"></script>
 
-    <link href="/mermaid/mermaid.css?1789345979" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1789345979"></script>
+    <link href="/mermaid/mermaid.css?1789731933" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1789731933"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

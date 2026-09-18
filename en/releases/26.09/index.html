@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Changelog v20.06.1 :: OVN project documentation website</title>
+    <title>26.09 :: OVN project documentation website</title>
 
     
     <link href="/css/nucleus.css?1789731933" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/en/releases/changelog_v20.06.1/">
+  <body class="" data-url="/en/releases/26.09/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -132,7 +132,7 @@
  
   
     
-      <li data-nav-id="/en/releases/26.09/" title="26.09" class="dd-item ">
+      <li data-nav-id="/en/releases/26.09/" title="26.09" class="dd-item active">
         <a href="/en/releases/26.09/">
         26.09
         <i class="fas fa-check read-icon"></i>
@@ -348,7 +348,7 @@
                   
                     
                     
-                      <option id="en" value="/en/releases/changelog_v20.06.1/" selected>English</option>
+                      <option id="en" value="/en/releases/26.09/" selected>English</option>
                     
                   
               
@@ -405,7 +405,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/ovn-website/edit/main/src/content/releases/changelog_v20.06.1.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ovn-org/ovn-website/edit/main/src/content/releases/26.09.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -436,7 +436,7 @@
             
           
           
-            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > Changelog v20.06.1
+            <a href='/en/'>OVN, Open Virtual Network</a> > <a href='/en/releases/'>Releases</a> > 26.09
           
          
           
@@ -451,9 +451,9 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#ovn-2609">OVN 26.09</a>
       <ul>
-        <li><a href="#changes-from-v20060-to-v20061">Changes from v20.06.0 to v20.06.1</a></li>
+        <li><a href="#v26090">v26.09.0</a></li>
       </ul>
     </li>
   </ul>
@@ -473,7 +473,7 @@
           
             <h1>
               
-              Changelog v20.06.1
+              26.09
             </h1>
           
 
@@ -481,36 +481,128 @@
 
 
 
-<h3 id="changes-from-v20060-to-v20061">Changes from v20.06.0 to v20.06.1</h3>
-<ul>
-<li><a href="https://github.com/ovn-org/ovn/commit/c4d0d51368fb9857ab9aa068cc6f7db369c6b3e3">c4d0d513</a> Set release date for 20.06.1</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/7cc12230f1322ca98f37d396d9bcc93864751597">7cc12230</a> ovn-northd: Fix memory leak in build_lswitch_rport_arp_req_flows().</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/4b1b9624901c1dc71d6f9c01e2038644e3545bae">4b1b9624</a> ovn-controller: Fix the memory leak in ref lflow handling.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/fc816ff6007d9c79f37771538088c171f45ab9b9">fc816ff6</a> ovn-northd: Fix the missing lflow issue in LS_OUT_PRE_LB.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/2640b73ac7edb717331ff5256484a974d3473038">2640b73a</a> Fix selection fields for UDP and SCTP load balancers.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/0db5cbf65283fb41a7d28e5d0ad2f8ac14725d73">0db5cbf6</a> Split SB Port_Group per datapath.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/bad3cc972ed18066335bdd0da0fbca922fff0601">bad3cc97</a> chassis.c: Add comment to SB DB transaction only when needed.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/b738f8b0aa648b118c63e627fd75c40332dcc27a">b738f8b0</a> Cleanup <code>ovn-nbctl lr-route-add</code> IP normalization logic.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/da7aab095dc8c7ab34739a22001018de3fd2cad6">da7aab09</a> Use normalized IP addresses in <code>ovn-nbctl lr-nat-del</code></li>
-<li><a href="https://github.com/ovn-org/ovn/commit/0d624ca9e769b93650d11b9bf48caebb451a21f3">0d624ca9</a> Use normalized IP addreses in <code>ovn-nbctl lr-nat-add</code></li>
-<li><a href="https://github.com/ovn-org/ovn/commit/9367c5b49c0cd9a8917e1966b093581ed90d0fb2">9367c5b4</a> Add more IP address normalization functions.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/ef097892a3a3c5ad24afad81d3a5730d0c1b127c">ef097892</a> Use normalized IP addresses in <code>ovn-nbctl lrp-add</code></li>
-<li><a href="https://github.com/ovn-org/ovn/commit/7d19cc445e2956f75893c8ecd6b3b5380cb200de">7d19cc44</a> Avoid case-sensitive MAC address comparisons.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/427a8dcd2fe813cedd29b7248d3a97c4d2013c07">427a8dcd</a> ovn-controller: Fix memleak in lflow_add_flows_for_datapath.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/4982c7132c490f0cc65f147b72c85b1311948597">4982c713</a> binding.c: Reorder out params of some of the static functions.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/4dcc306581b7a2e108cf78b7c62d60e857e75019">4dcc3065</a> Add an util function get_unique_lport_key() for generating unique lport key.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/c573ae51062b9a73e847b71e9fac7acb0faafdb8">c573ae51</a> tests: Enhance ovn-performance testing by adding gw router port.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/a7c9df3c478ef844bb711a936310809789aa0ddf">a7c9df3c</a> ovn-controller: Use the tracked runtime data changes for flow calculation.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/3d096f833c4a7d6f688a58c0d57629806936a926">3d096f83</a> ovn-controller: Handle runtime data changes in flow output engine</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/8bc8fe85a5d51db21fa6aa183944c5a9d1189a12">8bc8fe85</a> ovn-controller: I-P for ct zone and OVS interface changes in flow output stage.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/c7ed2c73e3c986edbc10d5659fef39ad82d68bb3">c7ed2c73</a> I-P engine: Provide the option for an engine to clear tracked engine data in every run.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/80f50554f98eaef6d59fbbe390ab29327008b802">80f50554</a> northd: set packet length in check_pkt_larger()</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/aaf198b7fd2a4c85d02cfdd6125b6d87308fb269">aaf198b7</a> Honour router_preference for solicited RA</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/bb6bf9630b41e587db9fc05a46aede5c80ed5c3e">bb6bf963</a> Fix ovn-controller generated packets from getting dropped for reject ACL action.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/cc1ae396c6197daf8ac48b4eabe077dc72b65456">cc1ae396</a> northd: By pass IPv6 Router Adv and Router Solicitation packets from ACL stages.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/8242db7882584dae00fc8869e43ff7acd1139358">8242db78</a> ovn-controller: Fix I-P for SB Port_Binding and OVS Interface.</li>
-<li><a href="https://github.com/ovn-org/ovn/commit/fae8454f3312738e3c592bf27f95f1aee2dbb7d1">fae8454f</a> Prepare for 20.06.1</li>
-</ul>
+<h2 id="ovn-2609">OVN 26.09</h2>
+<p>OVN 26.09 was initially released on 18 September, 2026.
+This version of OVN is currently supported for all bug fixes.
+Support for this version will end on 18 September, 2027.</p>
+<h3 id="v26090">v26.09.0</h3>
+<p>v26.09.0 was released on 18 September, 2026.</p>
+<p><a href="https://github.com/ovn-org/ovn/releases/tag/v26.09.0">Github link</a></p>
+<p>Release Notes:</p>
+<pre tabindex="0"><code>OVN v26.09.0 - Sep 18 2026
+--------------------------
+   - Logical_Router_Port: Added a new &#34;options:dhcpv4_primary_ip&#34; key
+     that selects which of the port&#39;s IPv4 addresses ovn-northd uses as
+     the relay agent address (giaddr) in relayed DHCP packets.  When
+     unset, ovn-northd picks the same address it picked before
+     (whichever CIDR in &#34;networks&#34; sorts first as a string), so
+     existing deployments are unaffected; deployments that need a
+     specific address on a multi-IP port can pin it via the new
+     option.
+   - OVN Interconnection now supports advertising Address_Sets to remote
+     availability zones.  Set options:ic-adv=true on an NB Address_Set to
+     have ovn-ic publish it to the IC-SB database and import it into the
+     Northbound databases of other availability zones.
+   - Load balancer health checks now &#34;fail closed&#34; for newly added backends:
+     ovn-northd initializes a newly created Service_Monitor row to the
+     &#34;offline&#34; state, so traffic is not forwarded to a backend until its first
+     health check probe succeeds.  Previously, such backends were treated as
+     available until the first probe completed.
+   - Added Transit Switch port support with new ovn-ic-nbctl &#39;tsp-add&#39;,
+     &#39;tsp-del&#39; and &#39;tsp-set-addr&#39; commands.
+   - Added ability to set any &#34;ipsec_*&#34; NB_Global option to configure the
+     IPsec backend.
+   - Added nb_cfg_timestamp to SB_Global, written atomically with each
+     nb_cfg update by ovn-northd.  ovn-controller propagates this value
+     to the local OVS bridge external_ids as &#34;ovn-nb-cfg-sb-ts&#34;.  In
+     large deployments where options:enable_chassis_nb_cfg_update is
+     false, this enables per-chassis propagation latency tracking without
+     any southbound database writes.
+   - Documented missing ovn-nbctl commands: &#34;mirror-rule-add&#34;,
+     &#34;mirror-rule-del&#34;, &#34;lr-nat-update-ext-ip&#34;,
+     &#34;ha-chassis-group-set-chassis-prio&#34;, &#34;lsp-add-router-port&#34;,
+     and &#34;lsp-add-localnet-port&#34;.  Also documented missing options for
+     &#34;lb-add&#34;, &#34;meter-add&#34;, &#34;lr-policy-add&#34;, and &#34;lr-policy-del&#34;, and
+     fixed the &#34;nfg-list&#34; signature.
+   - Dynamic Routing:
+     * Allow multiple routers to read the same VRF table.
+     * Add support for hub-and-spoke propagation via the &#34;hub-spoke&#34; option
+       in dynamic-routing-redistribute settings.
+     * Add ECMP/multi-homing support for EVPN FDB entries. FDB entries
+       backed by a kernel nexthop group are load-balanced via OpenFlow
+       select groups with weighted buckets.
+     * Add EVPN ARP/ND suppression for logical switches.  When a
+       broadcast ARP request or multicast ND solicitation targets
+       an IP address that was learned via EVPN, ovn-northd now
+       generates proxy-reply flows using a dedicated side table
+       and the new chk_evpn_arp() action, preventing unnecessary
+       flooding to remote VTEPs.
+     * Allow learning routes from the main (254) and default (253) routing
+       tables.
+     * EVPN: distributed dnat_and_snat NAT entries (e.g. floating IPs)
+       are now populated in the SB Advertised_MAC_Binding table on the
+       provider logical switch that carries the distributed gateway
+       port, so that they can be advertised as EVPN Type-2 routes.  This
+       is gated on a new &#34;nat&#34; token of the Logical_Switch
+       &#34;dynamic-routing-redistribute&#34; option, independent of &#34;ip&#34;.
+     * ovn-controller now automatically discovers the veth peer interface
+       of a Logical Switch Port referenced by the &#34;routing-protocol-redirect&#34;
+       option, when that port is bound locally and connected through a veth
+       pair.  This removes the need to manually configure
+       &#34;dynamic-routing-port-name&#34; and/or the Open_vSwitch
+       &#34;external_ids:dynamic-routing-port-mapping&#34; for veth-based routing
+       daemon integrations.  This feature is Linux-only and requires
+       OVS version &gt;= 4.0.
+     * Remove the &#34;other_config:dynamic-routing-arp-prefer-local&#34;
+       option from Logical Switches.  EVPN-learned MAC bindings are
+       now written to the SB MAC_Binding table and consumed at the
+       same priority as dynamic entries, making the preference option
+       obsolete.
+   - Added &#34;override-connected&#34; option to Logical Router Static Routes to mark
+     static routes as higher-priority than connected routes, which in turn led
+     to changes in administrative distance for specific route types. Please see
+     the &#34;Route Administrative Distance&#34; section of the ovn-northd manpage.
+   - Windows support was broken since the split from OVS repository.
+     Remaining bits of the build system and the documentation are now removed.
+   - Removed deprecated &#34;port-up-notif&#34;, &#34;ct-no-masked-label&#34; and
+     &#34;ovn-ct-lb-related&#34; feature flags. At the same time mark
+     &#34;mac-binding-timestamp&#34;, &#34;fdb-timestamp&#34; and &#34;ls-dpg-column&#34; feature
+     flags as deprecated.
+   - Removed the deprecated &#34;ct_lb&#34; action.
+   - Added a new &#34;icmp4.inner_ip4.src&#34; action that rewrites the source
+     IPv4 address embedded in an ICMPv4 error&#39;s inner packet.  ovn-northd
+     uses it for stateless &#34;dnat_and_snat&#34; rules, controlled by the new
+     &#34;options:stateless_icmp_helper&#34; NAT option (default true), so that
+     inbound ICMPv4 errors that quote the original datagram - Destination
+     Unreachable (type 3, including &#34;fragmentation needed&#34;), Time Exceeded
+     (type 11) and Parameter Problem (type 12) - generated by an external
+     router are un-NATed correctly.  This makes Path MTU discovery and
+     traceroute work through stateless NAT.
+   - Added the &#34;ic-route-ipv4-next-hop-ipv6&#34; option to Logical_Router (and,
+     as an override, to Logical_Router_Port) to advertise a router&#39;s IPv4
+     routes through ovn-ic using the interconnect port&#39;s IPv6 address as next
+     hop (&#34;IPv4 over IPv6&#34;).
+   - Add vtap mode support for Network Function. In vtap mode, traffic matching
+     ACLs is mirrored to the network function while continuing to flow to the
+     original destination. This enables passive monitoring use cases where
+     network functions can observe traffic without being inline in
+     the data path.
+   - Added a new &#34;ovn-debug lflow-pipeline-oftable-start-list&#34; command that
+     prints the starting OpenFlow table number of the logical ingress and
+     egress pipelines.
+   - The support for co-hosting multiple controller instances is now
+     considered stable.  Its &#34;experimental&#34; tag has been removed.
+   - Added the &#34;ic-route-learn-tag-rules&#34; option to Logical_Router_Port to
+     filter the routes learned through the port by route tag.  This supersedes
+     &#34;ic-route-filter-tag&#34;, which is now deprecated and is ignored when
+     &#34;ic-route-learn-tag-rules&#34; is set.
+   - Mark tunnel ports as transient (other_config:transient=true) when the
+     local chassis is a member of an HA chassis group.
+     Systems which invoke ovs-ctl --delete-transient-ports during OVS startup
+     (e.g. via the ovs-delete-transient-ports.service on RHEL/Fedora) will
+     automatically remove stale tunnel ports on reboot, preventing them from
+     interfering with BFD and HA failover after a gateway chassis reboot.
+</code></pre><p><a href="../changelog_v26.09.0">Changelog</a></p>
 
 
 <footer class="footline">
@@ -581,8 +673,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -599,6 +689,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -705,10 +798,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/architecture/" title="Architecture"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/releases/" title="Releases"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/releases/26.09/" title="26.09" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/releases/26.03/" title="26.03" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
